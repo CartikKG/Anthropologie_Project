@@ -1,0 +1,201 @@
+* {
+    padding: 0%;
+    margin: 0%;
+}
+
+nav {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+#WHOLENAV {
+    background-color: rgb(255, 255, 255);
+    position: sticky;
+    top: 0%;
+}
+
+input[type="search"] {
+    width: 86%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    border-radius: 7px;
+    border: 1px solid #bfbfbf;
+    padding: 11px 15px;
+}
+
+#SigninSignUP {
+    height: 35px;
+    background-color: #f6f6f6;
+    display: flex;
+    /* align-items: flex-end; */
+    /* flex-direction: end; */
+    justify-content: flex-end;
+    /* align-items: center; */
+    margin-top: 10px;
+    /* margin: 0%; */
+}
+
+#SigninSignUP div {
+    width: 150px;
+    color: rgb(25, 138, 153);
+    align-items: center;
+}
+
+nav>ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border: 1px solid rgb(232, 232, 232);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+}
+
+ul>li {
+
+    list-style: none;
+    padding: 4px;
+    padding-bottom: 18px;
+    padding-top: 18px;
+    padding-right: 20px;
+    padding-left: 20px;
+
+}
+
+ul>li :hover {
+    color: rgb(2, 151, 121);
+}
+
+ul>li:hover {
+    color: rgb(2, 151, 121);
+
+    border-bottom: solid rgb(2, 151, 121) 1.5px;
+}
+
+li>a {
+    text-decoration: none;
+    color: black;
+}
+
+#navbarupper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navbarupperinside>a {
+    padding: 12px 37px;
+    border: 1px solid rgb(232, 232, 232);
+}
+
+#searchplusbag {
+    width: 300px;
+}
+
+#navbarupperinside {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+
+
+/* DISPLAY  */
+div nav ul .downnav1 {
+    position: absolute;
+    top: 105%;
+    left: 0px;
+    visibility: hidden;
+    opacity: 0;
+    transition: visibility 0s, opacity .7s linear;
+    background-color: rgb(255, 255, 255);
+    border: 1px solid rgb(232, 232, 232);
+    color: rgb(77, 77, 82);
+}
+
+div nav ul .dropdown {
+    position: relative;
+}
+
+div nav ul .dropdown:hover .downnav1 {
+    visibility: visible;
+    opacity: 1;
+    opacity: 1;
+}
+
+.downnav1 {
+    display: flex;
+    width: 800%;
+
+    background-color: aliceblue;
+    justify-content: space-between;
+
+    z-index: 1;
+}
+
+#Clothing {
+    margin-left: -160px;
+}
+
+#HomeandFurniture {
+    margin-left: -560px;
+}
+
+#accessories {
+    margin-left: -327px;
+}
+
+#beautywellness {
+    margin-left: -705px;
+}
+
+#gardenoutdoor {
+    margin-left: -300px;
+    width: 500px;
+}
+
+#gardenoutdoor>div {
+    width: 50%;
+    margin: 0%;
+    display: inline;
+}
+
+#Extra50off {
+    margin-left: -1000px;
+}
+
+#Wedding {
+    margin-left: -500px;
+}
+
+.downnav1>div {
+    width: 30%;
+    margin-left: auto;
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-weight: 500;
+}
+
+.downnav1>div div {
+    font-size: 13px;
+    margin: auto;
+    width: 90%;
+    margin-top: 10px;
+
+}
+
+a {
+    text-decoration: none;
+    color: rgb(8, 5, 5);
+}
+
+.vi {
+    border-left: 1px solid rgb(232, 232, 232);
+}
+
+.bottomborder {
+    border-bottom: 1px solid rgb(232, 232, 232);
+}

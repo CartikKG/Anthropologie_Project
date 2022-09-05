@@ -13,193 +13,14 @@
     src="https://kit.fontawesome.com/60b736368c.js"
     crossorigin="anonymous"
   ></script>
-    <style>
-      * {
-        padding: 0%;
-        margin: 0%;
-      }
-      nav {
-        padding-left:50px;
-        padding-right:50px;
-      }
-
-      #WHOLENAV{
-        background-color: rgb(255, 255, 255);
-        position: sticky;
-        top: 0%;
-      }
-      input[type="search"]{
-        width: 86%;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    border-radius: 7px;
-    border: 1px solid #bfbfbf;
-    padding: 11px 15px;
-      }
-      #SigninSignUP{
-        height: 35px;
-        background-color: #f6f6f6;
-         display: flex;
-       /* align-items: flex-end; */
-       /* flex-direction: end; */
-       justify-content: flex-end; 
-       /* align-items: center; */
-       margin-top: 10px;
-       /* margin: 0%; */
-      }
-      #SigninSignUP  div {
-        width:150px;
-        /* height: 100px; */
-        /* position:relative; */
-       /* left:  10%; 00*/
-       /* align-items: baseline; */
-       /* right: 20%; */
-       /* margin-left: 0%; */
-       /* background-color: aqua; */
-       color: rgb(25, 138, 153);
-       align-items: center;
-       /* padding:3px 3px; */
-       /* padding-bottom: 20px; */
-      
-      }
-   
-      nav > ul {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        border: 1px solid rgb(232, 232, 232);
-        font-family: "Montserrat", sans-serif;
-        font-weight: 600;
-        font-size: 12px;   
-      }
-      ul > li {
-     
-        list-style: none;
-        padding: 4px;
-        padding-bottom: 18px;
-        padding-top: 18px;
-        padding-right: 20px;
-        padding-left: 20px;
-       
-      }
-      ul > li :hover {
-        color: rgb(2, 151, 121);
-      }
-
-      ul > li:hover {
-        color: rgb(2, 151, 121);
-
-        border-bottom: solid rgb(2, 151, 121) 1.5px;
-      }
-      li > a {
-        text-decoration: none;
-        color: black;
-      }
-      #navbarupper {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-      }
-      #navbarupperinside > a {
-        padding: 12px 37px;
-        border: 1px solid rgb(232, 232, 232);
-      }
-      #searchplusbag{
-        width: 300px;
-      }
-      #navbarupperinside {
-        display: flex;
-        justify-content: space-between;
-      }
-      
-
-
-
-
-      /* DISPLAY  */
-      div nav ul .downnav1 {
-        position: absolute;
-        top: 105%;
-        left: 0px;
-        visibility: hidden;
-        opacity: 0;
-        transition: visibility 0s, opacity .7s linear;
-        background-color: rgb(255, 255, 255);
-        border: 1px solid rgb(232, 232, 232);
-        color: rgb(77, 77, 82);
-      }
-      div nav ul .dropdown {
-        position: relative;
-      }
-      div nav ul .dropdown:hover .downnav1 {
-        visibility: visible;
-        opacity: 1;
-        opacity: 1;
-      }
-
-      .downnav1 {
-         display: flex;
-         width: 800%; 
-         /* left: 0%; */
-         /* width: 700px; */
-         background-color: aliceblue;
-         justify-content: space-between;
-         /* border: 4px solid rgb(0, 0, 0);  */
-         z-index:1;
-      }
-      #Clothing{
-        margin-left: -160px;
-      }
-      #HomeandFurniture{
-        margin-left: -560px;
-      }
-      #accessories{
-        margin-left: -327px;
-      }
-      #beautywellness{
-        margin-left: -705px;
-      }
-      #gardenoutdoor{
-        margin-left: -800px;
-      }
-      .downnav1 > div {
-        width: 30%;
-        margin-left: auto;
-        margin-left: auto;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-start;
-        font-weight: 500; 
-      }
-
-      .downnav1 > div div {
-        font-size: 13px;
-        margin: auto;
-        width: 90%;
-        margin-top: 10px;    
-        
-      }
-      a{
-        text-decoration: none;
-        color: rgb(8, 5, 5);
-      }
-      .vi {
-      border-left: 1px solid rgb(232, 232, 232);
-      }
-      .bottomborder{
-        border-bottom: 1px solid rgb(232, 232, 232);
-      }
-
-
-
-    </style>
+  <link rel="stylesheet" href="./navbar.css" />
   </head>
   <body>
     <div style="background-color: rgb(203, 69, 102); height: 40px; ">
 
     </div>
     <div id = "SigninSignUP">
-      <div> <i class="fa-light fa-earth-americas"></i> English ($)</div>    <a href=""> <div  >  <i class="fa-regular fa-user"></i>    Sign In / Sign Up  </div></a> 
+      <div>  <i class="fa-sharp fa-solid fa-globe" style="margin-right: 10px;"></i>English ($)</div>    <a href=""> <div  >  <i class="fa-regular fa-user"></i>    Sign In / Sign Up  </div></a> 
     </div>
     <div id="WHOLENAV"> 
       <nav>
@@ -670,15 +491,110 @@
           </li>
           <li class="dropdown">
             <a href="">Wedding</a>
+            
+            <div class="downnav1" id="Wedding">
+              <div>
+                <a href=""><div class="bottomborder"> <h3>Shop by Category</h3> <br> </div></a> <br>
+                <a href=""><div>Explore All Shoes</div></a>
+                <a href=""><div>Shop All Weddings</div></a>
+                <a href=""><div>New</div></a>
+                <a href=""><div>Bride</div></a>
+                <a href=""><div>Bridemaids</div></a>
+                
+              </div>
+            
+              <div>
+                <a href=""><div class="bottomborder"> <h3>.</h3> <br> </div><br>
+                
+               
+           
+                <a href=""><div>Flower Girl Dresses</div></a>
+                <a href=""><div>Wedding Guest Dresses</div></a>
+                <a href=""><div>Plus</div></a>
+                <a href=""><div>Accessories</div></a>
+                <a href=""><div>Shoes</div></a>
+              </div> 
+              <span class="vi"></span>
+              <div>
+              <a href=""><div class="bottomborder"> <h3>Featurerd</h3> <br> </div><br>
+                
+               
+           
+                <a href=""><div>City Hall Bride</div></a>
+                <a href=""><div>Modern Bride</div></a>
+                <a href=""><div>Bohemian Bride</div></a>
+                
+              </div> 
+
          
+             <span class="vi"></span>
+             <div>
+             
+                
+               
+              <a href="">   <img style="width: 100%;" src="https://images.ctfassets.net/5de70he6op10/2iYTpFYonIxBrfJzQ1yZfh/59a2b461dabe0e202f89acf56aa652cb/L1_Weddings_Dropdown_CS.jpg?w=922&q=80&fm=webp" alt=""></a>
+                
+              </div> 
+              
+              
+            </div>
+            
           </li>
           <li class="dropdown">
             <a href="" style="color: rgb(186, 58, 58);">Extra 50% Off Sale</a>
+            <div class="downnav1" id="Extra50off">
+              <div>
+                <a href=""><div class="bottomborder"> <h3>Shop All Extra 50 % Off Sale</h3> <br> </div></a> <br>
+                <a href=""><div>Freshly Cut</div></a>
+                <a href=""><div>Accessories</div></a>
+                <a href=""><div>Beauty & Wellnes</div></a>
+                <a href=""><div>Clothing</div></a>
+                
+                
+              </div>
+            
+              <div>
+                <a href=""><div class="bottomborder"> <h3>.</h3> <br> </div><br>
+                
+               
+           
+                <a href=""><div>Home & Furniture</div></a>
+                <a href=""><div>Petites</div></a>
+                <a href=""><div>Plus</div></a>
+                <a href=""><div>Shoes</div></a>
+              </div> 
+              <span class="vi"></span>
+
+              <div>
+                <a href=""><div class="bottomborder"> <h3>Shop by Price</h3> <br> </div><br>
+                
+               
+           
+                <a href=""><div>Under $25</div></a>
+                <a href=""><div>Under $50</div></a>
+                <a href=""><div>Under $75</div></a>
+                <a href=""><div>Under $100</div></a>
+               
+              </div> 
+         
+             <span class="vi"></span>
+             <div>
+             
+                
+               
+              <a href="">   <img style="width: 100%;" src="https://images.ctfassets.net/5de70he6op10/5iyc5hElb58ovV19L9N1kE/decf62d3e45b27b01c90015f4aca4878/SuperNav_Content_Slot.jpg?w=295&q=80&fm=webp" alt=""></a>
+                
+              </div> 
+              
+              
+            </div>
+            
+          
           </li>
         </ul>
       </nav>
     </div>
-    <div style=" background-color: rgb(107, 61, 0); height: 700px ;width:100vw; color: rgb(186, 58, 58); border: 6px red; "> </div>
+    <!-- <div style=" background-color: rgb(107, 61, 0); height: 700px ;width:100vw; color: rgb(186, 58, 58); border: 6px red; "> </div> -->
 
    
   
