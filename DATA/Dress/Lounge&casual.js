@@ -103,15 +103,20 @@ let dress_Loungeandcasual = [
     name: "By Anthropologie Embroidered Tunic Mini Dress",
     image_1:
       "https://images.urbndata.com/is/image/Anthropologie/4130578570021_067_b14?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
-    image_2: "",
-    image_3: "",
-    price: 0,
+      image_2:
+      "https://images.urbndata.com/is/image/Anthropologie/4130348690182_028_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
+    image_3:
+      "https://images.urbndata.com/is/image/Anthropologie/4130348690182_028_b3?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
+    price: 340.00,
   },
   {
-    name: "",
-    image_1: "",
-    image_2: "",
-    image_3: "",
-    price: 0,
+    name: "Maeve Faux Suede Shift Mini Dress",
+    image_1:
+      "https://images.urbndata.com/is/image/Anthropologie/4130348690182_028_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
+    image_2:
+      "https://images.urbndata.com/is/image/Anthropologie/4130348690182_028_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
+    image_3:
+      "https://images.urbndata.com/is/image/Anthropologie/4130348690182_028_b3?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
+    price: 170.0,
   },
 ];
