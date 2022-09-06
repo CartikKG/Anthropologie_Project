@@ -31,8 +31,8 @@
     <div  > <div>   <i>ends tonight! </i>  </div>       <div><p>Extra 50% OFF ALL SALE ITEMS   </p>  </div> <div> <i>shop </i>  </div> <div>  <i>all sale final-see details </i></div> </div>  
 
     </div>
-      <a class="prev" onclick="plusSlides(-1)">❮</a>
-     <a class="next" onclick="plusSlides(1)">❯</a>
+      <a class="slidesprev" onclick="plusSlides(-1)">❮</a>
+     <a class="slidesnext" onclick="plusSlides(1)">❯</a>
     <div id = "SigninSignUP">
       <div>  <i class="fa-sharp fa-solid fa-globe" style="margin-right: 10px;"></i>English ($)</div>    <a href=""> <div  >  <i class="fa-regular fa-user"></i>    Sign In / Sign Up  </div></a> 
     
@@ -71,7 +71,7 @@
             />
           
            <a href="">   <i class="fa-solid fa-bag-shopping"></i>  </a> </i>
-             <input type="Checkbox" id="check" >
+             <input type="Checkbox" id="checkboxnav" >
           <label for="check" class="checkbtn" id="MOBILECLICK" onclick="Changeui()" > <i class="fas fa-bars" ></i></label>
           </form>
         
@@ -628,10 +628,10 @@
         </ul>
       </nav>
     </div>
-    <div style=" background-color: rgb(107, 61, 0); height: 700px ;width:100vw; color: rgb(186, 58, 58); border: 6px red; "> </div>
+     <div style=" background-color: rgb(107, 61, 0); height: 700px ;width:100vw; color: rgb(186, 58, 58); border: 6px red; "> </div>
     <div style=" background-color: rgb(9, 0, 107); height: 700px ;width:100vw; color: rgb(186, 58, 58); border: 6px red; "> </div>
 
-   
+    -->
   
   </body>
   <script>
@@ -666,7 +666,7 @@
         dots[slideIndex-1].className += " active";
     }
   //   $( function() { // wait for document ready
-  //   $( '#searchplusbag' ).on( 'click', ':checkbox', function( e ) { // attach click event
+  //   $( '#chec' ).on( 'click', ':checkbox', function( e ) { // attach click event
   //     $( '#appTimes' ).find(':text').prop( 'disabled', $(e.currentTarget).is(':checked') ); // set disabled prop equal to checked property of checkbox
   // } );
   //    } );
@@ -678,7 +678,7 @@
     //  }
 
     function Changeui(){
-        document.getElementById("NAVBARUL").classList.toggle("change");
+        document.getElementById("NAVBARUL").classList.toggle("changewholenav");
         document.getElementById("MOBILECLICK").classList.toggle("MOBILECLICKDISPLAY");
         // document.getElementById("SigninSignUP").classList.toggle("SigninSignUPMOBILEvisible");
         // document.querySelector("Body").style.backgroundColor="grey"

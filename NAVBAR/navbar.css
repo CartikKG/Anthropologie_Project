@@ -3,7 +3,7 @@
     margin: 0%;
 }
 
-.prev {
+.slidesprev {
     /* cursor: pointer; */
     position: absolute;
     left: 3%;
@@ -30,11 +30,11 @@
     display: none;
 }
 
-#check {
+#checkboxnav {
     display: none;
 }
 
-.next {
+.slidesnext {
     cursor: pointer;
     /* transition: 0.9s ease; */
     position: absolute;
@@ -47,7 +47,7 @@
 .SLIDEDIVS {
     background-color: #ffffff;
     transition: 0.6s;
-    height: 40%;
+    height: 10%;
     /* margin: 10px; */
 }
 
@@ -119,7 +119,7 @@ nav>ul {
     font-size: 12px;
 }
 
-ul>li {
+nav ul>li {
     list-style: none;
     padding: 4px;
     padding-bottom: 18px;
@@ -132,13 +132,13 @@ ul>li :hover {
     color: rgb(2, 151, 121);
 }
 
-ul>li:hover {
+nav ul>li:hover {
     color: rgb(2, 151, 121);
 
     border-bottom: solid rgb(2, 151, 121) 1.5px;
 }
 
-li>a {
+nav li>a {
     text-decoration: none;
     color: black;
 }
@@ -268,7 +268,7 @@ div nav ul .dropdown:hover .downnav1 {
     margin-top: 10px;
 }
 
-a {
+nav a {
     text-decoration: none;
     color: rgb(8, 5, 5);
 }
@@ -281,7 +281,7 @@ a {
     border-bottom: 1px solid rgb(232, 232, 232);
 }
 
-.change {
+.changewholenav {
     /* display: inline-block; */
     display: block;
     position: fixed;
@@ -335,11 +335,18 @@ a {
 
 }
 
+#searchplusbag>form i {
+    text-decoration: none;
+}
 
 
 
-@media (max-width: 1100px) {
 
+@media (max-width: 1190px) {
+
+    nav {
+        padding: 0%;
+    }
 
     div nav ul .downnav1 {
         display: none;
@@ -393,7 +400,7 @@ a {
         display: inline-block;
     }
 
-    ul div {
+    nav ul div {
         border-bottom: 1px solid rgb(232, 232, 232);
         padding-bottom: 10px;
     }
@@ -496,12 +503,12 @@ a {
 
     /* } */
 
-    input:checked~li {
+    /* input:checked~li {
         background-color: #08016f;
         color: aqua;
-    }
+    } */
 
-    ul li {
+    nav ul li {
         width: 100%;
         border-bottom: 1px solid rgb(204, 204, 204);
     }
@@ -529,7 +536,7 @@ a {
         background-color: #000000;
     } */
 
-    form {
+    #searchplusbag form {
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -539,9 +546,7 @@ a {
 }
 
 @media (max-width: 583px) {
-    nav {
-        padding: 0%;
-    }
+
 
     #navbarupperinside {
         width: 100%;

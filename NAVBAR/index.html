@@ -1,20 +1,23 @@
 <html>
   <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <link rel="stylesheet" href="../footerStyle.css" />
-    <!-- <link rel="stylesheet" href="./navbar.css" /> -->
+    <link rel="stylesheet" href="../footerPage/footerStyle.css" />
+    <link rel="stylesheet" href="./navbar.css" />
 
     <script>
       $(function () {
-        $("#includedContent").load("./navbar.html");
-        $("#navbarHtml").load("../footerPage.html");
+        $("#navbarHtml").load("./navbar.html");
+        $("#includedContent").load("../footerPage/footerPage.html");
       });
     </script>
   </head>
 
   <body>
-    <!-- <a href=""></a> -->
-    <div id="includedContent"></div>
+    <!-- NAVBAR -->
+
     <div id="navbarHtml"></div>
+
+    <!-- FOOTER -->
+    <div id="includedContent"></div>
   </body>
 </html>
