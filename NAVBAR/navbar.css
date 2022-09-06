@@ -2,6 +2,7 @@
     padding: 0%;
     margin: 0%;
 }
+
 .prev {
     /* cursor: pointer; */
     position: absolute;
@@ -19,6 +20,7 @@
     cursor: pointer;
     /* user-select: none; */
 }
+
 
 .checkbtn {
     font-size: 20px;
@@ -44,9 +46,25 @@
 
 .SLIDEDIVS {
     background-color: #ffffff;
-    transition: 0.6s ease;
+    transition: 0.6s;
     height: 40%;
+    /* margin: 10px; */
+}
 
+.SLIDEDIVS div {
+    /* height: 40%; */
+    width: 100%;
+    display: flex;
+
+    justify-content: space-between;
+}
+
+.SLIDEDIVS>div>div {
+    margin: 10px;
+    /* margin-left: 10PX; */
+    margin-right: 0%;
+
+    /* justify-content: space-between; */
 
 }
 
@@ -54,7 +72,6 @@ nav {
     padding-left: 50px;
     padding-right: 50px;
 }
-
 
 #WHOLENAV {
     background-color: rgb(255, 255, 255);
@@ -64,12 +81,11 @@ nav {
 
 input[type="search"] {
     width: 90%;
-        /* margin-top: 0px; */
-        /* margin-bottom: 0px; */
+    /* margin-top: 0px; */
+    /* margin-bottom: 0px; */
     border-radius: 7px;
     border: 1px solid #bfbfbf;
     padding: 11px 15px;
-
 }
 
 #SigninSignUP {
@@ -80,18 +96,17 @@ input[type="search"] {
     /* flex-direction: end; */
     justify-content: flex-end;
     align-items: center;
-        /* margin-top: 10px; */
+    /* margin-top: 10px; */
     /* margin: 0%; */
 }
-
 
 #SigninSignUP div {
     width: 120px;
     color: rgb(25, 138, 153);
     align-items: center;
     padding: 4px;
-        font-size: 14px;
-        margin-right: 40px;
+    font-size: 14px;
+    margin-right: 40px;
 }
 
 nav>ul {
@@ -105,14 +120,12 @@ nav>ul {
 }
 
 ul>li {
-
     list-style: none;
     padding: 4px;
     padding-bottom: 18px;
     padding-top: 18px;
     padding-right: 20px;
     padding-left: 20px;
-
 }
 
 ul>li :hover {
@@ -142,19 +155,20 @@ li>a {
 }
 
 #searchplusbag {
-        width: 400px;
-            /* justify-content: center; */
-            display: flex;
-            flex-direction: column;
-            /* justify-: ; */
-            /* justify-content: space-between; */
-            justify-content: space-around;
+    width: 400px;
+    /* justify-content: center; */
+    display: flex;
+    flex-direction: column;
+    /* justify-: ; */
+    /* justify-content: space-between; */
+    justify-content: space-around;
 }
 
 #navbarupperinside {
     display: flex;
     justify-content: space-between;
 }
+
 #navbarupperinside img {
     display: block;
     margin-left: auto;
@@ -167,18 +181,15 @@ form {
     align-items: center;
 }
 
-
-
-
-
 /* DISPLAY  */
 div nav ul .downnav1 {
     position: absolute;
     top: 105%;
     left: 0px;
     visibility: hidden;
+    /* display: none; */
     opacity: 0;
-    transition: visibility 0s, opacity .7s linear;
+    transition: visibility 0s, opacity 0.7s linear;
     background-color: rgb(255, 255, 255);
     border: 1px solid rgb(232, 232, 232);
     color: rgb(77, 77, 82);
@@ -190,6 +201,7 @@ div nav ul .dropdown {
 
 div nav ul .dropdown:hover .downnav1 {
     visibility: visible;
+    /* display: initial; */
     opacity: 1;
     opacity: 1;
 }
@@ -254,7 +266,6 @@ div nav ul .dropdown:hover .downnav1 {
     margin: auto;
     width: 90%;
     margin-top: 10px;
-
 }
 
 a {
@@ -269,27 +280,89 @@ a {
 .bottomborder {
     border-bottom: 1px solid rgb(232, 232, 232);
 }
+
 .change {
-    display: inline-block;
+    /* display: inline-block; */
+    display: block;
     position: fixed;
-
-    /* width: 16%; */
-    background-color: #f6f6f6;
-    /* top: 80%; */
-    /* left: 0; */
+    /* position: static; */
+    /* position: sticky; */
+    background-color: #ffffff;
     right: 0;
-    /* right: -200; */
-
-    /* text-align: center; */
-    /* margin-right: -500px; */
+    /* left: 0%;
+    */
+    top: 0;
     width: 70%;
-    transition: all .10s;
     height: 100vh;
-    /* left: -500px; */
-    /* display: none; */
+    overflow: auto;
+    transition: all 0.1s;
+    /* height: 100vh; */
 }
 
+#SigninSignUPMOBILE {
+    display: none;
+    /* visibility: hidden; */
+    /* opacity: 0; */
+    /* display: flex; */
+    border: 0px solid rgb(255, 255, 255);
+}
+
+.SigninSignUPMOBILEvisible {
+    /* opacity: 1; */
+    visibility: visible;
+    display: flex;
+    flex-direction: row;
+}
+
+/* #MOBILECLICK {
+    /* display: none; */
+/* visibility: hidden; */
+/* opacity: 0; */
+/* color: white; */
+
+/* } */
+.MOBILECLICKDISPLAY {
+    margin-left: 6px;
+    /* position: absolute; */
+    position: fixed;
+    /* position: sticky; */
+    top: 6px;
+    left: 28px;
+    border: 5px solid rgb(201, 201, 201);
+    background: rgb(201, 201, 201);
+    padding: 4px;
+    /* /* z-index: 100; */
+
+}
+
+
+
+
 @media (max-width: 1100px) {
+
+
+    div nav ul .downnav1 {
+        display: none;
+    }
+
+    #SigninSignUPMOBILE {
+        display: flex;
+    }
+
+    #SigninSignUPMOBILE>div {
+        /* margin: auto; */
+        margin-right: auto;
+        margin-left: auto;
+        /* justify-content: space-between; */
+        justify-content: center;
+        margin-top: 10px;
+    }
+
+    div nav ul .dropdown:hover .downnav1 {
+        /* visibility: visible; */
+        display: initial;
+    }
+
     #SigninSignUP {
         display: none;
     }
@@ -320,29 +393,99 @@ a {
         display: inline-block;
     }
 
-    #check:checked~h3 {
+    ul div {
+        border-bottom: 1px solid rgb(232, 232, 232);
+        padding-bottom: 10px;
+    }
 
+    #check:checked~h3 {
         background-color: #08016f;
         color: aqua;
     }
 
-    div nav ul .dropdown {
-        position: relative;
-    }
+
 
     .downnav1 {
         flex-direction: column;
         width: 100%;
-        margin-left: 0%;
-        margin-right: 0%;
     }
 
     .downnav1>div {
-        margin-left: 0%;
-        /* width: 10px; */
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
         height: 100%;
     }
 
+    div nav ul .downnav1 {
+
+        transition: none;
+    }
+
+    /* div nav ul .dropdown:hover .downnav1 {
+        visibility: visible;
+        opacity: 1;
+        opacity: 0;
+}
+
+*/
+    .downnav1>div img {
+        /* display: none; */
+        width: 80%;
+        /* margin: auto; */
+        /* margin-right: 0%; */
+    }
+
+    #Clothing {
+        margin-left: auto;
+        margin-right: auto;
+        /* margin-left: -160px; */
+    }
+
+    .downnav1>div {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #HomeandFurniture {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #accessories {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #beautywellness {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #gardenoutdoor {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #gardenoutdoor div div {
+        /* margin-left: 0; */
+        /* margin-right: 0; */
+    }
+
+    #gardenoutdoor>div {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #Extra50off {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #Wedding {
+        margin-left: auto;
+        margin-right: auto;
+    }
 
     /* text-align: start; */
 
@@ -356,17 +499,17 @@ a {
     input:checked~li {
         background-color: #08016f;
         color: aqua;
-
     }
 
-    ul>li {
+    ul li {
         width: 100%;
+        border-bottom: 1px solid rgb(204, 204, 204);
     }
 
     form {
         display: block;
         border: 1px solid rgb(232, 232, 232);
-        padding: 10px
+        padding: 10px;
     }
 
     #navbarupper {
@@ -381,18 +524,16 @@ a {
         width: 100%;
     }
 
-    .SLIDEDIVS {
+    /* .SLIDEDIVS {
         height: 70px;
         background-color: #000000;
-    }
+    } */
 
     form {
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
-
-
 
 
 }
