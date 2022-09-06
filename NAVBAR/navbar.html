@@ -16,17 +16,37 @@
   <link rel="stylesheet" href="./navbar.css" />
   </head>
   <body>
-    <div style="background-color: rgb(203, 69, 102); height: 40px; ">
-
+    <div id="UPPERSLIDES"> 
+      <div class="SLIDEDIVS" >
+       <a href=""> <img style="width: 100%;" src="./IMG/1.JPG" alt=""> </a>    
     </div>
+    <div class="SLIDEDIVS" id="SLIDEDIVS1">
+      <a href=""> <img style="width: 100%;" src="./IMG/2.JPG" alt="" > </a>   
+   </div>
+   <div class="SLIDEDIVS" id="SLIDEDIVS2">
+    <a href=""> <img style="width: 100%;" src="./IMG/3.JPG" alt=""> </a>            
+    </div>
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+     <a class="next" onclick="plusSlides(1)">❯</a>
     <div id = "SigninSignUP">
       <div>  <i class="fa-sharp fa-solid fa-globe" style="margin-right: 10px;"></i>English ($)</div>    <a href=""> <div  >  <i class="fa-regular fa-user"></i>    Sign In / Sign Up  </div></a> 
+    
+
     </div>
+   </div>
     <div id="WHOLENAV"> 
       <nav>
         <div id="navbarupper">
           <div id="navbarupperinside">
-            <a href=""> <div style="margin-top:8px;"> <img src="https://images.ctfassets.net/5de70he6op10/53ZOE4rRqrxcvv0hg2eSLV/a849085e5f600c618132be2475017746/anthro-logo.svg" alt=""></div> </a>
+             
+            <a href="">
+              <div style="margin-top:8px;">
+                <img
+                  src="https://images.ctfassets.net/5de70he6op10/53ZOE4rRqrxcvv0hg2eSLV/a849085e5f600c618132be2475017746/anthro-logo.svg"
+                  alt=""
+                />
+              </div>
+            </a>
             <a href="">
               <div>
                 <img
@@ -37,22 +57,23 @@
             </a>
           </div>
         <div id="searchplusbag">
-          <form class="d-flex" role="search">
-            <input
-              class="form-control me-2"
+          <form role="search">
+            <input 
               type="search"
               placeholder="Search"
               aria-label="Search"
             />
           
            <a href="">   <i class="fa-solid fa-bag-shopping"></i>  </a> </i>
-           
+             <input type="Checkbox" id="check" >
+          <label for="check" class="checkbtn" onclick="Changeui()" > <i class="fas fa-bars" ></i></label>
           </form>
+        
         </div>
         </div>
-        <ul>
+        <ul id="NAVBARUL" >
             <li class="dropdown">
-             <a href="">NEW!</a>
+             <a class ="active" href="">NEW!</a>
              <div class="downnav1">
               <div>
                 <a href=""><div  class="bottomborder" > <h3>Shop More</h3> <br> </div> </a><br>
@@ -83,8 +104,8 @@
               </div>
             </div>
           </li>
-          <li class="dropdown">
-            <a href="">Dresses</a>
+          <li class="dropdown" >
+            <a href=""    >Dresses</a>
             <div class="downnav1">
               <div>
                 <a href=""><div  class="bottomborder"> <h3>Shop by Category </h3> <br> </div></a> <br>
@@ -599,4 +620,52 @@
    
   
   </body>
+  <script>
+        let slideIndex = 1;
+       showSlides(slideIndex);
+      
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+      
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+      
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("SLIDEDIVS");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length){
+             slideIndex = 1
+        }    
+        if (n < 1){
+         slideIndex = slides.length
+        }
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style. display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active";
+    }
+  //   $( function() { // wait for document ready
+  //   $( '#searchplusbag' ).on( 'click', ':checkbox', function( e ) { // attach click event
+  //     $( '#appTimes' ).find(':text').prop( 'disabled', $(e.currentTarget).is(':checked') ); // set disabled prop equal to checked property of checkbox
+  // } );
+  //    } );
+    //  document.querySelector("form"),addEventListener("checkbox", runkro )
+
+    //  function runkro(){
+    //   let a =document.querySelector("nav>ul");
+    //   a.style.margin="1000px";
+    //  }
+
+    function Changeui(){
+        document.getElementById("NAVBARUL").classList.toggle("change");
+    }
+
+  </script>
 </html>
