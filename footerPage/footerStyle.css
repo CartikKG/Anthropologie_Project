@@ -6,7 +6,7 @@
 footer {
     width: 100%;
     /* change to position to fixed*/
-    position: relative;
+    position: static;
     bottom: 0;
     margin: auto;
 }
@@ -85,42 +85,6 @@ footer {
     box-sizing: border-box;
 }
 
-
-#popUp {
-    width: 100%;
-    height: 80px;
-    background-color: rgb(54 118 104);
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    justify-content: space-around;
-    font-size: 15px;
-    letter-spacing: 1px;
-    position: fixed;
-    margin-top: 10%;
-    display: none;
-    /* visibility: hidden; */
-}
-
-#dismiss {
-    padding: 15px 60px;
-    color: rgb(75 86 102);
-    background-color: white;
-    border: none;
-    letter-spacing: 1px;
-    cursor: pointer;
-}
-
-.displayPopUp {
-    display: contents;
-    /* visibility: visible; */
-}
-
-#dismiss:hover {
-    background-color: rgb(75 86 102);
-    color: white;
-}
 
 
 #btn_signupMail {
