@@ -41,7 +41,7 @@ footer {
     display: flex;
     width: 90%;
     margin: 30px;
-    margin-left: 70px;
+    /* margin-left: 70px; */
 }
 
 #child1 {
@@ -260,7 +260,12 @@ footer {
     display: none;
 }
 
-@media screen and (max-width:1020px) {
+@media screen and (min-width:770px) and (max-width:1020px) {
+    * {
+        margin: 0%;
+        padding: 0%;
+    }
+
     #parentbox {
         display: grid;
     }
