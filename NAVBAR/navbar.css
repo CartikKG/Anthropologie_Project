@@ -7,7 +7,7 @@
     /* cursor: pointer; */
     position: absolute;
     left: 3%;
-    top: 1%;
+    top: 2%;
     /* top: 50%; */
     /* width: auto;
     padding: 16px;
@@ -40,7 +40,7 @@
     position: absolute;
     right: 3%;
     /* to: 34%; */
-    top: 1%;
+    top: 3%;
     border-radius: 3px 0 0 3px;
 }
 
@@ -53,9 +53,9 @@
 
 .SLIDEDIVS div {
     /* height: 40%; */
-    width: 100%;
+    width: 70%;
     display: flex;
-
+    margin: auto;
     justify-content: space-between;
 }
 
@@ -474,10 +474,10 @@ nav a {
         margin-right: auto;
     }
 
-    #gardenoutdoor div div {
+    /* #gardenoutdoor div div {
         /* margin-left: 0; */
-        /* margin-right: 0; */
-    }
+    /* margin-right: 0; */
+    /* */
 
     #gardenoutdoor>div {
         margin-left: auto;
