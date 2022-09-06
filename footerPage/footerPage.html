@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Footer page</title>
+    <script src="https://kit.fontawesome.com/ce16d2eaf5.js"></script>
+    <link rel="stylesheet" href="footerStyle.css">
+    <script>
+        document.getElementById("btn_signupMail").addEventListener("openPopUp");
+        var popup = document.getElementById("#popUp");
+        function openPopUp() {
+            popup.classList.add("displayPopUp");
+        }
+        function closePopUp() {
+            popup.classList.remove("displayPopUp");
+        }
+        console.log("hello");
+    </script>
+</head>
+
+<body>
+    <footer>
+        <!-- pop-up box -->
+
+        <div id="popUp">
+            <p>Email successfully subscribed!</p>
+            <button type="sumbit" id="dismiss" onclick="closePopUp()">DISMISS</button>
+        </div>
+
+        <div id="about">
+            <hr>
+            <h3>About Us</h3>
+            <p>Our mission at Anthropologie has always been to surprise and delight you with unexpected, distinctive
+                finds
+                for your
+                closet and home. We source and craft all of our products with care, ensuring that any treasure you find
+                at
+                Anthropologie
+                is unique, just like you. Explore our <a href="">dress shop</a> to find styles and fits perfect for any
+                occasi...</p>
+            <a href="" class="readMore">Read More</a>
+        </div>
+        <hr>
+
+        <!-- signup for mail -->
+        <div id="parentbox">
+            <div id="child1">
+                <h3>Sign Up for Email</h3>
+                <p>Receive new acess to new arrivals, sales, exclusive content, events and <br> much more!</p>
+            </div>
+            <div id="child2">
+                <p>Email Address*</p>
+                <div>
+                    <input type="text" class="inputEmail" required>
+                    <button type="submit" id="btn_signupMail" onclick="openPopUp()">SUBMIT</button>
+                </div>
+            </div>
+            <div id="responsiveChild2">
+                <p>Email Address*</p>
+                <div>
+                    <input type="text" class="inputEmail" required>
+                    <button id="btn_signupMail">SUBMIT</button>
+                </div>
+            </div>
+        </div>
+
+        <p class="paraOutOfParentBox">By signing up, you will receive Anthropologie offers, promotions and other
+            commercial messages. You are
+            also agreeing to
+            Anthropologie<span>'</span>s <a href="">Privacy Policy.</a> You may unsubscribe at any time.</p>
+        <hr>
+
+
+        <!-- before responsiveness -->
+        <div class="contentBox">
+            <div class="help">
+                <p>Help</p>
+                <ul>
+                    <li><a href="">Track Your Order</a></li>
+                    <li><a href="">Start A Return Or Exchange <br>(US)</a></li>
+                    <li><a href="">Returns & Exchanges</a></li>
+                    <li><a href="">Shipping</a></li>
+                    <li><a href="">Customer Service</a></li>
+                    <li><a href="">Current Promotions</a></li>
+                    <li><a href="">Product Recalls</a></li>
+                </ul>
+            </div>
+            <div class="aboutUs">
+                <p>About us</p>
+                <ul>
+                    <li><a href="">Our Story</a></li>
+                    <li><a href="">Events</a></li>
+                    <li><a href="">A Greater Good</a></li>
+                    <li><a href="">Diversity & Inclusion</a></li>
+                    <li><a href="">Stories</a></li>
+                </ul>
+            </div>
+            <div class="services">
+                <p>Services</p>
+                <ul>
+                    <li><a href="">AnthroPerks</a></li>
+                    <li><a href="">Gift Cards</a></li>
+                    <li><a href="">AnthroLiving B2B</a></li>
+                    <li><a href="">Furniture: Guides & Services</a></li>
+                    <li><a href="">Store Pickup & Collection<br>Points</a></li>
+                    <li><a href="">Klarna</a></li>
+                </ul>
+            </div>
+            <div class="connect">
+                <p>Connect</p>
+                <ul>
+                    <li><a href="">Contact Us</a></li>
+                    <li><a href="">Stay Connected</a></li>
+                    <li><a href="">Careers</a></li>
+                    <li><a href="">Styling Services</a></li>
+                    <li><a href="">Request A Catalog</a></li>
+                </ul>
+            </div>
+            <div class="locator-mail">
+                <ul class="listItems">
+                    <li><i class="fa-sharp fa-solid fa-location-dot"></i>&nbsp<a href="">Store Locator</a></li>
+                    <li><i class="fa-sharp fa-solid fa-envelope"></i>&nbsp<a href="">Get Email</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+        <!-- another div for responsiveness -->
+        <div class="responsiveDropDown">
+            <div class="locator-mail">
+                <ul class="listItems">
+                    <li><i class="fa-sharp fa-solid fa-location-dot"></i>&nbsp<a href="" id="store">Store Locator</a>
+                    </li>
+                    <hr>
+                    <li><i class="fa-sharp fa-solid fa-envelope"></i>&nbsp<a href="" id="mail">Get Email</a></li>
+                    <hr>
+                </ul>
+            </div>
+            <div class="help">
+                <label for="btn-1">Help<span id="plus"><i class="fa-thin fa-plus"></i></span></label>
+                <input type="checkbox" id="btn-1">
+                <!-- <p>Help <span id="plus"><i class="fa-thin fa-plus"></i></span></p> -->
+                <hr>
+                <ul>
+                    <li><a href="">Track Your Order</a></li>
+                    <hr>
+                    <li><a href="">Start A Return Or Exchange <br>(US)</a></li>
+                    <hr>
+                    <li><a href="">Returns & Exchanges</a></li>
+                    <hr>
+                    <li><a href="">Shipping</a></li>
+                    <hr>
+                    <li><a href="">Customer Service</a></li>
+                    <hr>
+                    <li><a href="">Current Promotions</a></li>
+                    <hr>
+                    <li><a href="">Product Recalls</a></li>
+                    <hr>
+                </ul>
+            </div>
+            <div class="aboutUs">
+                <label for="btn-2">About us<span id="plus"><i class="fa-thin fa-plus"></i></span></label>
+                <input type="checkbox" id="btn-2">
+                <!-- <p>About us <span id="plus"><i class="fa-thin fa-plus"></i></span></p> -->
+                <hr>
+                <ul>
+                    <li><a href="">Our Story</a></li>
+                    <hr>
+                    <li><a href="">Events</a></li>
+                    <hr>
+                    <li><a href="">A Greater Good</a></li>
+                    <hr>
+                    <li><a href="">Diversity & Inclusion</a></li>
+                    <hr>
+                    <li><a href="">Stories</a></li>
+                    <hr>
+                </ul>
+            </div>
+            <div class="services">
+                <label for="btn-3">services<span id="plus"><i class="fa-thin fa-plus"></i></span></label>
+                <input type="checkbox" id="btn-3">
+                <!-- <p>Services <span id="plus"><i class="fa-thin fa-plus"></i></span></p> -->
+                <hr>
+                <ul>
+                    <li><a href="">AnthroPerks</a></li>
+                    <hr>
+                    <li><a href="">Gift Cards</a></li>
+                    <hr>
+                    <li><a href="">AnthroLiving B2B</a></li>
+                    <hr>
+                    <li><a href="">Furniture: Guides & Services</a></li>
+                    <hr>
+                    <li><a href="">Store Pickup & Collection<br>Points</a></li>
+                    <hr>
+                    <li><a href="">Klarna</a></li>
+                    <hr>
+                </ul>
+            </div>
+            <div class="connect">
+                <label for="btn-4">connect<span id="plus"><i class="fa-thin fa-plus"></i></span> <span id="minus"><i
+                            class="fa-light fa-hyphen"></i></i></span></label>
+                <input type="checkbox" id="btn-4">
+                <!-- <p>Connect <span id="plus"><i class="fa-thin fa-plus"></i></span></p> -->
+                <hr>
+                <ul>
+                    <li><a href="">Contact Us</a></li>
+                    <hr>
+                    <li><a href="">Stay Connected</a></li>
+                    <hr>
+                    <li><a href="">Careers</a></li>
+                    <hr>
+                    <li><a href="">Styling Services</a></li>
+                    <hr>
+                    <li><a href="">Request A Catalog</a> </li>
+                    <hr>
+                </ul>
+            </div>
+        </div>
+
+
+        <!-- upto here -->
+
+        <div class="logos">
+            <div class="appleLogo">
+                <a href="https://apps.apple.com/us/app/anthropologie/id922496703"><img id="apple"
+                        src="https://images.ctfassets.net/5de70he6op10/4gWq1G4qLLgmqlNeHfzV2T/55298745127c36c5876f4013434c0c37/Download_on_the_App_Store_Badge_US-UK_RGB_wht_092917_Copy_2.svg"
+                        alt="apple logo"></a>
+            </div>
+            <div class="remLogos">
+                <a href="https://www.pinterest.com/anthropologie/"><i class="fa-brands fa-pinterest"></i></a>
+                <a href="https://www.instagram.com/accounts/login/"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.facebook.com/Anthropologie"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="https://twitter.com/anthropologie"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+        </div>
+        <img id="endBar"
+            src="https://images.ctfassets.net/5de70he6op10/2Lh06CXT4AzVnj4LxvGsQD/a424e10a3b8c9e2e270dc22505bfbfa6/022421_SiteFooter_SMS_SIgnUp.jpg"
+            alt="endBar">
+        <img id="responsiveEndBar"
+            src="https://images.ctfassets.net/5de70he6op10/ZFKP51BBmuPpIh1BnlP9f/241ab62f70aa3581f4f33abd45f1d195/022421_SiteFooter_SMS_SIgnUp_SS.jpg"
+            alt="another end bar">
+        <div class="countries">
+            <a href="">US<span>&nbsp</span></a>&nbsp
+            &nbsp<a href="">France<span>&nbsp</span></a>&nbsp
+            &nbsp<a href="">Germany<span>&nbsp</span></a> &nbsp
+            &nbsp<a href="">Italy<span>&nbsp</span></a>&nbsp
+            &nbsp<a href="">Spain<span>&nbsp</span></a>&nbsp
+            &nbsp<a href="">UK</a>
+        </div>
+        <div class="base-tags">
+            <div class="terms-conditions">
+                <a href="">Privacy Policy<span>&nbsp |</span></a>
+                <a href="">&nbspTerms of Use<span>&nbsp |</span></a>
+                <a href="">&nbspCA Transparency<span>&nbsp |</span></a>
+                <a href="">&nbspAccessibility<span>&nbsp |</span></a>
+                <a href="">&nbspURBN.com<span>&nbsp |&nbsp</span></a>
+                <a href="" id="forCAResidents">For CA Residents</a>
+            </div>
+            <div class="copyRights">
+                <p>2022 URBN.com. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+
+</html>
