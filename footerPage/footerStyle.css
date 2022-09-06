@@ -62,11 +62,12 @@ footer {
 
 
 #child2 {
-    margin-left: 10%;
     width: 60%;
+    margin-left: 10%;
 }
 
 #child2>p {
+    width: 85%;
     margin-bottom: 10px;
     margin-left: -50px;
     padding-right: 0px;
@@ -259,24 +260,23 @@ footer {
     display: none;
 }
 
-@media screen and (max-width:1020px) {
+@media screen and (max-width:1020px) and (min-width:769px) {
     #parentbox {
         display: grid;
     }
 
     #child1 {
-        width: 100%;
+        width: 85%;
         margin-left: -30px;
     }
 
     #child1>p {
-        width: 100%;
-        margin: auto;
+        width: 85%;
         margin-bottom: 20px;
     }
 
     #child2 {
-        width: 100%;
+        width: 85%;
         margin-left: 20px;
     }
 
@@ -289,7 +289,7 @@ footer {
     }
 
     .paraOutOfParentBox {
-        width: 90%;
+        width: 85%;
         margin-left: 45px;
     }
 
