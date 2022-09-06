@@ -15,7 +15,7 @@ footer {
 #about {
     width: 90%;
     margin: auto;
-    padding: 20px 40px;
+    /* padding: 20px 40px; */
 }
 
 #about>h3 {
@@ -203,7 +203,8 @@ footer {
 
 #endBar {
     width: 90%;
-    margin: 20px 65px;
+    height: 101px;
+    margin: 25px 48px;
 }
 
 .countries {
