@@ -1,8 +1,6 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: "Avenir Medium",
-        sans-serif;
 }
 
 footer {
@@ -17,15 +15,10 @@ footer {
     width: 90%;
     margin: auto;
     padding: 20px 40px;
-    background-color: white;
 }
 
 #about>h3 {
-    background-color: white;
-}
-
-#about>h3~p {
-    background-color: white;
+    font-weight: normal;
 }
 
 
@@ -62,7 +55,7 @@ footer {
     margin-bottom: 15px;
 }
 
-h3 {
+#child1>h3 {
     font-weight: normal;
 }
 
@@ -75,6 +68,7 @@ h3 {
 #child2>p {
     margin-bottom: 10px;
     margin-left: -50px;
+    padding-right: 0px;
 }
 
 #responsiveChild2 {
@@ -169,22 +163,38 @@ h3 {
     display: none;
 }
 
-ul {
+.help>ul,
+.aboutUs>ul,
+.services>ul,
+.connect>ul,
+.locator-mail>ul {
     margin-top: 20px;
 }
 
-li {
+.help>ul>li,
+.aboutUs>ul>li,
+.services>ul>li,
+.connect>ul>li,
+.locator-mail>ul>li {
     list-style: none;
     margin-bottom: 10px;
 }
 
-li>a {
+.help>ul>li>a,
+.aboutUs>ul>li>a,
+.services>ul>li>a,
+.connect>ul>li>a,
+.locator-mail>ul>li>a {
     text-decoration: none;
     color: black;
     font-size: 13px;
 }
 
-li>a:hover {
+.help>ul>li>a:hover,
+.aboutUs>ul>li>a:hover,
+.services>ul>li>a:hover,
+.connect>ul>li>a:hover,
+.locator-mail>ul>li>a:hover {
     text-decoration: underline;
 }
 
@@ -362,7 +372,22 @@ li>a:hover {
         margin-bottom: 20px;
     }
 
-    .fa-thin {
+    .help .fa-thin {
+        float: right;
+        margin-right: 10px;
+    }
+
+    .aboutUs .fa-thin {
+        float: right;
+        margin-right: 10px;
+    }
+
+    .connect .fa-thin {
+        float: right;
+        margin-right: 10px;
+    }
+
+    .services .fa-thin {
         float: right;
         margin-right: 10px;
     }
@@ -462,18 +487,26 @@ li>a:hover {
     }
 
     #responsiveChild2 {
+        width: 100%;
         display: block;
+        margin-left: -30px;
     }
 
     #responsiveChild2>p {
-        margin-left: -5%;
+        margin-left: -2px;
         margin-bottom: 10px;
     }
 
-    #responsiveChild2>div>input {
+    #responsiveChild2 .inputEmail {
         width: 100%;
-        margin-left: -5%;
+        margin-left: -2px;
+        box-sizing: border-box;
         margin-bottom: 20px;
+    }
+
+    #responsiveChild2 #btn_signupMail {
+        box-sizing: border-box;
+        margin-left: -2px;
     }
 
     .base-tags {
