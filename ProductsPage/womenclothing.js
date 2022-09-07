@@ -626,87 +626,144 @@ var Clothing_WomensClothing = [
     price: "168.00",
   },
 ];
-
+displaydatafunction(Clothing_WomensClothing);
 // funtion for mapping all the data of items
-Clothing_WomensClothing.map(function (elem) {
-  var div = document.createElement("div");
-  var image1 = document.createElement("img");
-  var image2 = document.createElement("img");
-  var image3 = document.createElement("img");
-  var clickable = document.createElement("a");
-  var name = document.createElement("a");
-  var price = document.createElement("p");
-  var circleBox = document.createElement("div");
-  var imgCircle1 = document.createElement("div");
-  var imgCircle2 = document.createElement("div");
-  var imgCircle3 = document.createElement("div");
-  var innerCircle1 = document.createElement("div");
-  var innerCircle2 = document.createElement("div");
-  var innerCircle3 = document.createElement("div");
+function displaydatafunction(Clothing_WomensClothing) {
+  document.getElementById("productsItemsAll").innerHTML = "";
+  Clothing_WomensClothing.map(function (elem) {
+    var div = document.createElement("div");
+    var image1 = document.createElement("img");
+    var image2 = document.createElement("img");
+    var image3 = document.createElement("img");
+    var clickable = document.createElement("a");
+    var name = document.createElement("a");
+    var price = document.createElement("p");
+    var circleBox = document.createElement("div");
+    var imgCircle1 = document.createElement("div");
+    var imgCircle2 = document.createElement("div");
+    var imgCircle3 = document.createElement("div");
+    var innerCircle1 = document.createElement("div");
+    var innerCircle2 = document.createElement("div");
+    var innerCircle3 = document.createElement("div");
 
-  innerCircle1.style.backgroundColor = "#682020";
-  innerCircle2.style.backgroundColor = "rgb(44 71 98)";
-  innerCircle3.style.backgroundColor = "#74637e";
+    innerCircle1.style.backgroundColor = "#682020";
+    innerCircle2.style.backgroundColor = "rgb(44 71 98)";
+    innerCircle3.style.backgroundColor = "#74637e";
 
-  // filling the boxes of items with image, name, price and circle
-  image1.setAttribute("src", elem.image_1);
-  image2.setAttribute("src", elem.image_2);
-  image3.setAttribute("src", elem.image_3);
-  image1.setAttribute("class", "productsImg");
-  price.innerText = "$" + elem.price;
-  name.innerText = elem.name;
-
-  // setting attribute for giving styles
-  name.setAttribute("href", "");
-  circleBox.setAttribute("id", "productsCircleBox");
-  imgCircle1.setAttribute("class", "productsCircle");
-  imgCircle2.setAttribute("class", "productsCircle");
-  imgCircle3.setAttribute("class", "productsCircle");
-  clickable.setAttribute("href", "")
-
-  // function for changing image on mouseover and mouseleave
-  image1.addEventListener("mouseover", changeImg1);
-  image1.addEventListener("mouseleave", changeImg2);
-  function changeImg1() {
-    image1.setAttribute("src", elem.image_2);
-  }
-  function changeImg2() {
+    // filling the boxes of items with image, name, price and circle
     image1.setAttribute("src", elem.image_1);
-  }
+    image2.setAttribute("src", elem.image_2);
+    image3.setAttribute("src", elem.image_3);
+    image1.setAttribute("class", "productsImg");
+    price.innerText = "$" + elem.price;
+    name.innerText = elem.name;
 
-  // function for changing Border color while clicking on the circle
-  imgCircle1.addEventListener("click", cngImg1);
-  imgCircle2.addEventListener("click", cngImg2);
-  imgCircle3.addEventListener("click", cngImg3);
-  function cngImg1() {
-    image1.setAttribute("src", elem.image_1);
-    imgCircle1.style.borderColor = "black";
-    imgCircle2.style.borderColor = "white";
-    imgCircle3.style.borderColor = "white";
-  }
-  function cngImg2() {
-    image1.setAttribute("src", elem.image_2);
-    imgCircle2.style.borderColor = "black";
-    imgCircle1.style.borderColor = "white";
-    imgCircle3.style.borderColor = "white";
-  }
-  function cngImg3() {
-    image1.setAttribute("src", elem.image_3);
-    imgCircle3.style.borderColor = "black";
-    imgCircle1.style.borderColor = "white";
-    imgCircle2.style.borderColor = "white";
-  }
+    // setting attribute for giving styles
+    name.setAttribute("href", "");
+    circleBox.setAttribute("id", "productsCircleBox");
+    imgCircle1.setAttribute("class", "productsCircle");
+    imgCircle2.setAttribute("class", "productsCircle");
+    imgCircle3.setAttribute("class", "productsCircle");
+    clickable.setAttribute("href", "");
 
-  // Appending all the inner circles in the outer circle
-  imgCircle1.append(innerCircle1);
-  imgCircle2.append(innerCircle2);
-  imgCircle3.append(innerCircle3);
+    // function for changing image on mouseover and mouseleave
+    image1.addEventListener("mouseover", changeImg1);
+    image1.addEventListener("mouseleave", changeImg2);
+    function changeImg1() {
+      image1.setAttribute("src", elem.image_2);
+    }
+    function changeImg2() {
+      image1.setAttribute("src", elem.image_1);
+    }
 
-  // Appending all the outer circles in the circle box for giving flex property
-  circleBox.append(imgCircle1, imgCircle2, imgCircle3);
+    // function for changing Border color while clicking on the circle
+    imgCircle1.addEventListener("click", cngImg1);
+    imgCircle2.addEventListener("click", cngImg2);
+    imgCircle3.addEventListener("click", cngImg3);
+    function cngImg1() {
+      image1.setAttribute("src", elem.image_1);
+      imgCircle1.style.borderColor = "black";
+      imgCircle2.style.borderColor = "white";
+      imgCircle3.style.borderColor = "white";
+    }
+    function cngImg2() {
+      image1.setAttribute("src", elem.image_2);
+      imgCircle2.style.borderColor = "black";
+      imgCircle1.style.borderColor = "white";
+      imgCircle3.style.borderColor = "white";
+    }
+    function cngImg3() {
+      image1.setAttribute("src", elem.image_3);
+      imgCircle3.style.borderColor = "black";
+      imgCircle1.style.borderColor = "white";
+      imgCircle2.style.borderColor = "white";
+    }
 
-  // Appending image, name, price and circleBox to show it as an item
-  div.append(image1, name, price, circleBox);
-  document.getElementById("productsItemsAll").append(div);
-  // console.log(sum);
-});
+    // Appending all the inner circles in the outer circle
+    imgCircle1.append(innerCircle1);
+    imgCircle2.append(innerCircle2);
+    imgCircle3.append(innerCircle3);
+
+    // Appending all the outer circles in the circle box for giving flex property
+    circleBox.append(imgCircle1, imgCircle2, imgCircle3);
+
+    // Appending image, name, price and circleBox to show it as an item
+    div.append(image1, name, price, circleBox);
+    document.getElementById("productsItemsAll").append(div);
+    // console.log(sum);
+  });
+}
+function filterthepage() {
+  let changeshows = document.getElementById("productsSelect").value;
+  if (changeshows == "Low" || changeshows == "High") {
+    changebyfunctionvalue(changeshows);
+  }
+  if (changeshows == "A" || changeshows == "Z") {
+    namechange(changeshows);
+  }
+}
+
+function namechange(name) {
+  // let name = document.getElementById("NAME").value;
+
+  if (name == "A") {
+    Clothing_WomensClothing.sort(function (a, b) {
+      if (a.name[0] > b.name[0]) {
+        return 1;
+      } else if (a.name[0] < b.name[0]) {
+        return -1;
+      } else {
+        return 0;
+      }
+    });
+
+    displaydatafunction(Clothing_WomensClothing);
+  } else if (name == "Z") {
+    Clothing_WomensClothing.sort(function (a, b) {
+      if (a.name[0] > b.name[0]) {
+        return -1;
+      } else if (a.name[0] < b.name[0]) {
+        return 1;
+      } else {
+        return 0;
+      }
+    });
+    displaydatafunction(Clothing_WomensClothing);
+  }
+}
+
+function changebyfunctionvalue(name) {
+  // let name = document.getElementById("SALARY").value;
+  // console.log(name);
+  if (name == "Low") {
+    let a = Clothing_WomensClothing.sort(function (a, b) {
+      return Number(a.price) - Number(b.price);
+    });
+    displaydatafunction(a);
+  } else if (name == "High") {
+    let a = Clothing_WomensClothing.sort(function (a, b) {
+      return Number(b.price) - Number(a.price);
+    });
+    displaydatafunction(a);
+  }
+}

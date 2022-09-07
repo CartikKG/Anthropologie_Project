@@ -25,7 +25,7 @@
       src="https://kit.fontawesome.com/60b736368c.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="stylesheet" href="../footerPage/footerStyle.css" />
+    <link rel="stylesheet" href=" ../footerPage/footerStyle.css" />
     <link rel="stylesheet" href="../NAVBAR/navbar.css" />
     <!-- <link rel="stylesheet" href="/Anthropologie_Project/NAVBAR/navbar.css" /> -->
     <link rel="stylesheet" href="./womenClothing.css" />
@@ -182,15 +182,12 @@
           <div id="productsItemsTopRight">
             <div>
               <label for="">Sort: </label>
-              <select id="productsSelect">
+              <select id="productsSelect" onchange="filterthepage()">
                 <option value="">Featured</option>
-                <option value="">Price: Low to High</option>
-                <option value="">Price: High to Low</option>
-                <option value="">Newest</option>
-                <option value="">Bestselling</option>
-                <option value="">Ratings: High to Low</option>
-                <option value="">A-Z</option>
-                <option value="">Z-A</option>
+                <option value="Low">Price: Low to High</option>
+                <option value="High">Price: High to Low</option>
+                <option value="A">A-Z</option>
+                <option value="Z">Z-A</option>
               </select>
             </div>
             <div>
