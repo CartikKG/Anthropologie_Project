@@ -24,6 +24,17 @@
     /* user-select: none; */
 }
 
+.slidesnext {
+    cursor: pointer;
+    /* transition: 0.9s ease; */
+    position: absolute;
+    right: 3%;
+    /* to: 34%; */
+    top: 2%;
+    font-weight: bold;
+    font-size: 18px;
+    border-radius: 0 3px 3px 0;
+}
 
 .checkbtn {
     font-size: 20px;
@@ -37,15 +48,6 @@
     display: none;
 }
 
-.slidesnext {
-    cursor: pointer;
-    /* transition: 0.9s ease; */
-    position: absolute;
-    right: 3%;
-    /* to: 34%; */
-    top: 3%;
-    border-radius: 3px 0 0 3px;
-}
 
 .SLIDEDIVS {
     background-color: #ffffff;
@@ -74,7 +76,7 @@
 nav {
     padding-left: 50px;
     padding-right: 50px;
-    z-index: 50;
+    z-index: 10;
 }
 
 #WHOLENAV {
@@ -217,7 +219,7 @@ div nav ul .dropdown:hover .downnav1 {
     background-color: aliceblue;
     justify-content: space-between;
 
-    z-index: 1;
+    z-index: 10;
 }
 
 #Clothing {
@@ -301,7 +303,7 @@ nav a {
     overflow: auto;
     transition: all 0.1s;
     /* height: 100vh; */
-    z-index: 50;
+    z-index: 100;
 }
 
 #SigninSignUPMOBILE {
@@ -566,12 +568,35 @@ nav a {
 
 @media (max-width: 583px) {
 
-    #WHOLENAV {
+    /* .SLIDEDIVS {
+        height: 6%;
+        position: fixed;
+        width: 100%;
+    }
+
+    .SLIDEDIVS>div {}
+
+   
+
+    .slidesprev {
         position: fixed;
         top: 0%;
+    }
+
+    .slidesnext {
+        position: fixed;
+        top: 0%;
+    }
+
+    #WHOLENAV {
+        position: fixed;
+        top: 5%;
         margin: auto;
         width: 100%;
 
+    } */
+    .SLIDEDIVS>div {
+        font-size: 10px;
     }
 
     #navbarupperinside {
@@ -591,4 +616,5 @@ nav a {
     }
 
     /* navbarupperinside */
+
 }
