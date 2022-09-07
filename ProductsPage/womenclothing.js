@@ -782,5 +782,5 @@ function adddatatoprductview(index) {
     }
   });
   console.log("KARTIK WIN");
-  localStorage.setItem("forcheckitemview", JSON.stringify(temp));
+  localStorage.setItem("forcheckitemview", JSON.stringify(temp[0]));
 }
