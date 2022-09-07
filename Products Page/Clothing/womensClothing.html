@@ -52,8 +52,22 @@
       color: teal;
     }
 
+    #imageQuickShopBox{
+      display: flex;
+      align-items: flex-end;
+      /* border: 5px solid blue; */
+    }
+    #quickShop{
+      z-index: 500;
+      border: 5px solid green;
+      background-color: yellow;
+      height: 40px;
+      width: 100%;
+    }
     .productsImg {
-      margin-bottom: 8px;
+      z-index: 102;
+      /* margin-bottom: 8px; */
+      /* border: 1px solid red; */
       width: 100%;
     }
 
@@ -170,8 +184,8 @@
       margin-left: 0px;
     }
 
-    .productsShortLine {
-      /* color: red; */
+    #productsShortLine{
+      border: 1px solid red;
       width: 12px;
       margin-left: 0px;
     }
@@ -428,9 +442,9 @@
       <ul id="productsBrowse">
         <!-- <ul> -->
         <a>Browse by:</a>
-        <hr style="color: red;">
+        <hr>
         <li><a href="">Clothing</a></li>
-        <hr class="productsShortLine">
+        <hr id="productsShortLine">
         <li><a href="">New!</a></li>
         <li><a href="">Top-Rated</a></li>
         <li><a href="">Activewear</a></li>
@@ -1076,9 +1090,12 @@
   // funtion for mapping all the data of items
   Clothing_WomensClothing.map(function (elem) {
     var div = document.createElement("div");
+    var imageQuickShopBox = document.createElement("div");
     var image1 = document.createElement("img");
     var image2 = document.createElement("img");
     var image3 = document.createElement("img");
+    var clickable =document.createElement("a");
+    var quickShop = document.createElement("div");
     var name = document.createElement("a");
     var price = document.createElement("p");
     var circleBox = document.createElement("div");
@@ -1097,6 +1114,7 @@
     image1.setAttribute("src", elem.image_1);
     image2.setAttribute("src", elem.image_2);
     image3.setAttribute("src", elem.image_3);
+    // clickable.innerHTML = image1;
     image1.setAttribute("class", "productsImg");
     price.innerText = "$" + elem.price;
     name.innerText = elem.name;
@@ -1107,6 +1125,9 @@
     imgCircle1.setAttribute("class", "productsCircle");
     imgCircle2.setAttribute("class", "productsCircle");
     imgCircle3.setAttribute("class", "productsCircle");
+    clickable.setAttribute("href", "");
+    imageQuickShopBox.setAttribute("id", "imageQuickShopBox");
+    quickShop.setAttribute("id", "quickShop");
 
     // function for changing image on mouseover and mouseleave
     image1.addEventListener("mouseover", changeImg1);
@@ -1150,10 +1171,11 @@
     circleBox.append(imgCircle1, imgCircle2, imgCircle3);
 
     // Appending image, name, price and circleBox to show it as an item
-    div.append(image1, name, price, circleBox);
+    clickable.append(image1);
+    imageQuickShopBox.append(quickShop, clickable);
+    div.append( imageQuickShopBox, name, price, circleBox);
     document.getElementById("productsItemsAll").append(div);
     // console.log(sum);
-
   })
 
 </script>
