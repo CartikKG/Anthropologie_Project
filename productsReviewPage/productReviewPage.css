@@ -1,0 +1,381 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.parentBox {
+    width: 100%;
+    margin: auto;
+}
+
+#responsiveHeader {
+    display: none;
+}
+
+.parentBox>#headings {
+    text-align: center;
+    margin: 30px;
+    margin-bottom: 30px;
+    color: rgb(104, 102, 102);
+    cursor: pointer;
+}
+
+.parentBox>#headings:hover {
+    text-decoration: underline;
+}
+
+
+.contentsBox {
+    display: flex;
+}
+
+.leftSideImageDiv {
+    display: block;
+    width: 7%;
+    margin: auto;
+    margin-left: 60px;
+    /* border: 2px solid red; */
+}
+
+.leftSideImageDiv>img {
+    width: 100%;
+    margin: auto;
+    margin-top: 10px;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.leftSideImageDiv>img:hover {
+    border: 1px solid teal;
+}
+
+.mainImageDiv {
+    width: 41%;
+    margin: auto;
+    /* border: 2px solid red; */
+    margin-left: -1%;
+}
+
+.mainImageDiv>img {
+    width: 100%;
+    margin: auto;
+}
+
+.displayContentDiv {
+    width: 21%;
+    margin: auto;
+    margin-top: 0px;
+    margin-right: 60px;
+    /* border: 2px solid red; */
+}
+
+#nameOfTheProduct {
+    font-family: emoji;
+    font-size: 22px;
+    /* border: 2px solid red; */
+    margin-bottom: 5px;
+}
+
+#anthropologieText {
+    color: rgb(22 122 146);
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+#anthropologieText:hover {
+    text-decoration: none;
+}
+
+#starRating {
+    margin: 10px 0px;
+}
+
+#numberAfterRating {
+    margin-left: 5px;
+    color: rgb(22 122 146);
+    text-decoration: underline;
+    cursor: pointer;
+    /* border: 2px solid red; */
+}
+
+#numberAfterRating:hover {
+    text-decoration: none;
+}
+
+#productCost {
+    font-size: 18px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    /* border: 2px solid red; */
+}
+
+#statementAfterPrice {
+    width: 80%;
+    font-size: 12px;
+    line-height: 25px;
+    margin-bottom: 10px;
+    /* border: 2px solid red; */
+}
+
+#colorForTheDress {
+    margin: 10px 0px;
+    /* border: 2px solid red; */
+}
+
+#textInsidePara {
+    font-weight: bold;
+    /* border: 2px solid red; */
+}
+
+#smallImagesInDiv {
+    display: flex;
+    /* border: 2px solid red; */
+}
+
+#smallImagesInDiv img {
+    width: 20px;
+    height: 20px;
+    border-radius: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
+    cursor: pointer;
+    border: 2px solid white;
+}
+
+#smallImagesInDiv img:hover {
+    border: 2px solid teal;
+    position: relative;
+    border-radius: 15px;
+}
+
+#typeOfFit {
+    margin-top: 10px;
+    /* margin-bottom: 5px; */
+}
+
+#buttonsOfSize {
+    display: flex;
+    justify-content: space-between;
+    margin: auto;
+    /* border: 2px solid red; */
+}
+
+#buttonsOfSize>button {
+    padding: 10px 20px;
+    margin: 1px;
+    margin-right: 5px;
+    margin-left: 0px;
+    cursor: pointer;
+    border: 1px solid white;
+}
+
+
+
+#buttonsOfSize>button:hover {
+    border: 1px solid teal;
+}
+
+#sizeOfTheProduct {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#buttonsOfType {
+    display: flex;
+    justify-content: space-around;
+}
+
+#buttonsOfType>button {
+    padding: 10px 20px;
+    margin: 5px;
+    margin-right: 5px;
+    margin-left: 0px;
+    cursor: pointer;
+    border: 1px solid white;
+
+}
+
+#buttonsOfType>button:hover {
+    border: 1px solid teal;
+}
+
+#quantity {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#quantityOfItem {
+    width: 30%;
+    margin: auto;
+    padding: 10px;
+    font-size: 15px;
+    border-radius: 8px;
+}
+
+#addToBasket {
+    display: block;
+    width: 100%;
+    /* border: 2px solid red; */
+    padding: 20px 0px;
+    margin-top: 40px;
+    background-color: rgb(75 86 102);
+    color: white;
+    cursor: pointer;
+}
+
+#addToBasket:hover {
+    background-color: white;
+    color: rgb(75 86 102);
+    border: 1px solid rgb(75 86 102);
+}
+
+.rightSideImageDiv {
+    display: block;
+    width: 6%;
+    margin: auto;
+    padding-top: 10px;
+    /* border: 2px solid red; */
+    height: 90%;
+    margin-right: 70px;
+    margin-top: 5px;
+    background-color: whitesmoke;
+}
+
+.rightSideImageDiv>img {
+    width: 100%;
+    margin: auto;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.rightSideImageDiv>#sideText {
+    width: 95%;
+    text-align: center;
+    font-size: 15px;
+}
+
+#responsiveContentBox {
+    display: none;
+}
+
+@media screen and (min-width:920px) and (max-width:1213px) {
+    .rightSideImageDiv {
+        display: none;
+    }
+
+    .parentBox>#headings {
+        text-align: start;
+        color: rgb(104, 102, 102);
+        cursor: pointer;
+    }
+
+    .leftSideImageDiv {
+        max-width: 5%;
+        margin-top: 60px;
+    }
+
+    .mainImageDiv {
+        width: 35%;
+        margin-right: 5px;
+        margin-top: 0px;
+    }
+
+    #smallImagesInDiv>img {
+        width: 30px;
+        height: 30px;
+        border-radius: 50px;
+        margin-top: 5px;
+    }
+
+    .displayContentDiv {
+        width: 41%;
+        margin: auto;
+        margin-top: 0px;
+        margin-right: 70px;
+    }
+
+    #buttonsOfSize {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #buttonsOfType {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    #responsiveContentBox {
+        display: none;
+    }
+}
+
+@media screen and (min-width:250px) and (max-width:919px) {
+    #responsiveHeader {
+        display: block;
+        width: 80%;
+        margin-left: 20px;
+    }
+
+
+
+    /* #responsiveHeader>#anthropologieText {
+        border: 2px solid red;
+    } */
+
+    .leftSideImageDiv {
+        display: none;
+    }
+
+    .displayContentDiv {
+        display: none;
+    }
+
+    .rightSideImageDiv {
+        display: none;
+    }
+
+    .parentBox>#headings {
+        text-align: start;
+        margin-left: 20px;
+        color: rgb(104, 102, 102);
+        cursor: pointer;
+        line-height: 20px;
+    }
+
+
+    .mainImageDiv {
+        width: 95%;
+        margin: auto;
+        margin-top: 20px;
+    }
+
+    #responsiveContentBox {
+        display: block;
+        width: 95%;
+        margin-left: 16px;
+    }
+
+    #responsiveContentBox>#smallImagesInDiv>img {
+        width: 30px;
+        height: 30px;
+        border-radius: 50px;
+        margin-top: 5px;
+    }
+
+    #responsiveContentBox>#buttonsOfSize {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        row-gap: 5px;
+        column-gap: 5px;
+    }
+
+    #responsiveContentBox>#buttonsOfType {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    #responsiveContentBox>#quantityOfItem {
+        padding-right: 20px;
+    }
+}

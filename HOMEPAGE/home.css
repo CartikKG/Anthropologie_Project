@@ -1,0 +1,232 @@
+* {
+    margin: 0%;
+    padding: 0%;
+}
+
+#mainforhome {
+    /* margin-left: 8%;
+    margin-right: 8%;*/
+    margin: 8%;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    z-index: 0;
+
+}
+
+#mainforhome button {
+    cursor: pointer;
+}
+
+#mainforhome div div div img {
+    z-index: -30;
+}
+
+#mainforhome button:hover {
+    background-color: rgb(201, 201, 201);
+}
+
+
+#homedisplay1 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(550px, 1fr));
+    /* grid-template-columns: repeat(200px); */
+    grid-gap: 20px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+#homedisplay1 img {
+    width: 100%;
+}
+
+#homedisplay2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-columns: repeat(200px); */
+    grid-gap: 20px;
+    /* margin: auto; */
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+#homedisplay2 img {
+    width: 100%;
+}
+
+#homedisplay3 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    /* grid-template-columns: repeat(200px); */
+    grid-gap: 20px;
+    /* margin: auto; */
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+#homedisplay3 img {
+    width: 100%;
+}
+
+#homedisplay3_div1 {
+    grid-row: 1;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+#homedisplay4 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    ;
+    /* grid-template-columns: repeat(200px); */
+    grid-gap: 20px;
+    /* margin: auto; */
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+
+
+#homedisplay4 img {
+    width: 100%;
+}
+
+#homedisplay5 {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    /* grid-template-columns: repeat(200px); */
+    grid-gap: 20px;
+    /* margin: auto; */
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+#homedisplay5 img {
+    width: 100%;
+}
+
+#homedisplay5_div5 {
+    grid-row: 1;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+
+#homedisplay6 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-template-columns: repeat(200px); */
+    grid-gap: 20px;
+    /* margin: auto; */
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+#homedisplay6 img {
+    width: 100%;
+}
+
+#homedisplay7 img {
+    width: 100%;
+}
+
+#mainforhome button {
+
+    /* margin: auto; */
+    /* margin-bottom: 10px;
+    
+  
+    /* margin-top: -10023px; */
+
+    /*
+    border: rgb(211, 214, 214);
+    border: 10px;
+  
+    
+    color: rgb(75, 75, 75);
+   ; */
+    /* position: absolute; */
+    position: relative;
+    border: none;
+    background-color: rgb(243, 243, 243);
+    padding: 8px 20px;
+    border-radius: 2px;
+    top: -46px;
+    /* right: 10%; */
+    left: 28%;
+    z-index: 0;
+}
+
+
+
+@media (max-width: 544px) {
+    #homedisplay1 {
+        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+        grid-gap: 5px;
+    }
+
+    /* #homedisplay2 {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        grid-gap: 10px;
+    } */
+
+    #homedisplay3 {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        grid-gap: 10px;
+    }
+
+    /* #homedisplay3_div1 {
+        /* display: none; 
+    } */
+    */ #homedisplay4 {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        grid-gap: 10px;
+    }
+
+    #homedisplay5 {
+        grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+        grid-gap: 10px;
+    }
+
+    #btnforsmalldivs {
+        padding: 0%;
+        left: 0%;
+    }
+
+    /* #mainforhome button {
+        
+    } */
+}
+
+@media all and (min-width: 400px) and (max-width: 800px) {}
+
+@media all and (min-width: 100px) and (max-width: 630px) {
+
+    #homedisplay2 {
+        /* display: grid; */
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #homedisplay4 {
+        /* display: grid; */
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    #homedisplay6 {
+        /* display: grid; */
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+
+}

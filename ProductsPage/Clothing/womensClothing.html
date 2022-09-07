@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Women's Clothing | Anthropologie</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/60b736368c.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="./womenClothing.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="/Anthropologie_Project/NAVBAR/navbar.css" />
+    <link
+      rel="stylesheet"
+      href="/Anthropologie_Project/footerPage/footerStyle.css"
+    />
+    <script>
+      $(function () {
+        $("#navbarHtml").load("/Anthropologie_Project/NAVBAR/navbar.html");
+
+        $("#includedContent").load(
+          "/Anthropologie_Project/footerPage/footerPage.html"
+        );
+      });
+    </script>
+  </head>
+  <!-- <a href="/Anthropologie_Project/NAVBAR/navbar.css"></a> -->
+  <body>
+    <div id="navbarHtml"></div>
+
+    <div id="productsMain">
+      <div id="productsLeft">
+        <ul id="productsBrowse">
+          <!-- <ul> -->
+          <a>Browse by:</a>
+          <hr style="color: red" />
+          <li><a href="">Clothing</a></li>
+          <hr class="productsShortLine" />
+          <li><a href="">New!</a></li>
+          <li><a href="">Top-Rated</a></li>
+          <li><a href="">Activewear</a></li>
+          <li><a href="">Dresses</a></li>
+          <li><a href="">Getaway & Resort Wear</a></li>
+          <li><a href="">Intimates & Lingerie</a></li>
+          <li><a href="">Jackets & Coats</a></li>
+          <li><a href="">Jeans</a></li>
+          <li><a href="">Jumpsuits</a></li>
+          <li><a href="">Kimonos</a></li>
+          <li><a href="">Loungewear</a></li>
+          <li><a href="">Pants</a></li>
+          <li><a href="">Petites</a></li>
+          <li><a href="">Plus</a></li>
+          <li><a href="">Sets</a></li>
+          <li><a href="">Shorts</a></li>
+          <li><a href="">Skirts</a></li>
+          <li><a href="">Sleepwear</a></li>
+          <li><a href="">Sweaters</a></li>
+          <li><a href="">Swimwear</a></li>
+          <li><a href="">Tops & Tees</a></li>
+          <!-- </ul> -->
+        </ul>
+        <br />
+        <ul id="productsFilter">
+          <div>
+            <p>Filter by:</p>
+          </div>
+
+          <div class="productsDropDownBox">
+            <label for="productsBtn-1"
+              >Price<span id="productsPlus"
+                ><i class="fa-thin fa-plus"></i></span
+            ></label>
+            <input type="checkbox" id="productsBtn-1" />
+
+            <ul>
+              <li><a href="">Less than $25</a></li>
+              <li><a href="">$25 - $50</a></li>
+              <li><a href="">$50 - $100</a></li>
+              <li><a href="">$100 - $200</a></li>
+              <li><a href="">$200 - $500</a></li>
+              <li><a href="">More than $500</a></li>
+            </ul>
+          </div>
+
+          <div class="productsDropDownBox">
+            <label for="productsBtn-2"
+              >Color<span id="productsPlus"
+                ><i class="fa-thin fa-plus"></i></span
+            ></label>
+            <input type="checkbox" id="productsBtn-2" />
+            <ul>
+              <li><a href="">Black</a></li>
+              <li><a href="">Blue</a></li>
+              <li><a href="">White</a></li>
+              <li><a href="">Pink</a></li>
+              <li><a href="">Green</a></li>
+              <li><a href="">Assorted</a></li>
+              <li><a href="">Beige</a></li>
+              <li><a href="">Brown</a></li>
+              <li><a href="">Red</a></li>
+            </ul>
+          </div>
+
+          <!-- <div class="productsDropDownBox">
+          <label for="productsBtn-3">Brand<span id="productsPlus"><i class="fa-thin fa-plus"></i></span></label>
+          <input type="checkbox" id="productsBtn-3">
+          <ul>
+            <li><a href="">Less than $25</a></li>
+            <li><a href="">$25 - $50</a></li>
+            <li><a href="">$50 - $100</a></li>
+            <li><a href="">$100 - $200</a></li>
+            <li><a href="">$200 - $500</a></li>
+            <li><a href="">More than $500</a></li>
+          </ul>
+        </div> -->
+
+          <div class="productsDropDownBox">
+            <label for="productsBtn-4"
+              >Size<span id="productsPlus"><i class="fa-thin fa-plus"></i></span
+            ></label>
+            <input type="checkbox" id="productsBtn-4" />
+            <ul>
+              <li><a href="">Small</a></li>
+              <li><a href="">Small/Medium</a></li>
+              <li><a href="">Medium</a></li>
+              <li><a href="">Medium/Large</a></li>
+              <li><a href="">Large</a></li>
+              <li><a href="">Large/XL</a></li>
+              <li><a href="">XL</a></li>
+              <li><a href="">XXL</a></li>
+              <li><a href="">XXXL</a></li>
+            </ul>
+          </div>
+
+          <div class="productsDropDownBox">
+            <label for="productsBtn-5"
+              >In Stock<span id="productsPlus"
+                ><i class="fa-thin fa-plus"></i></span
+            ></label>
+            <input type="checkbox" id="productsBtn-5" />
+            <ul>
+              <li><a href="">Ready to Ship</a></li>
+            </ul>
+          </div>
+
+          <div class="productsDropDownBox">
+            <label for="productsBtn-6"
+              >Free Pickup<span id="productsPlus"
+                ><i class="fa-thin fa-plus"></i></span
+            ></label>
+            <input type="checkbox" id="productsBtn-6" />
+            <ul>
+              <li>
+                <a href="">Please search for your Nearest Pick up center</a>
+              </li>
+            </ul>
+          </div>
+          <p style="color: #cfd5e0">Reset all filters</p>
+        </ul>
+      </div>
+
+      <div id="productsItems">
+        <form id="productsItemsTop">
+          <div id="productsItemsTopLeft">
+            <label id="productsHeading" for="">Women's Clothing</label>
+          </div>
+          <div id="productsItemsTopRight">
+            <div>
+              <label for="">Sort: </label>
+              <select id="productsSelect">
+                <option value="">Featured</option>
+                <option value="">Price: Low to High</option>
+                <option value="">Price: High to Low</option>
+                <option value="">Newest</option>
+                <option value="">Bestselling</option>
+                <option value="">Ratings: High to Low</option>
+                <option value="">A-Z</option>
+                <option value="">Z-A</option>
+              </select>
+            </div>
+            <div>
+              <!-- <label for=""><a href=""><</a></label> -->
+              <i class="fa-solid fa-chevron-left"></i>
+              <label id="productsPageNo">1/40</label>
+              <i class="fa-solid fa-chevron-right"></i>
+              <!-- <a href="">></a> -->
+            </div>
+          </div>
+        </form>
+        <div id="productsLowerTop">
+          <select
+            name=""
+            id="productsShopByCategory"
+            onchange="window.location.href=this.value;"
+          >
+            <option value="">Shop by Category</option>
+            <option value="">New!</option>
+            <option value="">Top-Rated</option>
+            <option value="">Activewear</option>
+            <option value="">Dresses</option>
+            <option value="">Getaway & Resort Wear</option>
+            <option value="">Intimates & Lingerie</option>
+            <option value="">Jackets & Coats</option>
+            <option value="">Jeans</option>
+            <option value="">Jumpsuits</option>
+            <option value="">Kimonos</option>
+            <option value="">Loungewear</option>
+            <option value="">Pants</option>
+            <option value="">Petites</option>
+            <option value="">Plus</option>
+            <option value="">Sets</option>
+            <option value="">Shorts</option>
+            <option value="">Skirts</option>
+            <option value="">Sleepwear</option>
+            <option value="">Sweaters</option>
+            <option value="">Swimwear</option>
+            <option value="">Tops & Tees</option>
+          </select>
+          <div>
+            <a href="">Filter & Sort</a>
+          </div>
+        </div>
+        <div id="productsItemsAll"></div>
+      </div>
+    </div>
+    <!-- FOOTER -->
+    <div id="includedContent"></div>
+  </body>
+</html>
+
+<script src="./womenclothing.js"></script>
