@@ -15,11 +15,14 @@ footer {
 #about {
     width: 90%;
     margin: auto;
-    padding: 20px 40px;
+    /* padding: 20px 40px; */
+    margin-bottom: 20px;
+    /* border: 2px solid red; */
 }
 
 #about>h3 {
     font-weight: normal;
+    /* border: 2px solid red; */
 }
 
 
@@ -29,48 +32,54 @@ footer {
 
 #about>h3 {
     margin: 20px 0px;
+    /* border: 2px solid red; */
 }
 
 #about>p {
     margin-bottom: 10px;
     line-height: 25px;
     font-size: 14.5px;
+    /* border: 2px solid red; */
 }
 
 #parentbox {
     display: flex;
     width: 90%;
     margin: 30px;
-    margin-left: 70px;
+    margin-left: 55px;
+    justify-content: space-around;
+    /* border: 2px solid red; */
 }
 
 #child1 {
     width: 55%;
+    margin-left: 5px;
+    /* border: 2px solid red; */
 }
 
 #child1>p {
     font-size: 14.5px;
+    /* border: 2px solid red; */
 }
 
 #child1>h3 {
     margin-bottom: 15px;
+    font-weight: normal;
+    /* border: 2px solid red; */
 }
 
-#child1>h3 {
-    font-weight: normal;
-}
 
 
 #child2 {
-    width: 60%;
     margin-left: 10%;
+    width: 75%;
+    /* border: 2px solid red; */
 }
 
 #child2>p {
-    width: 85%;
     margin-bottom: 10px;
-    margin-left: -50px;
     padding-right: 0px;
+    /* border: 2px solid red; */
 }
 
 #responsiveChild2 {
@@ -82,9 +91,9 @@ footer {
     height: 38px;
     font-size: 20px;
     padding: 0px 10px;
-    margin-left: -50px;
     border: 1px solid coral;
     box-sizing: border-box;
+    /* border: 2px solid red; */
 }
 
 
@@ -94,10 +103,11 @@ footer {
     background-color: rgb(75 85 102);
     border: 1px solid black;
     cursor: pointer;
-    margin-left: 15px;
+    margin-left: 10px;
     margin-top: -5px;
     color: white;
     box-sizing: border-box;
+    /* border: 2px solid red; */
 }
 
 #btn_signupMail:hover {
@@ -109,8 +119,10 @@ footer {
     width: 90%;
     margin: auto;
     font-size: 13px;
+    margin-left: 55px;
     margin-bottom: 25px;
     line-height: 20px;
+    /* border: 2px solid red; */
 }
 
 .contentBox {
@@ -123,6 +135,7 @@ footer {
     margin-left: 13%;
     margin-right: 20%;
     margin-top: 3%;
+    /* border: 2px solid red; */
 }
 
 .responsiveDropDown {
@@ -179,12 +192,14 @@ footer {
     margin: auto;
     justify-content: center;
     margin-top: 50px;
+    /* border: 2px solid red; */
 }
 
 .remLogos {
     display: flex;
     width: 20%;
     justify-content: space-between;
+    /* border: 2px solid red; */
 }
 
 .remLogos>a:hover {
@@ -194,17 +209,22 @@ footer {
 
 #apple {
     margin-right: 40px;
+    /* border: 2px solid red; */
 }
 
 .fa-brands {
     font-size: 30px;
     margin-right: 30px;
     /* fill: rgb(22 122 146); */
+    /* border: 2px solid red; */
 }
 
 #endBar {
     width: 90%;
-    margin: 20px 65px;
+    height: 101px;
+    margin: 25px;
+    margin-left: 60px;
+    /* border: 2px solid red; */
 }
 
 .countries {
@@ -213,12 +233,14 @@ footer {
     display: flex;
     margin-top: 30px;
     margin-bottom: 30px;
+    /* border: 2px solid red; */
 }
 
 .countries>a {
     color: black;
     text-decoration: none;
     font-size: 14px;
+    /* border: 2px solid red; */
 }
 
 .countries>a:hover {
@@ -237,6 +259,7 @@ footer {
     justify-content: space-between;
     margin-top: 70px;
     margin-bottom: 30px;
+    /* border: 2px solid red; */
 }
 
 .terms-conditions>a {
@@ -254,30 +277,50 @@ footer {
 
 #forCAResidents {
     color: black;
+    /* border: 2px solid red; */
 }
 
 #responsiveEndBar {
     display: none;
 }
 
-@media screen and (max-width:1020px) and (min-width:769px) {
+@media screen and (min-width:770px) and (max-width:1024px) {
+    * {
+        margin: 0%;
+        padding: 0%;
+    }
+
     #parentbox {
+        width: 90%;
         display: grid;
+        margin-left: 40px;
+        /* justify-content: flex-start; */
+        /* align-items: flex-start; */
+        grid-template-columns: repeat(1, 1fr);
+        /* border: 2px solid red; */
     }
 
     #child1 {
-        width: 85%;
-        margin-left: -30px;
+        min-width: 100%;
+        margin: auto;
+        /* border: 2px solid red; */
     }
 
     #child1>p {
-        width: 85%;
+        width: 100%;
+        margin: auto;
         margin-bottom: 20px;
+        /* border: 2px solid red; */
     }
 
     #child2 {
-        width: 85%;
-        margin-left: 20px;
+        width: 100%;
+        margin: auto;
+        /* border: 2px solid red; */
+    }
+
+    #child2>p {
+        margin-bottom: 3px;
     }
 
     .inputEmail {
@@ -289,8 +332,9 @@ footer {
     }
 
     .paraOutOfParentBox {
-        width: 85%;
-        margin-left: 45px;
+        width: 90%;
+        margin: auto;
+        margin-bottom: 30px;
     }
 
     .countries {
@@ -321,7 +365,7 @@ footer {
     }
 }
 
-@media screen and (max-width:770px) {
+@media screen and (min-width:250px) and (max-width:769px) {
     .contentBox {
         display: none;
     }
@@ -447,32 +491,107 @@ footer {
         height: 10%;
     }
 
-    #child2 {
-        display: none;
-    }
-
-    #responsiveChild2 {
-        width: 100%;
+    #parentbox {
         display: block;
-        margin-left: -30px;
+        width: 90%;
+        margin: auto;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        align-items: flex-start;
+        /* border: 2px solid teal; */
     }
 
-    #responsiveChild2>p {
-        margin-left: -2px;
+    #child2 {
+        display: block;
+        width: 100%;
+        margin: auto;
+        /* border: 2px solid teal; */
+    }
+
+    #child1>h3 {
+        width: 100%;
+        margin: auto;
+        margin-left: -5px;
+        /* border: 2px solid teal; */
+    }
+
+    #child1>p {
+        width: 140%;
+        margin-left: -5px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        /* border: 2px solid teal; */
+    }
+
+    #child2>p {
+        width: 100%;
+        /* border: 2px solid teal; */
+        margin: auto;
+        margin-bottom: 5px;
+    }
+
+    .inputEmail {
+        width: 100%;
+        margin: auto;
         margin-bottom: 10px;
     }
 
-    #responsiveChild2 .inputEmail {
+    #btn_signupMail {
         width: 100%;
-        margin-left: -2px;
-        box-sizing: border-box;
-        margin-bottom: 20px;
+        margin: auto;
     }
 
-    #responsiveChild2 #btn_signupMail {
-        box-sizing: border-box;
-        margin-left: -2px;
+    .paraOutOfParentBox {
+        width: 90%;
+        margin: auto;
     }
+
+    .locator-mail li {
+        margin-left: 45%;
+    }
+
+    .remLogos {
+        margin-left: 10%;
+    }
+
+    /* #child1 {
+        width: 100%;
+        margin: auto;
+        margin-left: -30px;
+        border: 2px solid teal;
+    } */
+
+    /* #responsiveChild2 {
+        width: 100%;
+        display: block; */
+    /* margin-left: -30px; */
+    /* } */
+
+    /* #responsiveChild2>p {
+        width: 50%;
+        margin-left: 40px;
+        margin-bottom: 10px;
+        border: 2px solid teal;
+    } */
+
+    /* #responsiveChild2 .inputEmail {
+        width: 91%;
+        margin-left: 40px;
+        box-sizing: border-box;
+        margin-bottom: 20px;
+    } */
+
+    /* #responsiveChild2 #btn_signupMail {
+        width: 91%;
+        box-sizing: border-box;
+        margin-left: 40px;
+    } */
+
+    /* 
+    .paraOutOfParentBox {
+        margin-left: 40px;
+        margin-top: 30px;
+    } */
 
     .base-tags {
         margin-top: 10%;
@@ -486,9 +605,5 @@ footer {
         align-items: center;
     }
 
-    #btn_signupMail {
-        width: 100%;
-        margin-left: -5%;
-    }
 
 }
