@@ -1,0 +1,1170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="../footerPage/footerStyle.css" />
+  <link rel="stylesheet" href="../NAVBAR/navbar.css" />
+
+  <script>
+    $(function () {
+      $("#navbarHtml").load("../NAVBAR/navbar.html");
+      // $("#includedContent").load("../footerPage/footerPage.html");
+    });
+  </script>
+</head>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Women's Clothing | Anthropologie</title>
+  <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/60b736368c.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="sample.css">
+  <style>
+    #main {
+      /* border: 2px solid black; */
+      display: flex;
+      width: 100%;
+      z-index: -10;
+    }
+
+    #items {
+      /* border: 2px solid red; */
+      width: 83%;
+      margin: 10px 60px 0px 35px;
+    }
+
+    #itemsAll {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+    }
+
+    #itemsAll>div {
+      padding-bottom: 10px;
+    }
+
+    #itemsAll a {
+      /* border: 1px solid red; */
+      color: #1e1e20;
+      text-decoration: none;
+      font-size: 13px;
+      font-family: 'M PLUS Rounded 1c', sans-serif;
+    }
+
+    #itemsAll p {
+      margin-top: 8px;
+      margin-bottom: 8px;
+    }
+
+    #itemsAll a:hover {
+      color: teal;
+    }
+
+    .img {
+      margin-bottom: 8px;
+      width: 100%;
+    }
+
+    .img:hover {
+      cursor: pointer;
+    }
+
+    #circleBox {
+      display: flex;
+    }
+
+    .circle {
+      border: 1px solid white;
+      height: 20px;
+      width: 20px;
+      border-radius: 15px;
+      padding: 2px;
+      margin: 2px;
+    }
+
+    .circle:hover {
+      border: 1px solid teal;
+    }
+
+    .circle:first-child {
+      border: 1px solid black;
+    }
+
+    .circle>div {
+      border: 1px solid grey;
+      height: 18px;
+      width: 18px;
+      border-radius: 15px;
+    }
+
+    .circle img {
+      width: 100%;
+    }
+
+    #left {
+      /* border: 2px solid red; */
+      width: 17%;
+      margin: 20px 0px 0px 60px;
+    }
+
+    #browse {
+      /* border: 2px solid red; */
+      width: 100%;
+      list-style-type: none;
+      padding-left: 0px;
+    }
+
+    #browse li {
+      margin: 11px 0px 11px 0px;
+    }
+
+    #main li:hover {
+      text-decoration: underline;
+    }
+
+    #filter {
+      /* border: 1px solid red; */
+      list-style-type: none;
+      padding-left: 0px;
+      width: 100%;
+    }
+
+    .dropDownList ul {
+      /* display: none; */
+      padding-left: 20px;
+      list-style-type: none;
+    }
+
+    .dropDownList ul {
+      /* display: block; */
+      padding-left: 20px;
+      list-style-type: none;
+    }
+
+    #filter>div {
+      /* border: 1px solid green; */
+      border-bottom: 1px solid #dfdcd9;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    #filter div>li {
+      margin-top: 21px;
+      margin-bottom: 21px;
+    }
+
+    #filter a {
+      font-size: 16px;
+      text-decoration: none;
+      color: #4b4b4d;
+      font-family: 'M PLUS Rounded 1c', sans-serif;
+    }
+
+    #browse a {
+      text-decoration: none;
+      font-size: 13px;
+      font-family: 'M PLUS Rounded 1c', sans-serif;
+      color: #4b4b4d;
+    }
+
+    #filter p {
+      font-family: 'Manrope', sans-serif;
+      font-size: 0.8rem;
+    }
+
+    hr {
+      border: 1px solid #f1efeb;
+      width: 100%;
+      margin-left: 0px;
+    }
+
+    .shortLine {
+      /* color: red; */
+      width: 12px;
+      margin-left: 0px;
+    }
+
+    #itemsAll p {
+      font-family: 'Lato', sans-serif;
+      font-size: 0.79rem;
+      color: #26262c;
+    }
+
+    #heading {
+      font-size: 23px;
+      font-family: 'Manrope', sans-serif;
+    }
+
+    #itemsTop {
+      /* border: 2px solid red; */
+      height: 80px;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    #itemsTopLeft {
+      display: flex;
+      align-items: center;
+      /* border: 2px solid red; */
+      width: 50%;
+    }
+
+    #itemsTopRight {
+      /* border: 1px solid black; */
+      width: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    #itemsTopRight label {
+      font-size: 13px;
+      font-family: 'Manrope', sans-serif;
+    }
+
+    #select {
+      width: 36%;
+      height: 35px;
+      font-size: medium;
+      border-radius: 5px;
+      padding-left: 9px;
+      margin-left: 12px;
+      border-color: #939395;
+      color: #939395;
+    }
+
+    #itemsTopRight i {
+      font-size: 23px;
+    }
+
+    #itemsTopRight>div:first-child {
+      /* border: 1px solid red; */
+      width: 370px;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+
+    #itemsTopRight>div:last-child {
+      width: 85px;
+      /* border: 1px solid red; */
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    #itemsTopRight option {
+      /* border: 1px solid red; */
+      color: #939395;
+      font-size: 15px;
+    }
+
+    #lowerTop {
+      display: none;
+    }
+
+    #filter ul>li {
+      margin-top: 30px;
+      margin-bottom: 30px;
+    }
+
+
+    /* for drop down */
+
+    .dropDownBox .fa-thin {
+      float: right;
+      margin-right: 10px;
+    }
+
+    .dropDownBox {
+      width: 100%;
+      margin: auto;
+      cursor: pointer;
+      display: block;
+    }
+
+    .dropDownBox>label {
+      display: block;
+      padding: 10px 20px;
+      cursor: pointer;
+    }
+
+    .dropDownBox>ul {
+      display: none;
+    }
+
+    [id^=btn]:checked~ul {
+      display: block;
+
+    }
+
+    #btn-1,
+    #btn-2,
+    #btn-3,
+    #btn-4,
+    #btn-5,
+    #btn-6 {
+      display: none;
+    }
+
+    /* Media screen for Tablet view */
+    @media screen and (min-width: 765px) and (max-width: 1020px) {
+      #itemsAll {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
+      }
+
+      #items {
+        width: 80%;
+        margin-left: 20px;
+      }
+
+      #left {
+        width: 20%;
+      }
+
+      #select {
+        width: 140px;
+      }
+
+      #itemsTopRight {
+        width: 50%;
+        /* border: 1px solid red; */
+      }
+
+      #itemsTopRight>div:first-child {
+        /* border: 1px solid red; */
+
+        width: 280px;
+        display: flex;
+        justify-content: center;
+
+      }
+
+      #itemsTopRight>div:last-child {
+        width: 150px;
+        /* border: 1px solid red; */
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+
+      #lowerTop {
+        display: none;
+      }
+    }
+
+
+    /* Media screen for Mobile view */
+    @media screen and (min-width: 100px) and (max-width: 765px) {
+      #itemsAll {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+      }
+
+      #items {
+        width: 100%;
+        margin: 15px;
+      }
+
+      #itemsTopRight {
+        display: none;
+      }
+
+      #left {
+        display: none;
+      }
+
+      .circle {
+        display: none;
+      }
+
+      #lowerTop {
+        display: block;
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 20px;
+      }
+
+      #lowerTop>div {
+        width: 38%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border: 1px solid rgb(226, 226, 223);
+      }
+
+      #lowerTop a {
+        text-decoration: none;
+        color: black;
+      }
+
+      #shopByCategory {
+        width: 58%;
+        height: 50px;
+        padding: 15px;
+        border: 1px solid rgb(226, 226, 223);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div id="navbarHtml"></div>
+  <div id="main">
+    <div id="left">
+      <ul id="browse">
+        <!-- <ul> -->
+        <a>Browse by:</a>
+        <hr style="color: red;">
+        <li><a href="">Clothing</a></li>
+        <hr class="shortLine">
+        <li><a href="">New!</a></li>
+        <li><a href="">Top-Rated</a></li>
+        <li><a href="">Activewear</a></li>
+        <li><a href="">Dresses</a></li>
+        <li><a href="">Getaway & Resort Wear</a></li>
+        <li><a href="">Intimates & Lingerie</a></li>
+        <li><a href="">Jackets & Coats</a></li>
+        <li><a href="">Jeans</a></li>
+        <li><a href="">Jumpsuits</a></li>
+        <li><a href="">Kimonos</a></li>
+        <li><a href="">Loungewear</a></li>
+        <li><a href="">Pants</a></li>
+        <li><a href="">Petites</a></li>
+        <li><a href="">Plus</a></li>
+        <li><a href="">Sets</a></li>
+        <li><a href="">Shorts</a></li>
+        <li><a href="">Skirts</a></li>
+        <li><a href="">Sleepwear</a></li>
+        <li><a href="">Sweaters</a></li>
+        <li><a href="">Swimwear</a></li>
+        <li><a href="">Tops & Tees</a></li>
+        <!-- </ul> -->
+      </ul>
+      <br>
+      <ul id="filter">
+        <div>
+          <p>Filter by:</p>
+        </div>
+        <!-- <hr> -->
+        <div class="dropDownBox">
+          <!-- <l><a href="">Price</a></li> -->
+          <!-- <li><a href="">+</a></li> -->
+          <label for="btn-1">Price<span id="plus"><i class="fa-thin fa-plus"></i></span></label>
+          <input type="checkbox" id="btn-1">
+          <!-- </div> -->
+
+
+          <!-- <div class="dropDownList"> -->
+          <ul>
+            <li><a href="">Less than $25</a></li>
+            <li><a href="">$25 - $50</a></li>
+            <li><a href="">$50 - $100</a></li>
+            <li><a href="">$100 - $200</a></li>
+            <li><a href="">$200 - $500</a></li>
+            <li><a href="">More than $500</a></li>
+          </ul>
+        </div>
+        <!-- <hr> -->
+        <div class="dropDownBox">
+          <!-- <li><a href="">Color</a></li>
+          <li><a href="">+</a></li> -->
+          <label for="btn-2">Color<span id="plus"><i class="fa-thin fa-plus"></i></span></label>
+          <input type="checkbox" id="btn-2">
+          <ul>
+            <li><a href="">Less than $25</a></li>
+            <li><a href="">$25 - $50</a></li>
+            <li><a href="">$50 - $100</a></li>
+            <li><a href="">$100 - $200</a></li>
+            <li><a href="">$200 - $500</a></li>
+            <li><a href="">More than $500</a></li>
+          </ul>
+        </div>
+        <!-- <hr> -->
+        <div class="dropDownBox">
+          <!-- <li><a href="">Brand</a></li>
+          <li><a>+</a></li> -->
+          <label for="btn-3">Brand<span id="plus"><i class="fa-thin fa-plus"></i></span></label>
+          <input type="checkbox" id="btn-3">
+          <ul>
+            <li><a href="">Less than $25</a></li>
+            <li><a href="">$25 - $50</a></li>
+            <li><a href="">$50 - $100</a></li>
+            <li><a href="">$100 - $200</a></li>
+            <li><a href="">$200 - $500</a></li>
+            <li><a href="">More than $500</a></li>
+          </ul>
+        </div>
+        <!-- <hr> -->
+        <div class="dropDownBox">
+          <!-- <li><a href="">Size</a></li>
+          <li><a>+</a></li> -->
+          <label for="btn-4">Size<span id="plus"><i class="fa-thin fa-plus"></i></span></label>
+          <input type="checkbox" id="btn-4">
+          <ul>
+            <li><a href="">Less than $25</a></li>
+            <li><a href="">$25 - $50</a></li>
+            <li><a href="">$50 - $100</a></li>
+            <li><a href="">$100 - $200</a></li>
+            <li><a href="">$200 - $500</a></li>
+            <li><a href="">More than $500</a></li>
+          </ul>
+        </div>
+        <!-- <hr> -->
+        <div class="dropDownBox">
+          <!-- <li><a href="">In Stock</a></li>
+          <li><a>+</a></li> -->
+          <label for="btn-5">In Stock<span id="plus"><i class="fa-thin fa-plus"></i></span></label>
+          <input type="checkbox" id="btn-5">
+          <ul>
+            <li><a href="">Less than $25</a></li>
+            <li><a href="">$25 - $50</a></li>
+            <li><a href="">$50 - $100</a></li>
+            <li><a href="">$100 - $200</a></li>
+            <li><a href="">$200 - $500</a></li>
+            <li><a href="">More than $500</a></li>
+          </ul>
+        </div>
+        <!-- <hr> -->
+        <div class="dropDownBox">
+          <!-- <li><a href="">Free Pickup</a></li>
+          <li><a>+</a></li> -->
+          <label for="btn-6">Free Pickup<span id="plus"><i class="fa-thin fa-plus"></i></span></label>
+          <input type="checkbox" id="btn-6">
+          <ul>
+            <li><a href="">Less than $25</a></li>
+            <li><a href="">$25 - $50</a></li>
+            <li><a href="">$50 - $100</a></li>
+            <li><a href="">$100 - $200</a></li>
+            <li><a href="">$200 - $500</a></li>
+            <li><a href="">More than $500</a></li>
+          </ul>
+        </div>
+        <!-- <hr> -->
+        <p style="color: #cfd5e0;">Reset all filters</p>
+      </ul>
+    </div>
+
+    <div id="items">
+      <form id="itemsTop">
+        <div id="itemsTopLeft">
+          <!-- <label><span id="heading">Women's Clothing</span> &nbsp &nbsp &nbsp2847 products</label> -->
+          <label id="heading" for="">Women's Clothing</label>
+          <!-- <span for="">2847 products</span> -->
+        </div>
+        <div id="itemsTopRight">
+          <!-- <p>Sort:</p> -->
+          <div>
+            <label for="">Sort: </label>
+            <select id="select">
+              <option value="">Featured</option>
+              <option value="">Price: Low to High</option>
+              <option value="">Price: High to Low</option>
+              <option value="">Newest</option>
+              <option value="">Bestselling</option>
+              <option value="">Ratings: High to Low</option>
+              <option value="">A-Z</option>
+              <option value="">Z-A</option>
+            </select>
+          </div>
+          <div>
+            <!-- <label for=""><a href=""><</a></label> -->
+            <i class="fa-solid fa-chevron-left"></i>
+            <label id="pageNo">1/40</label>
+            <i class="fa-solid fa-chevron-right"></i>
+            <!-- <a href="">></a> -->
+          </div>
+        </div>
+      </form>
+      <div id="lowerTop">
+        <select name="" id="shopByCategory" onchange="window.location.href=this.value;">
+          <option value="">Shop by Category</option>
+          <option value="">New!</option>
+          <option value="">Top-Rated</option>
+          <option value="">Activewear</option>
+          <option value="">Dresses</option>
+          <option value="">Getaway & Resort Wear</option>
+          <option value="">Intimates & Lingerie</option>
+          <option value="">Jackets & Coats</option>
+          <option value="">Jeans</option>
+          <option value="">Jumpsuits</option>
+          <option value="">Kimonos</option>
+          <option value="">Loungewear</option>
+          <option value="">Pants</option>
+          <option value="">Petites</option>
+          <option value="">Plus</option>
+          <option value="">Sets</option>
+          <option value="">Shorts</option>
+          <option value="">Skirts</option>
+          <option value="">Sleepwear</option>
+          <option value="">Sweaters</option>
+          <option value="">Swimwear</option>
+          <option value="">Tops & Tees</option>
+        </select>
+        <div>
+          <a href="">Filter & Sort</a>
+        </div>
+      </div>
+      <div id="itemsAll">
+
+      </div>
+
+    </div>
+  </div>
+
+  <div id="includedContent"></div>
+</body>
+
+</html>
+
+<script>
+  var Clothing_WomensClothing = [
+
+    {
+      name: "Frame Le High 'N' Tight Wide-Leg Jeans",
+      image_1: "https://images.urbndata.com/is/image/Anthropologie/4122941520008_093_b14?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      image_2: "https://images.urbndata.com/is/image/Anthropologie/4122941520008_093_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      image_3: "https://images.urbndata.com/is/image/Anthropologie/4122941520008_093_b4?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      price: "260.00"
+    },
+
+    {
+      name: "Frame Le Palazzo Wide-Leg Corduroy Jeans",
+      image_1: "https://images.urbndata.com/is/image/Anthropologie/4122941520017_020_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      image_2: "https://images.urbndata.com/is/image/Anthropologie/4122941520017_020_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      image_3: "https://images.urbndata.com/is/image/Anthropologie/4122941520017_020_b3?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      price: "250.00"
+    },
+
+    {
+      name: "Frame Le Mini Boot Slit Corduroy Jeans",
+      image_1: "https://images.urbndata.com/is/image/Anthropologie/4122941520015_037_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      image_2: "https://images.urbndata.com/is/image/Anthropologie/4122941520015_037_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      image_3: "https://images.urbndata.com/is/image/Anthropologie/4122941520015_037_b3?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      price: "250.00"
+    },
+
+    {
+      name: "Frame Le High Straight Jeans",
+      image_1: "https://images.urbndata.com/is/image/Anthropologie/4122941520010_091_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      image_2: "https://images.urbndata.com/is/image/Anthropologie/4122941520010_091_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      image_3: "https://images.urbndata.com/is/image/Anthropologie/4122941520010_091_b4?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      price: "215.00"
+    },
+
+    {
+      name: "Central Park West Nico Faux Leather Blazer",
+      image_1: "https://images.urbndata.com/is/image/Anthropologie/4115688110003_001_b14?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      image_2: "https://images.urbndata.com/is/image/Anthropologie/4115688110003_001_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      image_3: "https://images.urbndata.com/is/image/Anthropologie/4115688110003_001_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      price: "198.00"
+    },
+
+    {
+      name: "Frame Le Crop Mini Boot Jeans",
+      image_1: "https://images.urbndata.com/is/image/Anthropologie/4122941520003_091_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      image_2: "https://images.urbndata.com/is/image/Anthropologie/4122941520003_091_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      image_3: "https://images.urbndata.com/is/image/Anthropologie/4122941520003_091_b3?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      price: "245.00"
+    },
+
+    {
+      name: "Bernardo Double-Breasted Blazer",
+      image_1: "https://images.urbndata.com/is/image/Anthropologie/4133293120006_020_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      image_2: "https://images.urbndata.com/is/image/Anthropologie/4133293120006_020_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      image_3: "https://images.urbndata.com/is/image/Anthropologie/4133293120006_020_b3?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      price: "179.00"
+    },
+
+    {
+      name: "Frame Le High Flare Jeans",
+      image_1: "https://images.urbndata.com/is/image/Anthropologie/4122941520001_091_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      image_2: "https://images.urbndata.com/is/image/Anthropologie/4122941520001_091_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      image_3: "https://images.urbndata.com/is/image/Anthropologie/4122941520001_091_b3?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      price: "228.00"
+    },
+
+    {
+      name: "Frame Le High 'N' Tight Straight Jeans",
+      image_1: "https://images.urbndata.com/is/image/Anthropologie/4122941520016_001_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      image_2: "https://images.urbndata.com/is/image/Anthropologie/4122941520016_001_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      image_3: "https://images.urbndata.com/is/image/Anthropologie/4122941520016_001_b3?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      price: "250.00"
+    },
+
+    {
+      name: "Frame Le Crop Mini Boot Jeans",
+      image_1: "https://images.urbndata.com/is/image/Anthropologie/4122941520002_001_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      image_2: "https://images.urbndata.com/is/image/Anthropologie/4122941520002_001_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      image_3: "https://images.urbndata.com/is/image/Anthropologie/4122941520002_001_b3?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      price: "219.00"
+    },
+
+    {
+      name: "BLANKNYC Faux Leather Moto Jacket",
+      image_1: "https://images.urbndata.com/is/image/Anthropologie/4133054590062_031_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      image_2: "https://images.urbndata.com/is/image/Anthropologie/4133054590062_031_b3?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      image_3: "https://images.urbndata.com/is/image/Anthropologie/4133054590062_031_b4?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      price: "98.00"
+    },
+
+    {
+      name: "Frame Le Crop Mini Boot Jeans",
+      image_1: "https://images.urbndata.com/is/image/Anthropologie/4122941520007_026_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      image_2: "https://images.urbndata.com/is/image/Anthropologie/4122941520007_026_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      image_3: "https://images.urbndata.com/is/image/Anthropologie/4122941520007_026_b3?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      price: "260.00"
+    },
+
+    {
+      name: "Frame Le High Flare Jeans",
+      image_1: "https://images.urbndata.com/is/image/Anthropologie/4122941520011_091_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      image_2: "https://images.urbndata.com/is/image/Anthropologie/4122941520011_091_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      image_3: "https://images.urbndata.com/is/image/Anthropologie/4122941520011_091_b3?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      price: "265.00"
+    },
+
+    {
+      name: "Frame Le High Flare Jeans",
+      image_1: "https://images.urbndata.com/is/image/Anthropologie/4122941520004_001_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      image_2: "https://images.urbndata.com/is/image/Anthropologie/4122941520004_001_b3?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      image_3: "https://images.urbndata.com/is/image/Anthropologie/4122941520004_001_b4?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      price: "210.00"
+    },
+
+    {
+      name: "Frame Le High Skinny Jeans",
+      image_1: "https://images.urbndata.com/is/image/Anthropologie/4122941520005_001_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      image_2: "https://images.urbndata.com/is/image/Anthropologie/4122941520005_001_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      image_3: "https://images.urbndata.com/is/image/Anthropologie/4122941520005_001_b4?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      price: "189.00"
+    },
+
+    {
+      name: "By Anthropologie Halter Vest",
+      image_1: "https://images.urbndata.com/is/image/Anthropologie/4112937830009_001_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      image_2: "https://images.urbndata.com/is/image/Anthropologie/4112937830009_001_b14?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      image_3: "https://images.urbndata.com/is/image/Anthropologie/4112937830009_001_b3?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      price: "88.00"
+    },
+
+    {
+      name: "Avec Les Filles Double-Breasted Wool Coat",
+      image_1: "https://images.urbndata.com/is/image/Anthropologie/4115402250065_011_b14?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      image_2: "https://images.urbndata.com/is/image/Anthropologie/4115402250065_011_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      image_3: "https://images.urbndata.com/is/image/Anthropologie/4115402250065_011_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      price: "198.00"
+    },
+
+    {
+      name: "Hanky Panky Original Rise Thong",
+      image_1: "https://images.urbndata.com/is/image/Anthropologie/78712361_001_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      image_2: "https://images.urbndata.com/is/image/Anthropologie/78712361_001_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      image_3: "https://images.urbndata.com/is/image/Anthropologie/78712361_001_b3?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      price: "24.00"
+    },
+
+    {
+      name: "",
+      image_1: "https://images.urbndata.com/is/image/Anthropologie/4130646420009_066_b3?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      image_2: "https://images.urbndata.com/is/image/Anthropologie/4130646420009_066_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      image_3: "https://images.urbndata.com/is/image/Anthropologie/4130646420009_066_b3?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      price: "168.00"
+    },
+
+    {
+      name: "Frame Le High 'N' Tight Wide-Leg Jeans",
+      image_1: "https://images.urbndata.com/is/image/Anthropologie/4122941520008_093_b14?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      image_2: "https://images.urbndata.com/is/image/Anthropologie/4122941520008_093_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      image_3: "https://images.urbndata.com/is/image/Anthropologie/4122941520008_093_b4?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      price: "260.00"
+    },
+
+    {
+      name: "Frame Le Palazzo Wide-Leg Corduroy Jeans",
+      image_1: "https://images.urbndata.com/is/image/Anthropologie/4122941520017_020_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      image_2: "https://images.urbndata.com/is/image/Anthropologie/4122941520017_020_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      image_3: "https://images.urbndata.com/is/image/Anthropologie/4122941520017_020_b3?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      price: "250.00"
+    },
+
+    {
+      name: "Frame Le Mini Boot Slit Corduroy Jeans",
+      image_1: "https://images.urbndata.com/is/image/Anthropologie/4122941520015_037_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      image_2: "https://images.urbndata.com/is/image/Anthropologie/4122941520015_037_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      image_3: "https://images.urbndata.com/is/image/Anthropologie/4122941520015_037_b3?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      price: "250.00"
+    },
+
+    {
+      name: "Frame Le High Straight Jeans",
+      image_1: "https://images.urbndata.com/is/image/Anthropologie/4122941520010_091_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      image_2: "https://images.urbndata.com/is/image/Anthropologie/4122941520010_091_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      image_3: "https://images.urbndata.com/is/image/Anthropologie/4122941520010_091_b4?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      price: "215.00"
+    },
+
+    {
+      name: "Central Park West Nico Faux Leather Blazer",
+      image_1: "https://images.urbndata.com/is/image/Anthropologie/4115688110003_001_b14?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      image_2: "https://images.urbndata.com/is/image/Anthropologie/4115688110003_001_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      image_3: "https://images.urbndata.com/is/image/Anthropologie/4115688110003_001_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      price: "198.00"
+    },
+
+    {
+      name: "Frame Le Crop Mini Boot Jeans",
+      image_1: "https://images.urbndata.com/is/image/Anthropologie/4122941520003_091_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      image_2: "https://images.urbndata.com/is/image/Anthropologie/4122941520003_091_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      image_3: "https://images.urbndata.com/is/image/Anthropologie/4122941520003_091_b3?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      price: "245.00"
+    },
+
+    {
+      name: "Bernardo Double-Breasted Blazer",
+      image_1: "https://images.urbndata.com/is/image/Anthropologie/4133293120006_020_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      image_2: "https://images.urbndata.com/is/image/Anthropologie/4133293120006_020_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      image_3: "https://images.urbndata.com/is/image/Anthropologie/4133293120006_020_b3?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      price: "179.00"
+    },
+
+    {
+      name: "Frame Le High Flare Jeans",
+      image_1: "https://images.urbndata.com/is/image/Anthropologie/4122941520001_091_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      image_2: "https://images.urbndata.com/is/image/Anthropologie/4122941520001_091_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      image_3: "https://images.urbndata.com/is/image/Anthropologie/4122941520001_091_b3?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      price: "228.00"
+    },
+
+    {
+      name: "Frame Le High 'N' Tight Straight Jeans",
+      image_1: "https://images.urbndata.com/is/image/Anthropologie/4122941520016_001_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      image_2: "https://images.urbndata.com/is/image/Anthropologie/4122941520016_001_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      image_3: "https://images.urbndata.com/is/image/Anthropologie/4122941520016_001_b3?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      price: "250.00"
+    },
+
+    {
+      name: "Frame Le Crop Mini Boot Jeans",
+      image_1: "https://images.urbndata.com/is/image/Anthropologie/4122941520002_001_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      image_2: "https://images.urbndata.com/is/image/Anthropologie/4122941520002_001_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      image_3: "https://images.urbndata.com/is/image/Anthropologie/4122941520002_001_b3?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      price: "219.00"
+    },
+
+    {
+      name: "BLANKNYC Faux Leather Moto Jacket",
+      image_1: "https://images.urbndata.com/is/image/Anthropologie/4133054590062_031_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      image_2: "https://images.urbndata.com/is/image/Anthropologie/4133054590062_031_b3?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      image_3: "https://images.urbndata.com/is/image/Anthropologie/4133054590062_031_b4?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      price: "98.00"
+    },
+
+    {
+      name: "Frame Le Crop Mini Boot Jeans",
+      image_1: "https://images.urbndata.com/is/image/Anthropologie/4122941520007_026_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      image_2: "https://images.urbndata.com/is/image/Anthropologie/4122941520007_026_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      image_3: "https://images.urbndata.com/is/image/Anthropologie/4122941520007_026_b3?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      price: "260.00"
+    },
+
+    {
+      name: "Frame Le High Flare Jeans",
+      image_1: "https://images.urbndata.com/is/image/Anthropologie/4122941520011_091_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      image_2: "https://images.urbndata.com/is/image/Anthropologie/4122941520011_091_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      image_3: "https://images.urbndata.com/is/image/Anthropologie/4122941520011_091_b3?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      price: "265.00"
+    },
+
+    {
+      name: "Frame Le High Flare Jeans",
+      image_1: "https://images.urbndata.com/is/image/Anthropologie/4122941520004_001_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      image_2: "https://images.urbndata.com/is/image/Anthropologie/4122941520004_001_b3?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      image_3: "https://images.urbndata.com/is/image/Anthropologie/4122941520004_001_b4?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      price: "210.00"
+    },
+
+    {
+      name: "Frame Le High Skinny Jeans",
+      image_1: "https://images.urbndata.com/is/image/Anthropologie/4122941520005_001_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      image_2: "https://images.urbndata.com/is/image/Anthropologie/4122941520005_001_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      image_3: "https://images.urbndata.com/is/image/Anthropologie/4122941520005_001_b4?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      price: "189.00"
+    },
+
+    {
+      name: "By Anthropologie Halter Vest",
+      image_1: "https://images.urbndata.com/is/image/Anthropologie/4112937830009_001_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      image_2: "https://images.urbndata.com/is/image/Anthropologie/4112937830009_001_b14?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      image_3: "https://images.urbndata.com/is/image/Anthropologie/4112937830009_001_b3?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      price: "88.00"
+    },
+
+    {
+      name: "Avec Les Filles Double-Breasted Wool Coat",
+      image_1: "https://images.urbndata.com/is/image/Anthropologie/4115402250065_011_b14?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      image_2: "https://images.urbndata.com/is/image/Anthropologie/4115402250065_011_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      image_3: "https://images.urbndata.com/is/image/Anthropologie/4115402250065_011_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      price: "198.00"
+    },
+
+    {
+      name: "Hanky Panky Original Rise Thong",
+      image_1: "https://images.urbndata.com/is/image/Anthropologie/78712361_001_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      image_2: "https://images.urbndata.com/is/image/Anthropologie/78712361_001_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      image_3: "https://images.urbndata.com/is/image/Anthropologie/78712361_001_b3?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      price: "24.00"
+    },
+
+    {
+      name: "",
+      image_1: "https://images.urbndata.com/is/image/Anthropologie/4130646420009_066_b3?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      image_2: "https://images.urbndata.com/is/image/Anthropologie/4130646420009_066_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      image_3: "https://images.urbndata.com/is/image/Anthropologie/4130646420009_066_b3?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      price: "168.00"
+    },
+
+    {
+      name: "Frame Le High 'N' Tight Wide-Leg Jeans",
+      image_1: "https://images.urbndata.com/is/image/Anthropologie/4122941520008_093_b14?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      image_2: "https://images.urbndata.com/is/image/Anthropologie/4122941520008_093_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      image_3: "https://images.urbndata.com/is/image/Anthropologie/4122941520008_093_b4?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      price: "260.00"
+    },
+
+    {
+      name: "Frame Le Palazzo Wide-Leg Corduroy Jeans",
+      image_1: "https://images.urbndata.com/is/image/Anthropologie/4122941520017_020_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      image_2: "https://images.urbndata.com/is/image/Anthropologie/4122941520017_020_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      image_3: "https://images.urbndata.com/is/image/Anthropologie/4122941520017_020_b3?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      price: "250.00"
+    },
+
+    {
+      name: "Frame Le Mini Boot Slit Corduroy Jeans",
+      image_1: "https://images.urbndata.com/is/image/Anthropologie/4122941520015_037_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      image_2: "https://images.urbndata.com/is/image/Anthropologie/4122941520015_037_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      image_3: "https://images.urbndata.com/is/image/Anthropologie/4122941520015_037_b3?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      price: "250.00"
+    },
+
+    {
+      name: "Frame Le High Straight Jeans",
+      image_1: "https://images.urbndata.com/is/image/Anthropologie/4122941520010_091_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      image_2: "https://images.urbndata.com/is/image/Anthropologie/4122941520010_091_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      image_3: "https://images.urbndata.com/is/image/Anthropologie/4122941520010_091_b4?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      price: "215.00"
+    },
+
+    {
+      name: "Central Park West Nico Faux Leather Blazer",
+      image_1: "https://images.urbndata.com/is/image/Anthropologie/4115688110003_001_b14?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      image_2: "https://images.urbndata.com/is/image/Anthropologie/4115688110003_001_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      image_3: "https://images.urbndata.com/is/image/Anthropologie/4115688110003_001_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      price: "198.00"
+    },
+
+    {
+      name: "Frame Le Crop Mini Boot Jeans",
+      image_1: "https://images.urbndata.com/is/image/Anthropologie/4122941520003_091_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      image_2: "https://images.urbndata.com/is/image/Anthropologie/4122941520003_091_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      image_3: "https://images.urbndata.com/is/image/Anthropologie/4122941520003_091_b3?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      price: "245.00"
+    },
+
+    {
+      name: "Bernardo Double-Breasted Blazer",
+      image_1: "https://images.urbndata.com/is/image/Anthropologie/4133293120006_020_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      image_2: "https://images.urbndata.com/is/image/Anthropologie/4133293120006_020_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      image_3: "https://images.urbndata.com/is/image/Anthropologie/4133293120006_020_b3?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      price: "179.00"
+    },
+
+    {
+      name: "Frame Le High Flare Jeans",
+      image_1: "https://images.urbndata.com/is/image/Anthropologie/4122941520001_091_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      image_2: "https://images.urbndata.com/is/image/Anthropologie/4122941520001_091_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      image_3: "https://images.urbndata.com/is/image/Anthropologie/4122941520001_091_b3?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      price: "228.00"
+    },
+
+    {
+      name: "Frame Le High 'N' Tight Straight Jeans",
+      image_1: "https://images.urbndata.com/is/image/Anthropologie/4122941520016_001_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      image_2: "https://images.urbndata.com/is/image/Anthropologie/4122941520016_001_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      image_3: "https://images.urbndata.com/is/image/Anthropologie/4122941520016_001_b3?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      price: "250.00"
+    },
+
+    {
+      name: "Frame Le Crop Mini Boot Jeans",
+      image_1: "https://images.urbndata.com/is/image/Anthropologie/4122941520002_001_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      image_2: "https://images.urbndata.com/is/image/Anthropologie/4122941520002_001_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      image_3: "https://images.urbndata.com/is/image/Anthropologie/4122941520002_001_b3?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      price: "219.00"
+    },
+
+    {
+      name: "BLANKNYC Faux Leather Moto Jacket",
+      image_1: "https://images.urbndata.com/is/image/Anthropologie/4133054590062_031_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      image_2: "https://images.urbndata.com/is/image/Anthropologie/4133054590062_031_b3?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      image_3: "https://images.urbndata.com/is/image/Anthropologie/4133054590062_031_b4?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      price: "98.00"
+    },
+
+    {
+      name: "Frame Le Crop Mini Boot Jeans",
+      image_1: "https://images.urbndata.com/is/image/Anthropologie/4122941520007_026_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      image_2: "https://images.urbndata.com/is/image/Anthropologie/4122941520007_026_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      image_3: "https://images.urbndata.com/is/image/Anthropologie/4122941520007_026_b3?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      price: "260.00"
+    },
+
+    {
+      name: "Frame Le High Flare Jeans",
+      image_1: "https://images.urbndata.com/is/image/Anthropologie/4122941520011_091_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      image_2: "https://images.urbndata.com/is/image/Anthropologie/4122941520011_091_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      image_3: "https://images.urbndata.com/is/image/Anthropologie/4122941520011_091_b3?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      price: "265.00"
+    },
+
+    {
+      name: "Frame Le High Flare Jeans",
+      image_1: "https://images.urbndata.com/is/image/Anthropologie/4122941520004_001_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      image_2: "https://images.urbndata.com/is/image/Anthropologie/4122941520004_001_b3?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      image_3: "https://images.urbndata.com/is/image/Anthropologie/4122941520004_001_b4?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      price: "210.00"
+    },
+
+    {
+      name: "Frame Le High Skinny Jeans",
+      image_1: "https://images.urbndata.com/is/image/Anthropologie/4122941520005_001_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      image_2: "https://images.urbndata.com/is/image/Anthropologie/4122941520005_001_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      image_3: "https://images.urbndata.com/is/image/Anthropologie/4122941520005_001_b4?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      price: "189.00"
+    },
+
+    {
+      name: "By Anthropologie Halter Vest",
+      image_1: "https://images.urbndata.com/is/image/Anthropologie/4112937830009_001_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      image_2: "https://images.urbndata.com/is/image/Anthropologie/4112937830009_001_b14?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      image_3: "https://images.urbndata.com/is/image/Anthropologie/4112937830009_001_b3?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      price: "88.00"
+    },
+
+    {
+      name: "Avec Les Filles Double-Breasted Wool Coat",
+      image_1: "https://images.urbndata.com/is/image/Anthropologie/4115402250065_011_b14?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      image_2: "https://images.urbndata.com/is/image/Anthropologie/4115402250065_011_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      image_3: "https://images.urbndata.com/is/image/Anthropologie/4115402250065_011_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      price: "198.00"
+    },
+
+    {
+      name: "Hanky Panky Original Rise Thong",
+      image_1: "https://images.urbndata.com/is/image/Anthropologie/78712361_001_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      image_2: "https://images.urbndata.com/is/image/Anthropologie/78712361_001_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      image_3: "https://images.urbndata.com/is/image/Anthropologie/78712361_001_b3?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      price: "24.00"
+    },
+
+    {
+      name: "",
+      image_1: "https://images.urbndata.com/is/image/Anthropologie/4130646420009_066_b3?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      image_2: "https://images.urbndata.com/is/image/Anthropologie/4130646420009_066_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      image_3: "https://images.urbndata.com/is/image/Anthropologie/4130646420009_066_b3?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+      price: "168.00"
+    }
+
+
+  ];
+
+  // funtion for mapping all the data of items
+  Clothing_WomensClothing.map(function (elem) {
+    var div = document.createElement("div");
+    var image1 = document.createElement("img");
+    var image2 = document.createElement("img");
+    var image3 = document.createElement("img");
+    var name = document.createElement("a");
+    var price = document.createElement("p");
+    var circleBox = document.createElement("div");
+    var imgCircle1 = document.createElement("div");
+    var imgCircle2 = document.createElement("div");
+    var imgCircle3 = document.createElement("div");
+    var innerCircle1 = document.createElement("div");
+    var innerCircle2 = document.createElement("div");
+    var innerCircle3 = document.createElement("div");
+
+    innerCircle1.style.backgroundColor = "#682020";
+    innerCircle2.style.backgroundColor = "rgb(44 71 98)";
+    innerCircle3.style.backgroundColor = "#74637e";
+
+    // filling the boxes of items with image, name, price and circle
+    image1.setAttribute("src", elem.image_1);
+    image2.setAttribute("src", elem.image_2);
+    image3.setAttribute("src", elem.image_3);
+    image1.setAttribute("class", "img");
+    price.innerText = "$" + elem.price;
+    name.innerText = elem.name;
+
+    // setting attribute for giving styles
+    name.setAttribute("href", "");
+    circleBox.setAttribute("id", "circleBox");
+    imgCircle1.setAttribute("class", "circle");
+    imgCircle2.setAttribute("class", "circle");
+    imgCircle3.setAttribute("class", "circle");
+
+    // function for changing image on mouseover and mouseleave
+    image1.addEventListener("mouseover", changeImg1);
+    image1.addEventListener("mouseleave", changeImg2);
+    function changeImg1() {
+      image1.setAttribute("src", elem.image_2);
+    }
+    function changeImg2() {
+      image1.setAttribute("src", elem.image_1);
+    }
+
+    // function for changing Border color while clicking on the circle
+    imgCircle1.addEventListener("click", cngImg1);
+    imgCircle2.addEventListener("click", cngImg2);
+    imgCircle3.addEventListener("click", cngImg3);
+    function cngImg1() {
+      image1.setAttribute("src", elem.image_1);
+      imgCircle1.style.borderColor = "black";
+      imgCircle2.style.borderColor = "white";
+      imgCircle3.style.borderColor = "white";
+    }
+    function cngImg2() {
+      image1.setAttribute("src", elem.image_2);
+      imgCircle2.style.borderColor = "black";
+      imgCircle1.style.borderColor = "white";
+      imgCircle3.style.borderColor = "white";
+    }
+    function cngImg3() {
+      image1.setAttribute("src", elem.image_3);
+      imgCircle3.style.borderColor = "black";
+      imgCircle1.style.borderColor = "white";
+      imgCircle2.style.borderColor = "white";
+    }
+
+    // Appending all the inner circles in the outer circle        
+    imgCircle1.append(innerCircle1);
+    imgCircle2.append(innerCircle2);
+    imgCircle3.append(innerCircle3);
+
+    // Appending all the outer circles in the circle box for giving flex property
+    circleBox.append(imgCircle1, imgCircle2, imgCircle3);
+
+    // Appending image, name, price and circleBox to show it as an item
+    div.append(image1, name, price, circleBox);
+    document.getElementById("itemsAll").append(div);
+    // console.log(sum);
+
+  })
+
+</script>
