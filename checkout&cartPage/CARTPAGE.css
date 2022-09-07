@@ -1,0 +1,343 @@
+/* <link href="https://fonts.googleapis.com/css2?family=Encode+Sans:wght@300&display=swap" rel="stylesheet">; */
+/*Cart Portion*/
+/* #basketname{
+  margin-left: 50px;
+} */
+*{
+  margin: 0%;
+  padding: 0%;
+}
+#secondScreenPayment{
+  display: none;
+  
+  /* border: 10px solid blue; */
+  width: 15%;
+  margin-top: 1px;
+  margin-left: 0px;
+  margin-right: 50px;
+  padding: 2%;
+  border-radius: 5px;
+}
+
+#cartMainbox{
+  /* border: 10px solid black; */
+  /* margin: auto; */
+  width: 100%;
+
+}
+ #CartBox {
+  /* border: 2px solid red; */
+  /* width: 100%;
+  margin: auto; */
+  /* margin-right: 20px; */
+  display: flex;
+  justify-content: space-between;
+}
+#AddCart {
+  width: 60%;
+  /* margin: auto; */
+  margin-left: 50px;
+  /* height: 680px; */
+  display: flex;
+  /* flex-wrap: wrap; */
+  /* padding: 2%; */
+  border: 1px solid #26262c4b;
+  border-radius: 5px;
+  letter-spacing: 0.06rem;
+  font-family: 'Encode Sans', sans-serif;
+  color: #26262c;
+  /* font-size: 15px;
+  line-height: 15px; */
+  /* height: 2000px; */
+  /* position: relative; */
+  /* box-shadow: rgba(60, 61, 61, 0.397) 0px 2px 5px -1px,
+    rgba(81, 82, 82, 0.397) 0px 1px 3px -1px; */
+}
+#PaymentTranc {
+  width: 25%;
+  /* border: 2px solid red; */
+  margin-top: 1px;
+  margin-left: 0px;
+  margin-right: 60px;
+  padding: 2%;
+  border-radius: 5px;
+}
+#ordersum{
+  border:1px solid #26262c4b;
+  padding: 20px;
+}
+#ordertext{
+  color: rgb(38,38,44);
+    font:  "Avenir Medium",sans-serif;;
+    letter-spacing: .06rem;
+    /* margin: auto; */
+    margin-bottom: 5px;
+    margin-top: -20px;
+}
+#saveforlater{
+  /* border:5px solid red; */
+  /* margin: auto; */
+  margin-left: 40px;
+  color: #26262C;
+  font: 18px "Avenir Medium",sans-serif ;
+  letter-spacing: .06rem;
+  margin-bottom: 15px;
+  
+  width: 55%;
+}
+#saveforlaterbox{
+  width: 60%;
+  height:30px;
+  margin: auto;
+  margin-top: 10px;
+  text-align: left;
+  border: 1px solid #e5e2de;
+  margin-left: 40px;
+  margin-bottom: 50px;
+  padding: 20px;
+  padding: -10px 10px 10px 10px;
+}
+#suggline{
+  /* margin: auto; */
+  margin-top: 80px;
+  margin-left: 50px;
+  color: rgb(38,38,44);
+  font: 18px "Avenir Medium",sans-serif ;
+  letter-spacing: .06rem;
+  margin-bottom: 15px;
+  width: 60%;
+  padding: 0px 0px 10px 0px;
+  border-bottom: 1px solid #e5e2de;
+}
+
+#sugg{
+  width: 60%;
+  /* margin: auto; */
+  display: flex;
+  /* grid-template-columns: repeat(5,1fr); */
+  gap: 15px;
+  margin-left: 50px;
+  /* flex-wrap: wrap; */
+  /* border: 5px solid red; */
+}
+.likeImg{
+  /* border: 2px solid blue; */
+  width: 20%;
+/* box-sizing: border-box; */
+  /* width: 170px; */
+  /* height: 260px; */
+  /* margin: auto; */
+  /* display: flex; */
+  /* position: relative;
+  display: inline-block; */
+}
+.likeImg > img{
+  width: 100%;
+}
+#orderbox{
+  display: flex;
+  justify-content: space-between;
+}
+#orderbox>p{
+  font-size: small;
+}
+#orderboxlines>p{
+  font-size:xx-small;
+}
+#btn{
+  /* -webkit-font-smoothing: antialiased; */
+  background-color:rgb(75,86,102);
+  border: 1px solid #E5E2DE;
+  color: #fdfdf9;
+  cursor: pointer;
+  font-family: "Avenir Medium",sans-serif;
+  /* font-size: 1.3rem; */
+  letter-spacing: .24rem;
+  line-height: normal;
+  min-height: 45px;
+  padding: 10px 20px;
+  text-transform: uppercase;
+  transition-duration: .2s;
+  transition-property: color,background-color,border-color;
+  width: 100%;
+}
+#btnimgdiv{
+  background: none;
+  margin-top: 20px;
+  margin-bottom: 20px;
+    background-color: #fff;
+    border: 1px solid #2c2e2f;
+    border-radius: 4px;
+    color: #2c2e2f;
+    cursor: pointer;
+    font-family: "Avenir Medium",sans-serif;
+    letter-spacing: inherit;
+    letter-spacing: .24rem;
+    line-height: normal;
+    padding: 10px 20px 20px 20px;
+    text-align: left;
+    text-align: center;
+    text-transform: uppercase;
+    transition-duration: .2s;
+    transition-property: color,background-color,border-color;
+    width: 88%;
+    height: 14px;
+}
+#btnimg{
+  /* border: 1px solid #26262C; */
+  width: 40%;
+  margin: auto;
+  height: 20px;
+  margin: auto;
+  margin-bottom:30px;
+  display: block;
+  justify-content: center;
+}
+#btn:hover{
+  background: white;
+  color: #26262c;
+}
+
+/* #promocode{
+  align-items: center;
+  display: flex;
+  /* flex-grow: 1; */
+  /* font: 15px "Avenir Medium",sans-serif ; */
+/* } */
+.navbar {
+  overflow: hidden;
+  background-color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar input {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  cursor: pointer;
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: #26262c;
+  display: block;
+  text-align: center;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+/* .navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
+  background-color: #26262c;
+} */
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content input {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content input:hover {
+  background-color: #ddd;
+}
+
+.show {
+  display: block;
+}
+
+@media screen and (min-width: 761px) and (max-width: 1020px) {
+  #belowPaymentScreen{
+    display: flex;
+    justify-content: flex-end;
+  }
+  #secondScreenPayment{
+    display: block;
+    border: 10px solid blue;
+    width: 30%;
+    /* right: 10px; */
+  }
+  #CartBox{
+    display: block;
+  }
+
+  #AddCart{
+    width: 100%;
+    /* display: block; */
+    /* flex-wrap: wrap; */
+    /* position: absolute;
+    top: 33%; */
+  }
+  #PaymentTranc{
+    display: none;
+  }
+  #saveforlaterbox{
+    width: 90%;
+    margin: auto;
+  }
+  #sugg{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    /* grid-template-columns: repeat(5,1fr); */
+    gap: 15px;
+    /* margin-left: 50px; */
+    /* flex-wrap: wrap; */
+    border: 5px solid red;
+  }
+  /* .likeImg{
+    border: 2px solid blue;
+    width: 100%;
+  } */
+
+ 
+}
+@media screen and (min-width: 100px) and (max-width: 760px) {
+  #secondScreenPayment{
+    display: block;
+    border: 10px solid blue;
+    width: 90%;
+    /* right: 10px; */
+  }
+  #PaymentTranc{
+    display: none;
+  }
+  #saveforlaterbox{
+    width: 90%;
+    margin: auto;
+  }
+
+  #sugg{
+    width: 90%;
+
+    margin: auto;
+    display: flex;
+    /* grid-template-columns: repeat(5,1fr); */
+    gap: 15px;
+    /* margin-left: 50px; */
+    /* flex-wrap: wrap; */
+    border: 5px solid red;
+  }
+}
