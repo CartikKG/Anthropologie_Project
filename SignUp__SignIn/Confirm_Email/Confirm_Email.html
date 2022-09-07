@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Confirm Email</title>
+    <title>Confirm_Email_By_Code</title>
     <link rel="icon" type="image/x-icon" href="https://www.anthropologie.com/favicon.ico">
     <!-- Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
@@ -20,20 +20,20 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+    <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
 
 </head>
 <link rel="stylesheet" href="Confirm_Email.css">
 
 
 
-<body>
+<body id="Confirm_Email_By_CodeID">
 
     <div class="container">
-        <h1 class="text-white bg-dark text-centre "></h1>
-        <i class="fa-solid fa-person"></i>
-        <button class="btn-success" data-target="#parent1" data-toggle="modal" data-dismiss> </i> CREATE AN ACCOUNT</button>
-
 
         <div class="modal fade" id="parent1">
             <div class="modal-dialog">
@@ -45,27 +45,27 @@
 
                         <div id="medium">
                             <button type="button" class="close" data-dismiss="modal">&times;</button>
-                            <h2>Finish Signing In</h2>
+                            <h2 id="finish">Finish Signing In</h2>
                             <hr>
-                            <p id="verification">
+                            <p class="para1" id="verification">
                                 If your email is verified with us, you will receive a one-time code sent to:
 
                             </p>
-                            <p id="getmail">
-                                shabbirkatlariwala@gmail.com <a href="E:\Masai Project\Anthropologie_Project\SINGUP_SIGNIN\Singup_Signin.html" id="editmail">Edit</a>
+                            <p class="para1" id="getmail">
+                                shabbirkatlariwala@gmail.com <a href="E:\Masai Project\Anthropologie_Project\SignUp__SignIn\SINGUP_SIGNIN\Singup_Signin.html" id="editmail">Edit</a>
                             </p>
 
 
                             <div>
                                 <p style="text-align: left; margin-bottom: 3%;">Enter Email Code*</p>
-                                <input type="number" required>
+                                <input id="inpnum" type="number" required>
                             </div>
                             <button id="Next">SIGN IN</button>
                             <button id="MOBILE">RESEND CODE</button>
 
 
 
-                            <p id="wrong">Having trouble? <a id="footer" href="#">Sign in with your phone instead</a> </p>
+                            <p class="para1" id="wrong">Having trouble? <a id="footer" href="E:\Masai Project\Anthropologie_Project\SignUp__SignIn\Sign_In_By_Mobile\Sign_In_By_Mobile.html">Sign in with your phone instead</a> </p>
 
 
 

@@ -1,4 +1,4 @@
-body {
+#Confirm_Email_By_CodeID {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -103,7 +103,7 @@ div+button {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-h2 {
+#finish {
     font-size: 22px;
     text-align: center;
     font-family: "avenir medium", sans-serif;
@@ -117,11 +117,11 @@ h2 {
     src: url('../fonts/Avenir.eot?#iefix') format('embedded-opentype'), url('../fonts/Avenir.woff') format('woff'), url('../fonts/Avenir.ttf') format('truetype'), url('../fonts/Avenir.svg#Avenir') format('svg');
 }
 
-h2 {
+#finish {
     font-family: 'Avenir medium', sans-serif;
 }
 
-p {
+.para1 {
     text-align: center;
     font-size: 11px;
     color: #5c5c5f;
@@ -134,10 +134,6 @@ p {
 
 #term {
     text-align: left;
-}
-
-#fine {
-    display: flex;
 }
 
 #last {
@@ -162,7 +158,7 @@ a:active {
     color: inherit;
 }
 
-input[type="number"] {
+#inpnum {
     display: grid;
     text-align: center;
     width: 100%;
@@ -175,4 +171,9 @@ input[type="number"] {
 #getmail {
     font-size: 13px;
     color: black;
+}
+
+#fine {
+    font-size: 11px;
+    display: flex;
 }
