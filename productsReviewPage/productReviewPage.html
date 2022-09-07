@@ -8,9 +8,25 @@
     <title>Product Review Page</title>
     <link rel="stylesheet" href="productReviewPage.css">
     <script src="https://kit.fontawesome.com/ce16d2eaf5.js" crossorigin="anonymous"></script>
-</head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="/Anthropologie_Project/NAVBAR/navbar.css" />
+    <link
+      rel="stylesheet"
+      href="/Anthropologie_Project/footerPage/footerStyle.css"
+    />
+    <script>
+      $(function () {
+        $("#navbarHtml").load("/Anthropologie_Project/NAVBAR/navbar.html");
 
+        $("#includedContent").load(
+          "/Anthropologie_Project/footerPage/footerPage.html"
+        );
+      });
+    </script>
+</head>
+<!-- <a href="/Anthropologie_Project/NAVBAR/navbar.css"></a> -->
 <body>
+    <div id="navbarHtml"></div>
     <div class="parentBox">
         <p id="headings">Clothing &nbsp/ &nbsp Dresses</p>
         <div id="responsiveHeader">
@@ -139,6 +155,8 @@
             <button id="addToBasket">ADD TO BASKET</button>
         </div>
     </div>
+    <!-- FOOTER -->
+    <div id="includedContent"></div>
 </body>
 
 </html>
