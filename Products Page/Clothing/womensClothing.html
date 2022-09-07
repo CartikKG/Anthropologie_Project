@@ -9,32 +9,33 @@
   <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Mulish:wght@200&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/60b736368c.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="sample.css">
   <style>
-    #main {
+    #productsMain {
       /* border: 2px solid black; */
       display: flex;
       width: 100%;
     }
 
-    #items {
+    #productsItems {
       /* border: 2px solid red; */
       width: 83%;
       margin: 10px 60px 0px 35px;
     }
 
-    #itemsAll {
+    #productsItemsAll {
       display: grid;
       grid-template-columns: repeat(4, 1fr);
       gap: 20px;
     }
 
-    #itemsAll>div {
+    #productsItemsAll>div {
       padding-bottom: 10px;
     }
 
-    #itemsAll a {
+    #productsItemsAll a {
       /* border: 1px solid red; */
       color: #1e1e20;
       text-decoration: none;
@@ -42,29 +43,29 @@
       font-family: 'M PLUS Rounded 1c', sans-serif;
     }
 
-    #itemsAll p {
+    #productsItemsAll p {
       margin-top: 8px;
       margin-bottom: 8px;
     }
 
-    #itemsAll a:hover {
+    #productsItemsAll a:hover {
       color: teal;
     }
 
-    .img {
+    .productsImg {
       margin-bottom: 8px;
       width: 100%;
     }
 
-    .img:hover {
+    .productsImg:hover {
       cursor: pointer;
     }
 
-    #circleBox {
+    #productsCircleBox {
       display: flex;
     }
 
-    .circle {
+    .productsCircle {
       border: 1px solid white;
       height: 20px;
       width: 20px;
@@ -73,147 +74,147 @@
       margin: 2px;
     }
 
-    .circle:hover {
+    .productsCircle:hover {
       border: 1px solid teal;
     }
 
-    .circle:first-child {
+    .productsCircle:first-child {
       border: 1px solid black;
     }
 
-    .circle>div {
+    .productsCircle>div {
       border: 1px solid grey;
       height: 18px;
       width: 18px;
       border-radius: 15px;
     }
 
-    .circle img {
+    .productsCircle img {
       width: 100%;
     }
 
-    #left {
+    #productsLeft {
       /* border: 2px solid red; */
       width: 17%;
       margin: 20px 0px 0px 60px;
     }
 
-    #browse {
+    #productsBrowse {
       /* border: 2px solid red; */
       width: 100%;
       list-style-type: none;
       padding-left: 0px;
     }
 
-    #browse li {
+    #productsBrowse li {
       margin: 11px 0px 11px 0px;
     }
 
-    #main li:hover {
+    #productsMain li:hover {
       text-decoration: underline;
     }
 
-    #filter {
+    #productsFilter {
       /* border: 1px solid red; */
       list-style-type: none;
       padding-left: 0px;
       width: 100%;
     }
 
-    .dropDownList ul {
+    .productsDropDownList ul {
       /* display: none; */
       padding-left: 20px;
       list-style-type: none;
     }
 
-    .dropDownList ul {
+    .productsDropDownList ul {
       /* display: block; */
       padding-left: 20px;
       list-style-type: none;
     }
 
-    #filter>div {
+    #productsFilter>div {
       /* border: 1px solid green; */
       border-bottom: 1px solid #dfdcd9;
       display: flex;
       justify-content: space-between;
     }
 
-    #filter div>li {
+    #productsFilter div>li {
       margin-top: 21px;
       margin-bottom: 21px;
     }
 
-    #filter a {
-      font-size: 16px;
+    #productsFilter a {
+      font-size: 13px;
       text-decoration: none;
       color: #4b4b4d;
       font-family: 'M PLUS Rounded 1c', sans-serif;
     }
 
-    #browse a {
+    #productsBrowse a {
       text-decoration: none;
       font-size: 13px;
       font-family: 'M PLUS Rounded 1c', sans-serif;
       color: #4b4b4d;
     }
 
-    #filter p {
+    #productsFilter p {
       font-family: 'Manrope', sans-serif;
       font-size: 0.8rem;
     }
 
-    hr {
+    #productsMain hr{
       border: 1px solid #f1efeb;
       width: 100%;
       margin-left: 0px;
     }
 
-    .shortLine {
+    .productsShortLine {
       /* color: red; */
       width: 12px;
       margin-left: 0px;
     }
 
-    #itemsAll p {
+    #productsItemsAll p {
       font-family: 'Lato', sans-serif;
       font-size: 0.79rem;
       color: #26262c;
     }
 
-    #heading {
+    #productsHeading {
       font-size: 23px;
       font-family: 'Manrope', sans-serif;
     }
 
-    #itemsTop {
+    #productsItemsTop {
       /* border: 2px solid red; */
       height: 80px;
       display: flex;
       justify-content: space-between;
     }
 
-    #itemsTopLeft {
+    #productsItemsTopLeft {
       display: flex;
       align-items: center;
       /* border: 2px solid red; */
       width: 50%;
     }
 
-    #itemsTopRight {
+    #productsItemsTopRight {
       /* border: 1px solid black; */
       width: 50%;
       display: flex;
       align-items: center;
-      justify-content: space-between;
+      justify-content: space-evenly;
     }
 
-    #itemsTopRight label {
+    #productsItemsTopRight label {
       font-size: 13px;
       font-family: 'Manrope', sans-serif;
     }
 
-    #select {
+    #productsSelect {
       width: 36%;
       height: 35px;
       font-size: medium;
@@ -224,11 +225,11 @@
       color: #939395;
     }
 
-    #itemsTopRight i {
+    #productsItemsTopRight i {
       font-size: 23px;
     }
 
-    #itemsTopRight>div:first-child {
+    #productsItemsTopRight>div:first-child {
       /* border: 1px solid red; */
       width: 370px;
       display: flex;
@@ -236,7 +237,7 @@
       align-items: center;
     }
 
-    #itemsTopRight>div:last-child {
+    #productsItemsTopRight>div:last-child {
       width: 85px;
       /* border: 1px solid red; */
       display: flex;
@@ -244,87 +245,106 @@
       align-items: center;
     }
 
-    #itemsTopRight option {
+    #productsItemsTopRight option{
       /* border: 1px solid red; */
       color: #939395;
       font-size: 15px;
     }
 
-    #lowerTop {
+    #productsLowerTop {
       display: none;
     }
 
-    #filter ul>li {
-      margin-top: 30px;
-      margin-bottom: 30px;
+    #productsFilter ul > li {
+      margin-top: 15px;
+      margin-bottom: 15px;
     }
 
-
-    /* for drop down */
-
-    .dropDownBox .fa-thin {
+    .productsDropDownBox .fa-thin {
       float: right;
       margin-right: 10px;
     }
 
-    .dropDownBox {
+    .productsDropDownBox {
       width: 100%;
       margin: auto;
       cursor: pointer;
       display: block;
     }
-
-    .dropDownBox>label {
+    
+    .productsDropDownBox > label {
+      /* border: 2px solid red; */
       display: block;
-      padding: 10px 20px;
+      padding-top: 20px;
+      padding-bottom: 20px;
       cursor: pointer;
+      padding-left: 0px;
+      font-family: 'M PLUS Rounded 1c', sans-serif;
+      color: #4b4b4d;
+      width: 100%;
+    }
+    .productsDropDownBox > label:hover{
+      color: teal;
     }
 
-    .dropDownBox>ul {
+    .productsDropDownBox > ul {
       display: none;
+      margin-top: 50px;
+      /* height: 300px; */
+    }
+    .productsDropDownBox > ul > li{
+      padding-top: 8px;
+      padding-bottom: 8px;
+      padding-left: 8px;
+      margin-left: -110px;
+      width: 190px;
+      border: 1px solid white;
+      list-style-type: none;
+    }
+    .productsDropDownBox > ul > li:hover{
+      border: 1px solid teal;
     }
 
-    [id^=btn]:checked~ul {
+    [id^=productsBtn]:checked~ul {
       display: block;
-
     }
 
-    #btn-1,
-    #btn-2,
-    #btn-3,
-    #btn-4,
-    #btn-5,
-    #btn-6 {
+    #productsBtn-1,
+    #productsBtn-2,
+    #productsBtn-3,
+    #productsBtn-4,
+    #productsBtn-5,
+    #productsBtn-6 {
       display: none;
     }
 
     /* Media screen for Tablet view */
     @media screen and (min-width: 765px) and (max-width: 1020px) {
-      #itemsAll {
+      #productsItemsAll {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 20px;
       }
 
-      #items {
+      #productsItems {
         width: 80%;
         margin-left: 20px;
       }
 
-      #left {
+      #productsLeft {
         width: 20%;
       }
 
-      #select {
+      #productsSelect {
         width: 140px;
       }
 
-      #itemsTopRight {
+      #productsItemsTopRight {
         width: 50%;
         /* border: 1px solid red; */
       }
 
-      #itemsTopRight>div:first-child {
+      #productsItemsTopRight>div:first-child {
         /* border: 1px solid red; */
 
         width: 280px;
@@ -333,7 +353,7 @@
 
       }
 
-      #itemsTopRight>div:last-child {
+      #productsItemsTopRight>div:last-child {
         width: 150px;
         /* border: 1px solid red; */
         display: flex;
@@ -341,7 +361,7 @@
         align-items: center;
       }
 
-      #lowerTop {
+      #productsLowerTop {
         display: none;
       }
     }
@@ -349,37 +369,37 @@
 
     /* Media screen for Mobile view */
     @media screen and (min-width: 100px) and (max-width: 765px) {
-      #itemsAll {
+      #productsItemsAll {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 20px;
       }
 
-      #items {
+      #productsItems {
         width: 100%;
         margin: 15px;
       }
 
-      #itemsTopRight {
+      #productsItemsTopRight {
         display: none;
       }
 
-      #left {
+      #productsLeft {
         display: none;
       }
 
-      .circle {
+      .productsCircle {
         display: none;
       }
 
-      #lowerTop {
+      #productsLowerTop {
         display: block;
         display: flex;
         justify-content: space-between;
         margin-bottom: 20px;
       }
 
-      #lowerTop>div {
+      #productsLowerTop>div {
         width: 38%;
         display: flex;
         align-items: center;
@@ -387,12 +407,12 @@
         border: 1px solid rgb(226, 226, 223);
       }
 
-      #lowerTop a {
+      #productsLowerTop a {
         text-decoration: none;
         color: black;
       }
 
-      #shopByCategory {
+      #productsShopByCategory {
         width: 58%;
         height: 50px;
         padding: 15px;
@@ -403,14 +423,14 @@
 </head>
 
 <body>
-  <div id="main">
-    <div id="left">
-      <ul id="browse">
+  <div id="productsMain">
+    <div id="productsLeft">
+      <ul id="productsBrowse">
         <!-- <ul> -->
         <a>Browse by:</a>
         <hr style="color: red;">
         <li><a href="">Clothing</a></li>
-        <hr class="shortLine">
+        <hr class="productsShortLine">
         <li><a href="">New!</a></li>
         <li><a href="">Top-Rated</a></li>
         <li><a href="">Activewear</a></li>
@@ -435,20 +455,16 @@
         <!-- </ul> -->
       </ul>
       <br>
-      <ul id="filter">
+      <ul id="productsFilter">
         <div>
           <p>Filter by:</p>
         </div>
-        <!-- <hr> -->
-        <div class="dropDownBox">
-          <!-- <l><a href="">Price</a></li> -->
-          <!-- <li><a href="">+</a></li> -->
-          <label for="btn-1">Price<span id="plus"><i class="fa-thin fa-plus"></i></span></label>
-          <input type="checkbox" id="btn-1">
-          <!-- </div> -->
 
 
-          <!-- <div class="dropDownList"> -->
+        <div class="productsDropDownBox">
+          <label for="productsBtn-1">Price<span id="productsPlus"><i class="fa-thin fa-plus"></i></span></label>
+          <input type="checkbox" id="productsBtn-1">
+
           <ul>
             <li><a href="">Less than $25</a></li>
             <li><a href="">$25 - $50</a></li>
@@ -458,12 +474,28 @@
             <li><a href="">More than $500</a></li>
           </ul>
         </div>
-        <!-- <hr> -->
-        <div class="dropDownBox">
-          <!-- <li><a href="">Color</a></li>
-          <li><a href="">+</a></li> -->
-          <label for="btn-2">Color<span id="plus"><i class="fa-thin fa-plus"></i></span></label>
-          <input type="checkbox" id="btn-2">
+
+
+        <div class="productsDropDownBox">
+          <label for="productsBtn-2">Color<span id="productsPlus"><i class="fa-thin fa-plus"></i></span></label>
+          <input type="checkbox" id="productsBtn-2">
+          <ul>
+            <li><a href="">Black</a></li>
+            <li><a href="">Blue</a></li>
+            <li><a href="">White</a></li>
+            <li><a href="">Pink</a></li>
+            <li><a href="">Green</a></li>
+            <li><a href="">Assorted</a></li>
+            <li><a href="">Beige</a></li>
+            <li><a href="">Brown</a></li>
+            <li><a href="">Red</a></li>
+          </ul>
+        </div>
+
+
+        <!-- <div class="productsDropDownBox">
+          <label for="productsBtn-3">Brand<span id="productsPlus"><i class="fa-thin fa-plus"></i></span></label>
+          <input type="checkbox" id="productsBtn-3">
           <ul>
             <li><a href="">Less than $25</a></li>
             <li><a href="">$25 - $50</a></li>
@@ -472,84 +504,55 @@
             <li><a href="">$200 - $500</a></li>
             <li><a href="">More than $500</a></li>
           </ul>
-        </div>
-        <!-- <hr> -->
-        <div class="dropDownBox">
-          <!-- <li><a href="">Brand</a></li>
-          <li><a>+</a></li> -->
-          <label for="btn-3">Brand<span id="plus"><i class="fa-thin fa-plus"></i></span></label>
-          <input type="checkbox" id="btn-3">
+        </div> -->
+
+
+        <div class="productsDropDownBox">
+          <label for="productsBtn-4">Size<span id="productsPlus"><i class="fa-thin fa-plus"></i></span></label>
+          <input type="checkbox" id="productsBtn-4">
           <ul>
-            <li><a href="">Less than $25</a></li>
-            <li><a href="">$25 - $50</a></li>
-            <li><a href="">$50 - $100</a></li>
-            <li><a href="">$100 - $200</a></li>
-            <li><a href="">$200 - $500</a></li>
-            <li><a href="">More than $500</a></li>
+            <li><a href="">Small</a></li>
+            <li><a href="">Small/Medium</a></li>
+            <li><a href="">Medium</a></li>
+            <li><a href="">Medium/Large</a></li>
+            <li><a href="">Large</a></li>
+            <li><a href="">Large/XL</a></li>
+            <li><a href="">XL</a></li>
+            <li><a href="">XXL</a></li>
+            <li><a href="">XXXL</a></li>
           </ul>
         </div>
-        <!-- <hr> -->
-        <div class="dropDownBox">
-          <!-- <li><a href="">Size</a></li>
-          <li><a>+</a></li> -->
-          <label for="btn-4">Size<span id="plus"><i class="fa-thin fa-plus"></i></span></label>
-          <input type="checkbox" id="btn-4">
+
+
+        <div class="productsDropDownBox">
+          <label for="productsBtn-5">In Stock<span id="productsPlus"><i class="fa-thin fa-plus"></i></span></label>
+          <input type="checkbox" id="productsBtn-5">
           <ul>
-            <li><a href="">Less than $25</a></li>
-            <li><a href="">$25 - $50</a></li>
-            <li><a href="">$50 - $100</a></li>
-            <li><a href="">$100 - $200</a></li>
-            <li><a href="">$200 - $500</a></li>
-            <li><a href="">More than $500</a></li>
+            <li><a href="">Ready to Ship</a></li>
           </ul>
         </div>
-        <!-- <hr> -->
-        <div class="dropDownBox">
-          <!-- <li><a href="">In Stock</a></li>
-          <li><a>+</a></li> -->
-          <label for="btn-5">In Stock<span id="plus"><i class="fa-thin fa-plus"></i></span></label>
-          <input type="checkbox" id="btn-5">
+
+
+        <div class="productsDropDownBox">
+          <label for="productsBtn-6">Free Pickup<span id="productsPlus"><i class="fa-thin fa-plus"></i></span></label>
+          <input type="checkbox" id="productsBtn-6">
           <ul>
-            <li><a href="">Less than $25</a></li>
-            <li><a href="">$25 - $50</a></li>
-            <li><a href="">$50 - $100</a></li>
-            <li><a href="">$100 - $200</a></li>
-            <li><a href="">$200 - $500</a></li>
-            <li><a href="">More than $500</a></li>
+            <li><a href="">Please search for your Nearest Pick up center</a></li>
           </ul>
         </div>
-        <!-- <hr> -->
-        <div class="dropDownBox">
-          <!-- <li><a href="">Free Pickup</a></li>
-          <li><a>+</a></li> -->
-          <label for="btn-6">Free Pickup<span id="plus"><i class="fa-thin fa-plus"></i></span></label>
-          <input type="checkbox" id="btn-6">
-          <ul>
-            <li><a href="">Less than $25</a></li>
-            <li><a href="">$25 - $50</a></li>
-            <li><a href="">$50 - $100</a></li>
-            <li><a href="">$100 - $200</a></li>
-            <li><a href="">$200 - $500</a></li>
-            <li><a href="">More than $500</a></li>
-          </ul>
-        </div>
-        <!-- <hr> -->
         <p style="color: #cfd5e0;">Reset all filters</p>
       </ul>
     </div>
 
-    <div id="items">
-      <form id="itemsTop">
-        <div id="itemsTopLeft">
-          <!-- <label><span id="heading">Women's Clothing</span> &nbsp &nbsp &nbsp2847 products</label> -->
-          <label id="heading" for="">Women's Clothing</label>
-          <!-- <span for="">2847 products</span> -->
+    <div id="productsItems">
+      <form id="productsItemsTop">
+        <div id="productsItemsTopLeft">
+          <label id="productsHeading" for="">Women's Clothing</label>
         </div>
-        <div id="itemsTopRight">
-          <!-- <p>Sort:</p> -->
+        <div id="productsItemsTopRight">
           <div>
             <label for="">Sort: </label>
-            <select id="select">
+            <select id="productsSelect">
               <option value="">Featured</option>
               <option value="">Price: Low to High</option>
               <option value="">Price: High to Low</option>
@@ -563,14 +566,14 @@
           <div>
             <!-- <label for=""><a href=""><</a></label> -->
             <i class="fa-solid fa-chevron-left"></i>
-            <label id="pageNo">1/40</label>
+            <label id="productsPageNo">1/40</label>
             <i class="fa-solid fa-chevron-right"></i>
             <!-- <a href="">></a> -->
           </div>
         </div>
       </form>
-      <div id="lowerTop">
-        <select name="" id="shopByCategory" onchange="window.location.href=this.value;">
+      <div id="productsLowerTop">
+        <select name="" id="productsShopByCategory" onchange="window.location.href=this.value;">
           <option value="">Shop by Category</option>
           <option value="">New!</option>
           <option value="">Top-Rated</option>
@@ -598,7 +601,7 @@
           <a href="">Filter & Sort</a>
         </div>
       </div>
-      <div id="itemsAll">
+      <div id="productsItemsAll">
 
       </div>
 
@@ -1094,16 +1097,16 @@
     image1.setAttribute("src", elem.image_1);
     image2.setAttribute("src", elem.image_2);
     image3.setAttribute("src", elem.image_3);
-    image1.setAttribute("class", "img");
+    image1.setAttribute("class", "productsImg");
     price.innerText = "$" + elem.price;
     name.innerText = elem.name;
 
     // setting attribute for giving styles
     name.setAttribute("href", "");
-    circleBox.setAttribute("id", "circleBox");
-    imgCircle1.setAttribute("class", "circle");
-    imgCircle2.setAttribute("class", "circle");
-    imgCircle3.setAttribute("class", "circle");
+    circleBox.setAttribute("id", "productsCircleBox");
+    imgCircle1.setAttribute("class", "productsCircle");
+    imgCircle2.setAttribute("class", "productsCircle");
+    imgCircle3.setAttribute("class", "productsCircle");
 
     // function for changing image on mouseover and mouseleave
     image1.addEventListener("mouseover", changeImg1);
@@ -1148,7 +1151,7 @@
 
     // Appending image, name, price and circleBox to show it as an item
     div.append(image1, name, price, circleBox);
-    document.getElementById("itemsAll").append(div);
+    document.getElementById("productsItemsAll").append(div);
     // console.log(sum);
 
   })
