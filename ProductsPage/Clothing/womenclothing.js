@@ -633,6 +633,7 @@ Clothing_WomensClothing.map(function (elem) {
   var image1 = document.createElement("img");
   var image2 = document.createElement("img");
   var image3 = document.createElement("img");
+  var clickable = document.createElement("a");
   var name = document.createElement("a");
   var price = document.createElement("p");
   var circleBox = document.createElement("div");
@@ -661,6 +662,7 @@ Clothing_WomensClothing.map(function (elem) {
   imgCircle1.setAttribute("class", "productsCircle");
   imgCircle2.setAttribute("class", "productsCircle");
   imgCircle3.setAttribute("class", "productsCircle");
+  clickable.setAttribute("href", "")
 
   // function for changing image on mouseover and mouseleave
   image1.addEventListener("mouseover", changeImg1);
