@@ -111,11 +111,12 @@
 }
 #orderbox>p{
   font-size: small;
+  padding: 10px;
 }
-#btnsign{
+/* #btnsign{
     -webkit-font-smoothing: antialiased;
     background-color: #fdfdf9;
-    border: 1px solid rgb(75,86,102);
+    border: 10px solid rgb(75,86,102);
     color: rgb(75,86,102);
     cursor: pointer;
     font-family: "Avenir Medium",sans-serif;
@@ -128,12 +129,11 @@
     transition-property: color,background-color,border-color;
     width: 320px;
     margin-left: 10px;
-    margin-left: 10px;
-}
-#btnsign:hover{
+} */
+/* #btnsign:hover{
     background: rgb(75,86,102);
     color: #fdfdf9;
-}
+} */
 /* #check-guest{
   width: 100%;
   margin: auto;
@@ -197,8 +197,8 @@
     transition-duration: .2s;
     transition-property: color,background-color,border-color;
     width: 90%;
-    margin-left: 10px;
-    margin-left: 10px;
+    margin-left: 30px;
+    margin-bottom: 20px;
   }
   #btn:hover{
     background: white;
@@ -274,13 +274,14 @@
     }
     #secondScreenPayment{
       display: block;
-      border: 10px solid blue;
+      /* border: 10px solid blue; */
       width: 30%;
       /* right: 10px; */
     }
     #PaymentTranc{
       display: none;
     }
+    
 }
 @media screen and (min-width: 761px) and (max-width: 1020px) {
   #belowPaymentScreen{
@@ -300,16 +301,23 @@
   #CartBox{
     display: block;
   }
+  #ordertext{
+    margin-left: 30px;
+  }
 
   #formfill{
     width: 100%;
-    /* display: block; */
-    /* flex-wrap: wrap; */
-    /* position: absolute;
-    top: 33%; */
+    margin: auto;
+    margin-left: 20px;
   }
   #PaymentTranc{
     display: none;
+  }
+  #formfill>form>h2{
+    /* border: 2px solid red; */
+    padding: 10px;
+    margin-bottom: 50px;
+    border-bottom:2px solid #26262c;
   }
 }
 @media screen and (min-width: 100px) and (max-width: 760px) {
@@ -328,7 +336,7 @@
     margin: auto;
   }
   #formfill{
-    width: 100%;
+    width: 90%;
     margin: auto;
   }
 }
