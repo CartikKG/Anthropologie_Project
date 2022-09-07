@@ -1,7 +1,10 @@
 * {
     padding: 0%;
     margin: 0%;
+
 }
+
+
 
 .slidesprev {
     /* cursor: pointer; */
@@ -71,6 +74,7 @@
 nav {
     padding-left: 50px;
     padding-right: 50px;
+    z-index: 50;
 }
 
 #WHOLENAV {
@@ -297,6 +301,7 @@ nav a {
     overflow: auto;
     transition: all 0.1s;
     /* height: 100vh; */
+    z-index: 50;
 }
 
 #SigninSignUPMOBILE {
@@ -339,14 +344,28 @@ nav a {
     text-decoration: none;
 }
 
+/* 
+#WHOLENAV {
+    position: fixed;
+    /* z-index: 100; 
+} */
 
 
 
 @media (max-width: 1190px) {
+    /* #WHOLENAV {
+        position: fixed;
+        top: 0%;
+        margin: auto;
+        width: 100%;
+
+    } */
+
 
     nav {
         padding: 0%;
     }
+
 
     div nav ul .downnav1 {
         display: none;
@@ -547,6 +566,13 @@ nav a {
 
 @media (max-width: 583px) {
 
+    #WHOLENAV {
+        position: fixed;
+        top: 0%;
+        margin: auto;
+        width: 100%;
+
+    }
 
     #navbarupperinside {
         width: 100%;
