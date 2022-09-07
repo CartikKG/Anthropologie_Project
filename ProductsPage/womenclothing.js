@@ -630,7 +630,7 @@ displaydatafunction(Clothing_WomensClothing);
 // funtion for mapping all the data of items
 function displaydatafunction(Clothing_WomensClothing) {
   document.getElementById("productsItemsAll").innerHTML = "";
-  Clothing_WomensClothing.map(function (elem) {
+  Clothing_WomensClothing.map(function (elem, index) {
     var div = document.createElement("div");
     var image1 = document.createElement("img");
     var image2 = document.createElement("img");
@@ -664,7 +664,13 @@ function displaydatafunction(Clothing_WomensClothing) {
     imgCircle1.setAttribute("class", "productsCircle");
     imgCircle2.setAttribute("class", "productsCircle");
     imgCircle3.setAttribute("class", "productsCircle");
-    clickable.setAttribute("href", "");
+    clickable.setAttribute(
+      "href",
+      "../productsReviewPage/productReviewPage.html"
+    );
+    image1.addEventListener("click", function () {
+      adddatatoprductview(index);
+    });
 
     // function for changing image on mouseover and mouseleave
     image1.addEventListener("mouseover", changeImg1);
@@ -708,7 +714,8 @@ function displaydatafunction(Clothing_WomensClothing) {
     circleBox.append(imgCircle1, imgCircle2, imgCircle3);
 
     // Appending image, name, price and circleBox to show it as an item
-    div.append(image1, name, price, circleBox);
+    clickable.append(image1);
+    div.append(clickable, name, price, circleBox);
     document.getElementById("productsItemsAll").append(div);
     // console.log(sum);
   });
@@ -766,4 +773,14 @@ function changebyfunctionvalue(name) {
     });
     displaydatafunction(a);
   }
+}
+
+function adddatatoprductview(index) {
+  let temp = Clothing_WomensClothing.filter(function (el, i) {
+    if (i == index) {
+      return el;
+    }
+  });
+  console.log("KARTIK WIN");
+  localStorage.setItem("forcheckitemview", JSON.stringify(temp));
 }
