@@ -1,4 +1,4 @@
-#mainbody {
+body {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -60,7 +60,7 @@ div+button {
 
 #Next:hover {
     background-color: white;
-    color: black;
+    color: gray;
 }
 
 #MOBILE:hover {
@@ -106,14 +106,13 @@ div+button {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-#h2 {
+h2 {
     font-size: 22px;
     text-align: center;
     font-family: "avenir medium", sans-serif;
     color: #26262c;
     margin: 0 0px 0px 20px;
-    padding: 0px 0px 10px;
-    font-family: 'Avenir medium', sans-serif;
+    padding: 0px 0px 10px
 }
 
 @font-face {
@@ -121,7 +120,11 @@ div+button {
     src: url('../fonts/Avenir.eot?#iefix') format('embedded-opentype'), url('../fonts/Avenir.woff') format('woff'), url('../fonts/Avenir.ttf') format('truetype'), url('../fonts/Avenir.svg#Avenir') format('svg');
 }
 
-.p {
+h2 {
+    font-family: 'Avenir medium', sans-serif;
+}
+
+p {
     text-align: center;
     font-size: 13px;
     color: #5c5c5f;
