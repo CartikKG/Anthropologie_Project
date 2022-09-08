@@ -134,3 +134,12 @@ a:active {
     text-decoration: none;
     color: inherit;
 }
+
+#gotoright {
+    /* position: relative; */
+    position: absolute;
+    right: 8%;
+    top: 3%;
+    /* margin-right: -26%; */
+    font-size: 25px;
+}
