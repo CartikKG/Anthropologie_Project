@@ -160,7 +160,7 @@ function displaydatafunction(Clothing_WomensClothing) {
     imgCircle3.setAttribute("class", "productsCircle");
     clickable.setAttribute(
       "href",
-      "../productsReviewPage/productReviewPage.html"
+      "/Anthropologie_Project/productsReviewPage/productReviewPage.html"
     );
     // image1.addEventListener("click", function () {
     //   adddatatoprductview(index);
