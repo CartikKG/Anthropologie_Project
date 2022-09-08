@@ -3,6 +3,7 @@
     justify-content: center;
     align-items: center;
     /*horizzon */
+    background-color: black;
 }
 
 #parent {
@@ -12,6 +13,7 @@
     height: 520px;
     /* border: 1px solid black; */
     padding-top: 45px;
+
 }
 
 #parent>div {
@@ -176,4 +178,13 @@ a:active {
 #fine {
     font-size: 11px;
     display: flex;
+}
+
+#gotoright {
+    /* position: relative; */
+    position: absolute;
+    right: 8%;
+    top: 3%;
+    /* margin-right: -26%; */
+    font-size: 25px;
 }
