@@ -38,7 +38,8 @@
   /* border: 2px solid red; */
   padding: 10px;
   margin-bottom: 50px;
-  border-bottom: 2px solid #26262c;
+  /* border-bottom: 2px solid #26262c; */
+  text-align: center;
 }
 
 #formfill>form>input,
@@ -124,8 +125,9 @@
 }
 
 #orderbox>p {
-  font-size: small;
-  padding: 10px;
+  /* font-size: medium; */
+  font-size: 18px;
+  padding: 11px;
 }
 
 /* #btnsign{
