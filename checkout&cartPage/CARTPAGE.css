@@ -144,6 +144,18 @@
 }
 #orderboxlines>p{
   font-size:xx-small;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.promodrop{
+/* text-align: center; */
+padding: 10px;
+border: 1px solid rgb(75,86,102);
+width: 92%;
+margin: auto;
+margin-top: 14px;
+margin-left: 5px;
+border-radius: 2px;
 }
 #btn{
   /* -webkit-font-smoothing: antialiased; */
