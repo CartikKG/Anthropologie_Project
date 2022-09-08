@@ -32,6 +32,7 @@ function Changeui() {
   document.getElementById("NAVBARUL").classList.toggle("changewholenav");
   document.getElementById("MOBILECLICK").classList.toggle("MOBILECLICKDISPLAY");
 }
+
 let Clothing_WomensClothing = [
   {
     name: "Wtoo by Watters Miles Gown",
@@ -194,7 +195,7 @@ function displaydatafunction(Clothing_WomensClothing) {
     imgCircle3.setAttribute("class", "productsCircle");
     clickable.setAttribute(
       "href",
-      "../productsReviewPage/productReviewPage.html"
+      "./productsReviewPage/productReviewPage.html"
     );
     // image1.addEventListener("click", function () {
     //   adddatatoprductview(index);
