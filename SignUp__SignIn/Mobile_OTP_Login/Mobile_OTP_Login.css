@@ -3,7 +3,6 @@
     justify-content: center;
     align-items: center;
     /*horizzon */
-    background-color: black;
 }
 
 #parent {
@@ -194,13 +193,4 @@ input[type="number"] {
 
 .emailsignin {
     font-size: 13px;
-}
-
-#gotoright {
-    /* position: relative; */
-    position: absolute;
-    right: 8%;
-    top: 3%;
-    /* margin-right: -26%; */
-    font-size: 25px;
 }

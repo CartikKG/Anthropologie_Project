@@ -3,7 +3,6 @@ body {
     justify-content: center;
     align-items: center;
     /*horizzon */
-    background-color: black;
 }
 
 #parent {
@@ -13,7 +12,6 @@ body {
     height: 600px;
     /* border: 1px solid black; */
     padding-top: 45px;
-
 }
 
 #parent>div {
@@ -140,11 +138,6 @@ a:active {
     color: inherit;
 }
 
-#gotoright {
-    /* position: relative; */
-    position: absolute;
-    right: 8%;
-    top: 3%;
-    /* margin-right: -26%; */
-    font-size: 25px;
+.modal-backdrop {
+    background-image: url("https://images.urbndata.com/is/image/Anthropologie/67592915_050_a?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349");
 }
