@@ -1,18 +1,21 @@
-* {
+/* * {
     margin: 0;
     padding: 0;
-}
+} */
 
 .parentBox {
+    /* border: 2px solid red; */
     width: 100%;
-    margin: auto;
+    /* margin: auto; */
 }
 
 #responsiveHeader {
+    /* border: 2px solid blue; */
     display: none;
 }
 
 .parentBox>#headings {
+    /* border: 5px solid blue; */
     text-align: center;
     margin: 30px;
     margin-bottom: 30px;
@@ -24,24 +27,34 @@
     text-decoration: underline;
 }
 
-
 .contentsBox {
+    /* border: 2px solid green; */
+    font-family: 'Mulish', sans-serif;
+    color: #363638;
+    margin-top: 80px;
     display: flex;
+    /* margin: auto; */
 }
 
 .leftSideImageDiv {
+    /* border: 2px solid red; */
     display: block;
     width: 7%;
+    /* display: grid; */
+    /* grid-template-rows: 5, 1fr; */
     margin: auto;
+    /* margin-right: 50px; */
+    margin-top: 0px;
     margin-left: 60px;
     /* border: 2px solid red; */
 }
 
 .leftSideImageDiv>img {
     width: 100%;
-    margin: auto;
-    margin-top: 10px;
-    /* border: 1px solid white; */
+    /* margin: auto; */
+    /* margin-top: 10px; */
+    /* gap: 10px; */
+    border: 3px solid white;
     cursor: pointer;
 }
 
@@ -52,6 +65,7 @@
 .mainImageDiv {
     width: 41%;
     margin: auto;
+    margin-left: 200px;
     /* border: 2px solid red; */
     margin-left: -1%;
 }
@@ -62,7 +76,8 @@
 }
 
 .displayContentDiv {
-    width: 21%;
+    
+    width: 23%;
     margin: auto;
     margin-top: 0px;
     margin-right: 60px;
@@ -151,6 +166,7 @@
 
 #typeOfFit {
     margin-top: 10px;
+    font-size: 13px;
     /* margin-bottom: 5px; */
 }
 
@@ -177,8 +193,8 @@
 }
 
 #sizeOfTheProduct {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin-top: 20px;
+    font-size: 13px;
 }
 
 #buttonsOfType {
@@ -193,7 +209,7 @@
     margin-left: 0px;
     cursor: pointer;
     border: 1px solid white;
-
+    
 }
 
 #buttonsOfType>button:hover {
@@ -203,6 +219,7 @@
 #quantity {
     margin-top: 10px;
     margin-bottom: 10px;
+    font-size: 13px;
 }
 
 #quantityOfItem {
@@ -216,8 +233,8 @@
 #addToBasket {
     display: block;
     width: 100%;
-    /* border: 2px solid red; */
-    padding: 20px 0px;
+    border: 1px solid teal;
+    padding: 14px 0px;
     margin-top: 40px;
     background-color: rgb(75 86 102);
     color: white;
@@ -259,7 +276,7 @@
     display: none;
 }
 
-@media screen and (min-width:920px) and (max-width:1213px) {
+@media screen and (min-width:767px) and (max-width:1020px) {
     .rightSideImageDiv {
         display: none;
     }
@@ -310,7 +327,7 @@
     }
 }
 
-@media screen and (min-width:250px) and (max-width:919px) {
+@media screen and (min-width:250px) and (max-width:767px) {
     #responsiveHeader {
         display: block;
         width: 80%;

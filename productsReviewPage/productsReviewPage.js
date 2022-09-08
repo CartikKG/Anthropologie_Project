@@ -7,20 +7,103 @@ var getprice = localStorage.getItem("price");
 
 var itemName = document.createElement("h1");
 var image1 = document.createElement("img");
+var image1BigSize = document.createElement("img");
 var image2 = document.createElement("img");
 var image3 = document.createElement("img");
 var price = document.createElement("span");
 
 itemName.setAttribute("id", "nameOfTheProduct");
 
-console.log(getname);
-console.log(getprice);
+// console.log(getname);
+// console.log(getprice);
 itemName.innerText = getname;
 image1.setAttribute("src", getimage1);
+image1BigSize.setAttribute("src", getimage1);
 image2.setAttribute("src", getimage2);
 image3.setAttribute("src", getimage3);
 price.innerText = "$" + getprice;
 document.querySelector(".leftSideImageDiv").append(image1, image2, image3);
-document.querySelector(".mainImageDiv").append(image1);
+document.querySelector(".mainImageDiv").append(image1BigSize);
 document.getElementById("productNameBox").append(itemName);
 document.getElementById("productCost").append(price);
+
+
+var Size = "Not Selected";
+document.getElementById("buttonsOfSize1").addEventListener("click", selectSize1);
+document.getElementById("buttonsOfSize2").addEventListener("click", selectSize2);
+document.getElementById("buttonsOfSize3").addEventListener("click", selectSize3);
+ function selectSize1(){
+    document.getElementById("buttonsOfSize1").style.borderColor = "black";
+    document.getElementById("buttonsOfSize2").style.borderColor = "white";
+    document.getElementById("buttonsOfSize3").style.borderColor = "white";
+    Size = document.getElementById("buttonsOfSize1").innerText;
+ }
+ function selectSize2(){
+    document.getElementById("buttonsOfSize1").style.borderColor = "white";
+    document.getElementById("buttonsOfSize2").style.borderColor = "black";
+    document.getElementById("buttonsOfSize3").style.borderColor = "white";
+    Size = document.getElementById("buttonsOfSize2").innerText;
+ }
+ function selectSize3(){
+    document.getElementById("buttonsOfSize1").style.borderColor = "white";
+    document.getElementById("buttonsOfSize2").style.borderColor = "white";
+    document.getElementById("buttonsOfSize3").style.borderColor = "black";
+    Size = document.getElementById("buttonsOfSize3").innerText;
+ }
+
+ document.getElementById("buttonsOfColor1").addEventListener("click", SelectColor1);
+ document.getElementById("buttonsOfColor2").addEventListener("click", SelectColor2);
+ document.getElementById("buttonsOfColor3").addEventListener("click", SelectColor3);
+ document.getElementById("buttonsOfColor4").addEventListener("click", SelectColor4);
+ 
+ 
+ 
+ var Color = "Random";
+ function SelectColor1(){
+    document.getElementById("buttonsOfColor1").style.borderColor = "black";
+    document.getElementById("buttonsOfColor2").style.borderColor = "white";
+    document.getElementById("buttonsOfColor3").style.borderColor = "white";
+    document.getElementById("buttonsOfColor4").style.borderColor = "white";
+    Color = document.getElementById("buttonsOfColor1").innerText
+ }
+ function SelectColor2(){
+    document.getElementById("buttonsOfColor1").style.borderColor = "white";
+    document.getElementById("buttonsOfColor2").style.borderColor = "black";
+    document.getElementById("buttonsOfColor3").style.borderColor = "white";
+    document.getElementById("buttonsOfColor4").style.borderColor = "white";
+    Color = document.getElementById("buttonsOfColor2").innerText;
+}
+function SelectColor3(){
+    document.getElementById("buttonsOfColor1").style.borderColor = "white";
+    document.getElementById("buttonsOfColor2").style.borderColor = "white";
+    document.getElementById("buttonsOfColor3").style.borderColor = "black";
+    document.getElementById("buttonsOfColor4").style.borderColor = "white";
+    Color = document.getElementById("buttonsOfColor3").innerText;
+}
+function SelectColor4(){
+    document.getElementById("buttonsOfColor1").style.borderColor = "white";
+    document.getElementById("buttonsOfColor2").style.borderColor = "white";
+    document.getElementById("buttonsOfColor3").style.borderColor = "white";
+    document.getElementById("buttonsOfColor4").style.borderColor = "black";
+    Color = document.getElementById("buttonsOfColor4").innerText;
+}
+
+document.getElementById("addToBasket").addEventListener("click", addToCart);
+
+let cartArray = JSON.parse(localStorage.getItem("cartItems")) || [];
+function addToCart(){
+    var quantity = document.getElementById("quantityOfItem").value;
+    let cartObject = {
+        name: getname,
+        image1: getimage1,
+        image2: getimage2,
+        image3: getimage3,
+        price: getprice,
+        size: Size,
+        color: Color,
+        quantity:  quantity
+    }
+
+    cartArray.push(cartObject);
+    localStorage.setItem("cartItems", JSON.stringify(cartArray));
+}
