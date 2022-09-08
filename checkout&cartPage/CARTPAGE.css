@@ -3,6 +3,7 @@
 /* #basketname{
   margin-left: 50px;
 } */
+/* @import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap'); */
 *{
   margin: 0%;
   padding: 0%;
@@ -151,12 +152,42 @@
 /* text-align: center; */
 padding: 10px;
 border: 1px solid rgb(75,86,102);
-width: 92%;
+width: 50%;
 margin: auto;
 margin-top: 14px;
 margin-left: 5px;
 border-radius: 2px;
 }
+.promocodeans {
+  width: 85%;
+  margin: auto;
+  padding: 1px 10px;
+  background-color: #E7E9EB;
+  margin-top: 0px;
+  margin-left: 6px;
+}
+.expire {
+  color: red;
+}
+.card-body {
+  margin-left: 7px;
+  }
+.form-control{
+  padding: 7px;
+}
+.btnapply{
+  width: 70px;
+  padding: 7px;
+    color: #ffffff;
+    background-color: rgb(75,86,102);
+    border-color: #f8f9fa;
+    font-size: 12px
+  }
+    .btnapply:hover {
+    color: #ffffff;
+    background-color: #007BFF;
+    border-color: #007BFF
+    }
 #btn{
   /* -webkit-font-smoothing: antialiased; */
   background-color:rgb(75,86,102);
