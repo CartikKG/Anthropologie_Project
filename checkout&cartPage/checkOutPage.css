@@ -181,7 +181,7 @@
   #orderboxlines>p{
     font-size:xx-small;
   } */
-  #btn{
+  #shipbtn{
     -webkit-font-smoothing: antialiased;
     background-color:rgb(75,86,102);
     border: 1px solid #E5E2DE;
@@ -197,8 +197,9 @@
     transition-duration: .2s;
     transition-property: color,background-color,border-color;
     width: 90%;
-    margin-left: 30px;
+    margin-left: 25px;
     margin-bottom: 20px;
+    margin-top: 20px;
   }
   #btn:hover{
     background: white;
