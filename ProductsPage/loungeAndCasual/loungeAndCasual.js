@@ -195,7 +195,7 @@ function displaydatafunction(Clothing_WomensClothing) {
     imgCircle3.setAttribute("class", "productsCircle");
     clickable.setAttribute(
       "href",
-      "/Anthropologie_Project/productsReviewPage/productReviewPage.html"
+      "./productsReviewPage/productReviewPage.html"
     );
     // image1.addEventListener("click", function () {
     //   adddatatoprductview(index);
