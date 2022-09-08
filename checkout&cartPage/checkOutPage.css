@@ -12,10 +12,12 @@
   /* display: flex; */
   justify-content: space-between;
   background-color: #fdfdf9;
-  position: absolute;
+  /* position: absolute; */
+
 }
 
 #formfill {
+
   width: 60%;
   /* margin: auto; */
   margin-left: 50px;
@@ -95,7 +97,7 @@
   /* position: sticky; */
   /* left: 10px; */
   /* position: -webkit-sticky; */
-  position: fixed;
+  /* position: fixed; */
   right: 20px;
 }
 
@@ -108,7 +110,7 @@
 #ordertext {
   color: rgb(38, 38, 44);
   font: "Avenir Medium", sans-serif;
-  ;
+
   letter-spacing: .06rem;
   margin: auto;
   margin-bottom: 5px;
@@ -228,7 +230,7 @@
   margin-left: 40px;
   margin-top: -190px;
 } */
-.navbar {
+/* .navbar {
   overflow: hidden;
   background-color: white;
   font-family: Arial, Helvetica, sans-serif;
@@ -246,9 +248,9 @@
 .dropdown {
   float: left;
   overflow: hidden;
-}
+} */
 
-.dropdown .dropbtn {
+/* .dropdown .dropbtn {
   cursor: pointer;
   font-size: 16px;
   border: none;
@@ -260,13 +262,13 @@
   background-color: inherit;
   font-family: inherit;
   margin: 0;
-}
+} */
 
 /* .navbar a:hover, .dropdown:hover .dropbtn, .dropbtn:focus {
   background-color: #26262c;
 } */
 
-.dropdown-content {
+/* .dropdown-content {
   display: none;
   position: absolute;
   background-color: #f9f9f9;
@@ -286,7 +288,7 @@
 
 .dropdown-content input:hover {
   background-color: #ddd;
-}
+} */
 
 @media screen and (min-width: 761px) and (max-width: 1020px) {
   #belowPaymentScreen {
