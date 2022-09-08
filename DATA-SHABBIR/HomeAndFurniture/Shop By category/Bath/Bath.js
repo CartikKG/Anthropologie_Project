@@ -5,18 +5,17 @@ var home$furniture_Shopbycategory_Bath = [{
     name: "Bramble Bath Towel Collection",
     price1: "14.40",
     
-    strikeoffprice1: "18.00",
+    strikePrice: "18.00",
     
 },
 {
     image1: "https://images.urbndata.com/is/image/Anthropologie/70077979_099_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
     image2: "https://images.urbndata.com/is/image/Anthropologie/70077979_099_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
-    image3: "",
+    image3: "https://images.urbndata.com/is/image/Anthropologie/70077979_099_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
     name: "Organic Cotton Henrik Shower Curtain",
     price1: "62.40",
     
-    strikeoffprice1: "78.00",
-    strikeoffprice12: "",
+    strikePrice: "78.00",
 
 }, {
     image1: "https://images.urbndata.com/is/image/Anthropologie/52447893_070_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
@@ -25,7 +24,7 @@ var home$furniture_Shopbycategory_Bath = [{
     name: "Lacquered Regency Powder Bathroom Vanity",
     price1: "1438.40",
     
-    strikeoffprice1: "1998.00",
+    strikePrice: "1998.00",
     
 
 },
@@ -36,7 +35,7 @@ var home$furniture_Shopbycategory_Bath = [{
     name: "Bumblebee Towel Bar",
     price1: "61.60",
     
-    strikeoffprice1: "78.00",
+    strikePrice: "78.00",
   
 
 },
@@ -47,7 +46,7 @@ var home$furniture_Shopbycategory_Bath = [{
     name: "Agneta Organic Cotton Shower Curtain",
     price1: "70.40",
     
-    strikeoffprice1: "88.00",
+    strikePrice: "88.00",
     
 },
 {
@@ -57,7 +56,7 @@ var home$furniture_Shopbycategory_Bath = [{
     name: "Flatwoven Hideaway Bath Mat",
     price1: "30.40",
     
-    strikeoffprice1: "38.00",
+    strikePrice: "38.00",
     
 
 },
@@ -68,7 +67,7 @@ var home$furniture_Shopbycategory_Bath = [{
     name: "Odetta Single Bathroom Vanity",
     price1: "1998.00",
    
-    strikeoffprice12: "2000.00",
+    strikePrice: "2000.00",
 
 },
 {
@@ -78,7 +77,7 @@ var home$furniture_Shopbycategory_Bath = [{
     name: "Hexagon Toilet Paper Holder",
     price1: "38.00",
     
-    strikeoffprice1: "40.00",
+    strikePrice: "40.00",
     
 },
 {
@@ -88,7 +87,7 @@ var home$furniture_Shopbycategory_Bath = [{
     name: "Handcarved Samuel Single Bathroom Vanity",
     price1: "1598.402",
    
-    strikeoffprice1: "1998.00",
+    strikePrice: "1998.00",
     
 },
 {
@@ -98,7 +97,7 @@ var home$furniture_Shopbycategory_Bath = [{
     name: "Hideaway Bath Towel Collection",
     price1: "17.60",
     
-    strikeoffprice1: "22.00",
+    strikePrice: "22.00",
    
 
 
@@ -112,7 +111,7 @@ var home$furniture_Shopbycategory_Bath = [{
     name: "Bramble Reversible Bath Mat",
     price1: "38.40",
     
-    strikeoffprice1: "48.00",
+    strikePrice: "48.00",
    
 },
 {
@@ -122,11 +121,6 @@ var home$furniture_Shopbycategory_Bath = [{
     name: "Montague Powder Bathroom Vanity",
     price1: "1048.60",
    
-    strikeoffprice1: "1498.00",
-    
-
-
-
-
+    strikePrice: "1498.00",
 },
 ];
