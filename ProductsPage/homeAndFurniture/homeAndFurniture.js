@@ -1,128 +1,182 @@
-var Clothing_WomensClothing = [{
-    image_1: "https://images.urbndata.com/is/image/Anthropologie/4544Z113AA_006_b11?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
-    image_2: "https://images.urbndata.com/is/image/Anthropologie/4544Z113AA_006_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
-    image_3: "https://images.urbndata.com/is/image/Anthropologie/4544Z113AA_006_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides((slideIndex += n));
+}
+
+function currentSlide(n) {
+  showSlides((slideIndex = n));
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("SLIDEDIVS");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {
+    slideIndex = 1;
+  }
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex - 1].style.display = "flex";
+}
+
+function Changeui() {
+  document.getElementById("NAVBARUL").classList.toggle("changewholenav");
+  document.getElementById("MOBILECLICK").classList.toggle("MOBILECLICKDISPLAY");
+}
+var Clothing_WomensClothing = [
+  {
+    image_1:
+      "https://images.urbndata.com/is/image/Anthropologie/4544Z113AA_006_b11?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
+    image_2:
+      "https://images.urbndata.com/is/image/Anthropologie/4544Z113AA_006_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
+    image_3:
+      "https://images.urbndata.com/is/image/Anthropologie/4544Z113AA_006_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
     name: "Bramble Bath Towel Collection",
     price: "14.40",
-    
+
     strikePrice: "18.00",
-    
-},
-{
-    image_1: "https://images.urbndata.com/is/image/Anthropologie/70077979_099_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
-    image_2: "https://images.urbndata.com/is/image/Anthropologie/70077979_099_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
-    image_3: "https://images.urbndata.com/is/image/Anthropologie/70077979_099_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
+  },
+  {
+    image_1:
+      "https://images.urbndata.com/is/image/Anthropologie/70077979_099_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
+    image_2:
+      "https://images.urbndata.com/is/image/Anthropologie/70077979_099_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
+    image_3:
+      "https://images.urbndata.com/is/image/Anthropologie/70077979_099_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
     name: "Organic Cotton Henrik Shower Curtain",
     price: "62.40",
-    
-    strikePrice: "78.00",
 
-}, {
-    image_1: "https://images.urbndata.com/is/image/Anthropologie/52447893_070_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
-    image_2: "https://images.urbndata.com/is/image/Anthropologie/52447893_070_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
-    image_3: "https://images.urbndata.com/is/image/Anthropologie/52447893_070_b3?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
+    strikePrice: "78.00",
+  },
+  {
+    image_1:
+      "https://images.urbndata.com/is/image/Anthropologie/52447893_070_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
+    image_2:
+      "https://images.urbndata.com/is/image/Anthropologie/52447893_070_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
+    image_3:
+      "https://images.urbndata.com/is/image/Anthropologie/52447893_070_b3?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
     name: "Lacquered Regency Powder Bathroom Vanity",
     price: "1438.40",
-    
-    strikePrice: "1998.00",
-    
 
-},
-{
-    image_1: "https://images.urbndata.com/is/image/Anthropologie/62988688_027_b10?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
-    image_2: "https://images.urbndata.com/is/image/Anthropologie/62988688_027_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
-    image_3: "https://images.urbndata.com/is/image/Anthropologie/62988688_027_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
+    strikePrice: "1998.00",
+  },
+  {
+    image_1:
+      "https://images.urbndata.com/is/image/Anthropologie/62988688_027_b10?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
+    image_2:
+      "https://images.urbndata.com/is/image/Anthropologie/62988688_027_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
+    image_3:
+      "https://images.urbndata.com/is/image/Anthropologie/62988688_027_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
     name: "Bumblebee Towel Bar",
     price: "61.60",
-    
-    strikePrice: "78.00",
-  
 
-},
-{
-    image_1: "https://images.urbndata.com/is/image/Anthropologie/36216083_041_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
-    image_2: "https://images.urbndata.com/is/image/Anthropologie/36216083_041_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
-    image_3: "https://images.urbndata.com/is/image/Anthropologie/36216083_041_b3?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
+    strikePrice: "78.00",
+  },
+  {
+    image_1:
+      "https://images.urbndata.com/is/image/Anthropologie/36216083_041_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
+    image_2:
+      "https://images.urbndata.com/is/image/Anthropologie/36216083_041_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
+    image_3:
+      "https://images.urbndata.com/is/image/Anthropologie/36216083_041_b3?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
     name: "Agneta Organic Cotton Shower Curtain",
     price: "70.40",
-    
+
     strikePrice: "88.00",
-    
-},
-{
-    image_1: "https://images.urbndata.com/is/image/Anthropologie/4544Z006AA_095_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
-    image_2: "https://images.urbndata.com/is/image/Anthropologie/4544Z006AA_095_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
-    image_3: "https://images.urbndata.com/is/image/Anthropologie/4544Z006AA_095_b3?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
+  },
+  {
+    image_1:
+      "https://images.urbndata.com/is/image/Anthropologie/4544Z006AA_095_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
+    image_2:
+      "https://images.urbndata.com/is/image/Anthropologie/4544Z006AA_095_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
+    image_3:
+      "https://images.urbndata.com/is/image/Anthropologie/4544Z006AA_095_b3?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
     name: "Flatwoven Hideaway Bath Mat",
     price: "30.40",
-    
-    strikePrice: "38.00",
-    
 
-},
-{
-    image_1: "https://images.urbndata.com/is/image/Anthropologie/52366317_047_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
-    image_2: "https://images.urbndata.com/is/image/Anthropologie/52366317_047_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
-    image_3: "https://images.urbndata.com/is/image/Anthropologie/52366317_047_b3?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
+    strikePrice: "38.00",
+  },
+  {
+    image_1:
+      "https://images.urbndata.com/is/image/Anthropologie/52366317_047_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
+    image_2:
+      "https://images.urbndata.com/is/image/Anthropologie/52366317_047_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
+    image_3:
+      "https://images.urbndata.com/is/image/Anthropologie/52366317_047_b3?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
     name: "Odetta Single Bathroom Vanity",
     price: "1998.00",
-   
-    strikePrice: "2000.00",
 
-},
-{
-    image_1: "https://images.urbndata.com/is/image/Anthropologie/62999503_001_b11?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
-    image_2: "https://images.urbndata.com/is/image/Anthropologie/62999503_001_b11?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
-    image_3: "https://images.urbndata.com/is/image/Anthropologie/62999503_001_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
+    strikePrice: "2000.00",
+  },
+  {
+    image_1:
+      "https://images.urbndata.com/is/image/Anthropologie/62999503_001_b11?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
+    image_2:
+      "https://images.urbndata.com/is/image/Anthropologie/62999503_001_b11?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
+    image_3:
+      "https://images.urbndata.com/is/image/Anthropologie/62999503_001_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
     name: "Hexagon Toilet Paper Holder",
     price: "38.00",
-    
+
     strikePrice: "40.00",
-    
-},
-{
-    image_1: "https://images.urbndata.com/is/image/Anthropologie/57678641_047_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
-    image_2: "https://images.urbndata.com/is/image/Anthropologie/57678641_047_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
-    image_3: "https://images.urbndata.com/is/image/Anthropologie/57678641_047_b3?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
+  },
+  {
+    image_1:
+      "https://images.urbndata.com/is/image/Anthropologie/57678641_047_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
+    image_2:
+      "https://images.urbndata.com/is/image/Anthropologie/57678641_047_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
+    image_3:
+      "https://images.urbndata.com/is/image/Anthropologie/57678641_047_b3?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
     name: "Handcarved Samuel Single Bathroom Vanity",
     price: "1598.402",
-   
+
     strikePrice: "1998.00",
-    
-},
-{
-    image_1: "https://images.urbndata.com/is/image/Anthropologie/4544Z116AA_095_b3?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
-    image_2: "https://images.urbndata.com/is/image/Anthropologie/4544Z116AA_095_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
-    image_3: "https://images.urbndata.com/is/image/Anthropologie/4544Z116AA_095_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
+  },
+  {
+    image_1:
+      "https://images.urbndata.com/is/image/Anthropologie/4544Z116AA_095_b3?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
+    image_2:
+      "https://images.urbndata.com/is/image/Anthropologie/4544Z116AA_095_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
+    image_3:
+      "https://images.urbndata.com/is/image/Anthropologie/4544Z116AA_095_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
     name: "Hideaway Bath Towel Collection",
     price: "17.60",
-    
+
     strikePrice: "22.00",
-   
-
-
-
-
-},
-{
-    image_1: "https://images.urbndata.com/is/image/Anthropologie/4544Z077AA_031_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
-    image_2: "https://images.urbndata.com/is/image/Anthropologie/4544Z077AA_031_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
-    image_3: "https://images.urbndata.com/is/image/Anthropologie/4544Z077AA_031_b3?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
+  },
+  {
+    image_1:
+      "https://images.urbndata.com/is/image/Anthropologie/4544Z077AA_031_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
+    image_2:
+      "https://images.urbndata.com/is/image/Anthropologie/4544Z077AA_031_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
+    image_3:
+      "https://images.urbndata.com/is/image/Anthropologie/4544Z077AA_031_b3?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
     name: "Bramble Reversible Bath Mat",
     price: "38.40",
-    
+
     strikePrice: "48.00",
-   
-},
-{
-  image_1: "https://images.urbndata.com/is/image/Anthropologie/57243115_016_b3?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
-    image_2: "https://images.urbndata.com/is/image/Anthropologie/57243115_016_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
-    image_3: "https://images.urbndata.com/is/image/Anthropologie/57243115_016_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
+  },
+  {
+    image_1:
+      "https://images.urbndata.com/is/image/Anthropologie/57243115_016_b3?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
+    image_2:
+      "https://images.urbndata.com/is/image/Anthropologie/57243115_016_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
+    image_3:
+      "https://images.urbndata.com/is/image/Anthropologie/57243115_016_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
     name: "Montague Powder Bathroom Vanity",
     price: "1048.60",
-   
+
     strikePrice: "1498.00",
-},
+  },
 ];
 
 displaydatafunction(Clothing_WomensClothing);
@@ -163,13 +217,16 @@ function displaydatafunction(Clothing_WomensClothing) {
     imgCircle1.setAttribute("class", "productsCircle");
     imgCircle2.setAttribute("class", "productsCircle");
     imgCircle3.setAttribute("class", "productsCircle");
-    clickable.setAttribute("href", "../productsReviewPage/productReviewPage.html");
+    clickable.setAttribute(
+      "href",
+      "../productsReviewPage/productReviewPage.html"
+    );
     // image1.addEventListener("click", function () {
     //   adddatatoprductview(index);
     // });
     image1.addEventListener("click", adddatatoprductview);
 
-    function adddatatoprductview(){
+    function adddatatoprductview() {
       localStorage.setItem("itemName", elem.name);
       localStorage.setItem("image_1", elem.image_1);
       localStorage.setItem("image_2", elem.image_2);

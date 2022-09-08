@@ -1,3 +1,37 @@
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides((slideIndex += n));
+}
+
+function currentSlide(n) {
+  showSlides((slideIndex = n));
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("SLIDEDIVS");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {
+    slideIndex = 1;
+  }
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex - 1].style.display = "flex";
+}
+
+function Changeui() {
+  document.getElementById("NAVBARUL").classList.toggle("changewholenav");
+  document.getElementById("MOBILECLICK").classList.toggle("MOBILECLICKDISPLAY");
+}
 let Clothing_WomensClothing = [
   {
     name: "Maeve Plunge Faux Leather Dress",
@@ -158,13 +192,16 @@ function displaydatafunction(Clothing_WomensClothing) {
     imgCircle1.setAttribute("class", "productsCircle");
     imgCircle2.setAttribute("class", "productsCircle");
     imgCircle3.setAttribute("class", "productsCircle");
-    clickable.setAttribute("href", "../productsReviewPage/productReviewPage.html");
+    clickable.setAttribute(
+      "href",
+      "../productsReviewPage/productReviewPage.html"
+    );
     // image1.addEventListener("click", function () {
     //   adddatatoprductview(index);
     // });
     image1.addEventListener("click", adddatatoprductview);
 
-    function adddatatoprductview(){
+    function adddatatoprductview() {
       localStorage.setItem("itemName", elem.name);
       localStorage.setItem("image_1", elem.image_1);
       localStorage.setItem("image_2", elem.image_2);

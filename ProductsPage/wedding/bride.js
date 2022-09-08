@@ -1,86 +1,156 @@
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides((slideIndex += n));
+}
+
+function currentSlide(n) {
+  showSlides((slideIndex = n));
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("SLIDEDIVS");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {
+    slideIndex = 1;
+  }
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex - 1].style.display = "flex";
+}
+
+function Changeui() {
+  document.getElementById("NAVBARUL").classList.toggle("changewholenav");
+  document.getElementById("MOBILECLICK").classList.toggle("MOBILECLICKDISPLAY");
+}
 let Clothing_WomensClothing = [
   {
     name: "Wtoo by Watters Miles Gown",
-    image_1: "https://images.urbndata.com/is/image/Anthropologie/68591999_011_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
-    image_2: "https://images.urbndata.com/is/image/Anthropologie/68591999_011_d10?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
-    image_3: "https://images.urbndata.com/is/image/Anthropologie/55077200_011_a?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+    image_1:
+      "https://images.urbndata.com/is/image/Anthropologie/68591999_011_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+    image_2:
+      "https://images.urbndata.com/is/image/Anthropologie/68591999_011_d10?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+    image_3:
+      "https://images.urbndata.com/is/image/Anthropologie/55077200_011_a?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
     price: "1,278.00",
   },
   {
     name: "Watters Coco Gown",
-    image_1: "https://images.urbndata.com/is/image/Anthropologie/68687375_011_d10?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
-    image_2: "https://images.urbndata.com/is/image/Anthropologie/68619675_011_b1?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
-    image_3: "https://images.urbndata.com/is/image/Anthropologie/68619675_011_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+    image_1:
+      "https://images.urbndata.com/is/image/Anthropologie/68687375_011_d10?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+    image_2:
+      "https://images.urbndata.com/is/image/Anthropologie/68619675_011_b1?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+    image_3:
+      "https://images.urbndata.com/is/image/Anthropologie/68619675_011_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
     price: "1,695.00",
   },
   {
     name: "Cali Satin Charmeuse Midi Dress",
-    image_1: "https://images.urbndata.com/is/image/Anthropologie/59747709_011_b1?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
-    image_2: "https://images.urbndata.com/is/image/Anthropologie/59747709_011_c1?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
-    image_3: "https://images.urbndata.com/is/image/Anthropologie/59747709_011_c?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+    image_1:
+      "https://images.urbndata.com/is/image/Anthropologie/59747709_011_b1?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+    image_2:
+      "https://images.urbndata.com/is/image/Anthropologie/59747709_011_c1?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+    image_3:
+      "https://images.urbndata.com/is/image/Anthropologie/59747709_011_c?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
     price: "168.00",
   },
   {
     name: "Jenny by Jenny Yoo Portia Gown",
-    image_1: "https://images.urbndata.com/is/image/Anthropologie/59278606_011_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
-    image_2: "https://images.urbndata.com/is/image/Anthropologie/59278606_011_b3?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
-    image_3: "https://images.urbndata.com/is/image/Anthropologie/59278606_011_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+    image_1:
+      "https://images.urbndata.com/is/image/Anthropologie/59278606_011_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+    image_2:
+      "https://images.urbndata.com/is/image/Anthropologie/59278606_011_b3?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+    image_3:
+      "https://images.urbndata.com/is/image/Anthropologie/59278606_011_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
     price: "1,195.00",
   },
   {
     name: "BHLDN Valerie Gown",
-    image_1: "https://images.urbndata.com/is/image/Anthropologie/65604886_011_b1?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
-    image_2: "https://images.urbndata.com/is/image/Anthropologie/68659564_011_b3?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
-    image_3: "https://images.urbndata.com/is/image/Anthropologie/68659564_011_b1?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+    image_1:
+      "https://images.urbndata.com/is/image/Anthropologie/65604886_011_b1?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+    image_2:
+      "https://images.urbndata.com/is/image/Anthropologie/68659564_011_b3?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+    image_3:
+      "https://images.urbndata.com/is/image/Anthropologie/68659564_011_b1?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
     price: "1,100.00",
   },
   {
     name: "Watters Sorvette Gown",
-    image_1: "https://images.urbndata.com/is/image/Anthropologie/55077200_011_a?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
-    image_2: "https://images.urbndata.com/is/image/Anthropologie/55077200_011_c?$a15-pdp-detail-shot$&fit=constrain&qlt=80&wid=100",
-    image_3: "https://images.urbndata.com/is/image/Anthropologie/55077200_011_b?$a15-pdp-detail-shot$&fit=constrain&qlt=80&wid=100",
+    image_1:
+      "https://images.urbndata.com/is/image/Anthropologie/55077200_011_a?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+    image_2:
+      "https://images.urbndata.com/is/image/Anthropologie/55077200_011_c?$a15-pdp-detail-shot$&fit=constrain&qlt=80&wid=100",
+    image_3:
+      "https://images.urbndata.com/is/image/Anthropologie/55077200_011_b?$a15-pdp-detail-shot$&fit=constrain&qlt=80&wid=100",
     price: "1,030.00",
   },
   {
     name: "Rebecca Vallance Monique Gown",
-    image_1: "https://images.urbndata.com/is/image/Anthropologie/67973677_070_b3?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
-    image_2: "https://images.urbndata.com/is/image/Anthropologie/67973677_070_b1?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
-    image_3: "https://images.urbndata.com/is/image/Anthropologie/59278606_011_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+    image_1:
+      "https://images.urbndata.com/is/image/Anthropologie/67973677_070_b3?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+    image_2:
+      "https://images.urbndata.com/is/image/Anthropologie/67973677_070_b1?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+    image_3:
+      "https://images.urbndata.com/is/image/Anthropologie/59278606_011_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
     price: "1,695.00",
   },
   {
     name: "Rebecca Vallance Monique Gown",
-    image_1: "https://images.urbndata.com/is/image/Anthropologie/59278606_011_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
-    image_2: "https://images.urbndata.com/is/image/Anthropologie/59278606_011_b3?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
-    image_3: "https://images.urbndata.com/is/image/Anthropologie/59278606_011_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+    image_1:
+      "https://images.urbndata.com/is/image/Anthropologie/59278606_011_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+    image_2:
+      "https://images.urbndata.com/is/image/Anthropologie/59278606_011_b3?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+    image_3:
+      "https://images.urbndata.com/is/image/Anthropologie/59278606_011_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
     price: "1,695.00",
   },
   {
     name: "Ronny Kobo Kirsten Lace Blazer",
-    image_1: "https://images.urbndata.com/is/image/Anthropologie/59747709_011_c?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
-    image_2: "https://images.urbndata.com/is/image/Anthropologie/59747709_011_c1?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
-    image_3: "https://images.urbndata.com/is/image/Anthropologie/59747709_011_b1?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+    image_1:
+      "https://images.urbndata.com/is/image/Anthropologie/59747709_011_c?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+    image_2:
+      "https://images.urbndata.com/is/image/Anthropologie/59747709_011_c1?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+    image_3:
+      "https://images.urbndata.com/is/image/Anthropologie/59747709_011_b1?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
     price: "458.00",
   },
   {
     name: "Sachin & Babi Jane Dress",
-    image_1: "https://images.urbndata.com/is/image/Anthropologie/68820901_011_b1?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
-    image_2: "https://images.urbndata.com/is/image/Anthropologie/68820901_011_d10?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
-    image_3: "https://images.urbndata.com/is/image/Anthropologie/59278606_011_b3?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+    image_1:
+      "https://images.urbndata.com/is/image/Anthropologie/68820901_011_b1?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+    image_2:
+      "https://images.urbndata.com/is/image/Anthropologie/68820901_011_d10?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+    image_3:
+      "https://images.urbndata.com/is/image/Anthropologie/59278606_011_b3?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
     price: "295.00",
   },
   {
     name: "Sachin & Babi Jane Dress",
-    image_1: "https://images.urbndata.com/is/image/Anthropologie/68659564_011_b1?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
-    image_2: "https://images.urbndata.com/is/image/Anthropologie/68659564_011_b3?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
-    image_3: "https://images.urbndata.com/is/image/Anthropologie/68659564_011_b3?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+    image_1:
+      "https://images.urbndata.com/is/image/Anthropologie/68659564_011_b1?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+    image_2:
+      "https://images.urbndata.com/is/image/Anthropologie/68659564_011_b3?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+    image_3:
+      "https://images.urbndata.com/is/image/Anthropologie/68659564_011_b3?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
     price: "286.00",
   },
   {
     name: "Significant Other Demi Dress",
-    image_1: "https://images.urbndata.com/is/image/Anthropologie/68687375_011_d10?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
-    image_2: "https://images.urbndata.com/is/image/Anthropologie/68687375_011_b1?$a15-pdp-detail-shot$&fit=constrain&qlt=80&wid=100",
-    image_3: "https://images.urbndata.com/is/image/Anthropologie/68687375_011_b2?$a15-pdp-detail-shot$&fit=constrain&qlt=80&wid=100",
+    image_1:
+      "https://images.urbndata.com/is/image/Anthropologie/68687375_011_d10?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=640",
+    image_2:
+      "https://images.urbndata.com/is/image/Anthropologie/68687375_011_b1?$a15-pdp-detail-shot$&fit=constrain&qlt=80&wid=100",
+    image_3:
+      "https://images.urbndata.com/is/image/Anthropologie/68687375_011_b2?$a15-pdp-detail-shot$&fit=constrain&qlt=80&wid=100",
     price: "395.00",
   },
 ];
@@ -122,13 +192,16 @@ function displaydatafunction(Clothing_WomensClothing) {
     imgCircle1.setAttribute("class", "productsCircle");
     imgCircle2.setAttribute("class", "productsCircle");
     imgCircle3.setAttribute("class", "productsCircle");
-    clickable.setAttribute("href", "../productsReviewPage/productReviewPage.html");
+    clickable.setAttribute(
+      "href",
+      "../productsReviewPage/productReviewPage.html"
+    );
     // image1.addEventListener("click", function () {
     //   adddatatoprductview(index);
     // });
     image1.addEventListener("click", adddatatoprductview);
 
-    function adddatatoprductview(){
+    function adddatatoprductview() {
       localStorage.setItem("itemName", elem.name);
       localStorage.setItem("image_1", elem.image_1);
       localStorage.setItem("image_2", elem.image_2);

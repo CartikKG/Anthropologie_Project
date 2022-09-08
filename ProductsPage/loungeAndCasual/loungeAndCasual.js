@@ -1,3 +1,37 @@
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides((slideIndex += n));
+}
+
+function currentSlide(n) {
+  showSlides((slideIndex = n));
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("SLIDEDIVS");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {
+    slideIndex = 1;
+  }
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex - 1].style.display = "flex";
+}
+
+function Changeui() {
+  document.getElementById("NAVBARUL").classList.toggle("changewholenav");
+  document.getElementById("MOBILECLICK").classList.toggle("MOBILECLICKDISPLAY");
+}
 let Clothing_WomensClothing = [
   {
     name: "By Anthropologie Long-Sleeve Chiffon Dress",
@@ -103,7 +137,7 @@ let Clothing_WomensClothing = [
     name: "By Anthropologie Embroidered Tunic Mini Dress",
     image_1:
       "https://images.urbndata.com/is/image/Anthropologie/4130578570021_067_b14?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
-      image_2:
+    image_2:
       "https://images.urbndata.com/is/image/Anthropologie/4130348690182_028_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
     image_3:
       "https://images.urbndata.com/is/image/Anthropologie/4130348690182_028_b3?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
@@ -120,7 +154,6 @@ let Clothing_WomensClothing = [
     price: "170.0",
   },
 ];
-
 
 displaydatafunction(Clothing_WomensClothing);
 // funtion for mapping all the data of items

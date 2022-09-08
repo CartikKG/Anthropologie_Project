@@ -1,104 +1,179 @@
-var Clothing_WomensClothing=[
-    {
-        name :"By Anthropologie Plaid Bucket Hat",
-        image_1:"https://images.urbndata.com/is/image/Anthropologie/78131984_001_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
-        image_2:"https://images.urbndata.com/is/image/Anthropologie/78131984_001_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
-        image_3:"https://images.urbndata.com/is/image/Anthropologie/78131984_001_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
-        price : "148",
-    },
-    {
-        name :"Gold Bubble Bracelet",
-        image_1:"https://images.urbndata.com/is/image/Anthropologie/78154226_070_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
-        image_2:"https://images.urbndata.com/is/image/Anthropologie/78154226_070_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
-        image_3:"https://images.urbndata.com/is/image/Anthropologie/78154226_070_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
-        price : "38",
-    },
-    {
-        name :"Round Pearl-Embellished Sunglasses",
-        image_1:"https://images.urbndata.com/is/image/Anthropologie/78784147_017_b14?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
-        image_2:"https://images.urbndata.com/is/image/Anthropologie/78784147_017_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
-        image_3:"https://images.urbndata.com/is/image/Anthropologie/78784147_017_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
-        price : "48.00",
-    },
-    {
-        name :"Woven Faux Leather Clutch",
-        image_1:"https://images.urbndata.com/is/image/Anthropologie/78356185_021_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
-        image_2:"https://images.urbndata.com/is/image/Anthropologie/78356185_011_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
-        image_3:"https://images.urbndata.com/is/image/Anthropologie/78356185_001_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
-        price : "80.00",
-    },
-    {
-        name :"By Anthropologie Sheer Thing Socks",
-        image_1:"https://images.urbndata.com/is/image/Anthropologie/78075702_001_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
-        image_2:"https://images.urbndata.com/is/image/Anthropologie/78075702_010_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
-        image_3:"https://images.urbndata.com/is/image/Anthropologie/67895979_030_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
-        price : "20.00",
-    },
-    {
-        name :"By Anthropologie Leather Fingerless Gloves",
-        image_1:"https://images.urbndata.com/is/image/Anthropologie/78155074_066_b15?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
-        image_2:"https://images.urbndata.com/is/image/Anthropologie/78155074_224_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
-        image_3:"https://images.urbndata.com/is/image/Anthropologie/69672566_001_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
-        price : "88.00",
-    },
-    {
-        name :"Oversized Sunglasses",
-        image_1:"https://images.urbndata.com/is/image/Anthropologie/78555505_062_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
-        image_2:"https://images.urbndata.com/is/image/Anthropologie/78555505_041_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
-        image_3:"https://images.urbndata.com/is/image/Anthropologie/78555505_060_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
-        price : "38.00",
-    },
-    {
-        name :"Current Air Tulle Neck Tie",
-        image_1:"https://images.urbndata.com/is/image/Anthropologie/78497419_001_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
-        image_2:"https://images.urbndata.com/is/image/Anthropologie/78497419_040_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
-        image_3:"https://images.urbndata.com/is/image/Anthropologie/78497419_001_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
-        price : "38.00",
-    },
-    {
-        name :"Knit Houndstooth Beret",
-        image_1:"https://images.urbndata.com/is/image/Anthropologie/78027273_018_b14?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
-        image_2:"https://images.urbndata.com/is/image/Anthropologie/78027273_018_b14?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
-        image_3:"https://images.urbndata.com/is/image/Anthropologie/78027273_018_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
-        price : "40.00",
-    },
-    {
-        name :"By Anthropologie Metallic Clutch",
-        image_1:"https://images.urbndata.com/is/image/Anthropologie/78725132_007_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
-        image_2:"https://images.urbndata.com/is/image/Anthropologie/78725132_066_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
-        image_3:"https://images.urbndata.com/is/image/Anthropologie/78725132_001_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
-        price : "0.00",
-    },
-    {
-        name :"Embellished Pearl Reading Glasses",
-        image_1:"https://images.urbndata.com/is/image/Anthropologie/78784055_017_b14?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
-        image_2:"https://images.urbndata.com/is/image/Anthropologie/78784055_017_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
-        image_3:"https://images.urbndata.com/is/image/Anthropologie/78784055_017_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
-        price : "48.00",
-    },
-    {
-        name :"Baguette Tennis Bracelet",
-        image_1:"https://images.urbndata.com/is/image/Anthropologie/78192309_100_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
-        image_2:"https://images.urbndata.com/is/image/Anthropologie/78192309_030_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
-        image_3:"https://images.urbndata.com/is/image/Anthropologie/78192309_040_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
-        price : "28.00",
-    },
-    {
-        name :"Chunky Hoop Earrings",
-        image_1:"https://images.urbndata.com/is/image/Anthropologie/78075462_070_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
-        image_2:"https://images.urbndata.com/is/image/Anthropologie/78075462_007_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
-        image_3:"https://images.urbndata.com/is/image/Anthropologie/76194570_037_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
-        price : "34.00",
-    },
-    {
-        name :"Embellished Crossbody Bag",
-        image_1:"https://images.urbndata.com/is/image/Anthropologie/76194570_066_b15?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
-        image_2:"https://images.urbndata.com/is/image/Anthropologie/76194570_012_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
-        image_3:"https://images.urbndata.com/is/image/Anthropologie/76194570_007_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
-        price : "90.00",
-    },
+let slideIndex = 1;
+showSlides(slideIndex);
 
-]
+function plusSlides(n) {
+  showSlides((slideIndex += n));
+}
+
+function currentSlide(n) {
+  showSlides((slideIndex = n));
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("SLIDEDIVS");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {
+    slideIndex = 1;
+  }
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex - 1].style.display = "flex";
+}
+
+function Changeui() {
+  document.getElementById("NAVBARUL").classList.toggle("changewholenav");
+  document.getElementById("MOBILECLICK").classList.toggle("MOBILECLICKDISPLAY");
+}
+var Clothing_WomensClothing = [
+  {
+    name: "By Anthropologie Plaid Bucket Hat",
+    image_1:
+      "https://images.urbndata.com/is/image/Anthropologie/78131984_001_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+    image_2:
+      "https://images.urbndata.com/is/image/Anthropologie/78131984_001_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
+    image_3:
+      "https://images.urbndata.com/is/image/Anthropologie/78131984_001_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
+    price: "148",
+  },
+  {
+    name: "Gold Bubble Bracelet",
+    image_1:
+      "https://images.urbndata.com/is/image/Anthropologie/78154226_070_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+    image_2:
+      "https://images.urbndata.com/is/image/Anthropologie/78154226_070_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
+    image_3:
+      "https://images.urbndata.com/is/image/Anthropologie/78154226_070_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
+    price: "38",
+  },
+  {
+    name: "Round Pearl-Embellished Sunglasses",
+    image_1:
+      "https://images.urbndata.com/is/image/Anthropologie/78784147_017_b14?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+    image_2:
+      "https://images.urbndata.com/is/image/Anthropologie/78784147_017_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
+    image_3:
+      "https://images.urbndata.com/is/image/Anthropologie/78784147_017_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
+    price: "48.00",
+  },
+  {
+    name: "Woven Faux Leather Clutch",
+    image_1:
+      "https://images.urbndata.com/is/image/Anthropologie/78356185_021_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+    image_2:
+      "https://images.urbndata.com/is/image/Anthropologie/78356185_011_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+    image_3:
+      "https://images.urbndata.com/is/image/Anthropologie/78356185_001_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+    price: "80.00",
+  },
+  {
+    name: "By Anthropologie Sheer Thing Socks",
+    image_1:
+      "https://images.urbndata.com/is/image/Anthropologie/78075702_001_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+    image_2:
+      "https://images.urbndata.com/is/image/Anthropologie/78075702_010_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+    image_3:
+      "https://images.urbndata.com/is/image/Anthropologie/67895979_030_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
+    price: "20.00",
+  },
+  {
+    name: "By Anthropologie Leather Fingerless Gloves",
+    image_1:
+      "https://images.urbndata.com/is/image/Anthropologie/78155074_066_b15?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+    image_2:
+      "https://images.urbndata.com/is/image/Anthropologie/78155074_224_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+    image_3:
+      "https://images.urbndata.com/is/image/Anthropologie/69672566_001_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
+    price: "88.00",
+  },
+  {
+    name: "Oversized Sunglasses",
+    image_1:
+      "https://images.urbndata.com/is/image/Anthropologie/78555505_062_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+    image_2:
+      "https://images.urbndata.com/is/image/Anthropologie/78555505_041_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+    image_3:
+      "https://images.urbndata.com/is/image/Anthropologie/78555505_060_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+    price: "38.00",
+  },
+  {
+    name: "Current Air Tulle Neck Tie",
+    image_1:
+      "https://images.urbndata.com/is/image/Anthropologie/78497419_001_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+    image_2:
+      "https://images.urbndata.com/is/image/Anthropologie/78497419_040_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+    image_3:
+      "https://images.urbndata.com/is/image/Anthropologie/78497419_001_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
+    price: "38.00",
+  },
+  {
+    name: "Knit Houndstooth Beret",
+    image_1:
+      "https://images.urbndata.com/is/image/Anthropologie/78027273_018_b14?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+    image_2:
+      "https://images.urbndata.com/is/image/Anthropologie/78027273_018_b14?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
+    image_3:
+      "https://images.urbndata.com/is/image/Anthropologie/78027273_018_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
+    price: "40.00",
+  },
+  {
+    name: "By Anthropologie Metallic Clutch",
+    image_1:
+      "https://images.urbndata.com/is/image/Anthropologie/78725132_007_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+    image_2:
+      "https://images.urbndata.com/is/image/Anthropologie/78725132_066_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+    image_3:
+      "https://images.urbndata.com/is/image/Anthropologie/78725132_001_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+    price: "0.00",
+  },
+  {
+    name: "Embellished Pearl Reading Glasses",
+    image_1:
+      "https://images.urbndata.com/is/image/Anthropologie/78784055_017_b14?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+    image_2:
+      "https://images.urbndata.com/is/image/Anthropologie/78784055_017_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
+    image_3:
+      "https://images.urbndata.com/is/image/Anthropologie/78784055_017_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
+    price: "48.00",
+  },
+  {
+    name: "Baguette Tennis Bracelet",
+    image_1:
+      "https://images.urbndata.com/is/image/Anthropologie/78192309_100_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+    image_2:
+      "https://images.urbndata.com/is/image/Anthropologie/78192309_030_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+    image_3:
+      "https://images.urbndata.com/is/image/Anthropologie/78192309_040_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+    price: "28.00",
+  },
+  {
+    name: "Chunky Hoop Earrings",
+    image_1:
+      "https://images.urbndata.com/is/image/Anthropologie/78075462_070_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+    image_2:
+      "https://images.urbndata.com/is/image/Anthropologie/78075462_007_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+    image_3:
+      "https://images.urbndata.com/is/image/Anthropologie/76194570_037_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+    price: "34.00",
+  },
+  {
+    name: "Embellished Crossbody Bag",
+    image_1:
+      "https://images.urbndata.com/is/image/Anthropologie/76194570_066_b15?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+    image_2:
+      "https://images.urbndata.com/is/image/Anthropologie/76194570_012_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+    image_3:
+      "https://images.urbndata.com/is/image/Anthropologie/76194570_007_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+    price: "90.00",
+  },
+];
 displaydatafunction(Clothing_WomensClothing);
 // funtion for mapping all the data of items
 function displaydatafunction(Clothing_WomensClothing) {
@@ -137,13 +212,16 @@ function displaydatafunction(Clothing_WomensClothing) {
     imgCircle1.setAttribute("class", "productsCircle");
     imgCircle2.setAttribute("class", "productsCircle");
     imgCircle3.setAttribute("class", "productsCircle");
-    clickable.setAttribute("href", "../productsReviewPage/productReviewPage.html");
+    clickable.setAttribute(
+      "href",
+      "../productsReviewPage/productReviewPage.html"
+    );
     // image1.addEventListener("click", function () {
     //   adddatatoprductview(index);
     // });
     image1.addEventListener("click", adddatatoprductview);
 
-    function adddatatoprductview(){
+    function adddatatoprductview() {
       localStorage.setItem("itemName", elem.name);
       localStorage.setItem("image_1", elem.image_1);
       localStorage.setItem("image_2", elem.image_2);

@@ -1,78 +1,144 @@
-var Clothing_WomensClothing = [{
+let slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides((slideIndex += n));
+}
+
+function currentSlide(n) {
+  showSlides((slideIndex = n));
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("SLIDEDIVS");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {
+    slideIndex = 1;
+  }
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex - 1].style.display = "flex";
+}
+
+function Changeui() {
+  document.getElementById("NAVBARUL").classList.toggle("changewholenav");
+  document.getElementById("MOBILECLICK").classList.toggle("MOBILECLICKDISPLAY");
+}
+var Clothing_WomensClothing = [
+  {
     name: "Alexandra Candle",
-    image_1: "https://images.urbndata.com/is/image/Anthropologie/67587972_004_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
-    image_2: "https://images.urbndata.com/is/image/Anthropologie/69950285_080_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
-    image_3: "https://images.urbndata.com/is/image/Anthropologie/69950285_080_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+    image_1:
+      "https://images.urbndata.com/is/image/Anthropologie/67587972_004_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+    image_2:
+      "https://images.urbndata.com/is/image/Anthropologie/69950285_080_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+    image_3:
+      "https://images.urbndata.com/is/image/Anthropologie/69950285_080_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
     price: "20.80 - 54.40",
     strikePrice: "26.00",
-},
-{
-  image_1: "https://images.urbndata.com/is/image/Anthropologie/52733375_011_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
-  image_2: "https://images.urbndata.com/is/image/Anthropologie/67587972_004_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
-    image_3: "https://images.urbndata.com/is/image/Anthropologie/69950285_080_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+  },
+  {
+    image_1:
+      "https://images.urbndata.com/is/image/Anthropologie/52733375_011_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+    image_2:
+      "https://images.urbndata.com/is/image/Anthropologie/67587972_004_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+    image_3:
+      "https://images.urbndata.com/is/image/Anthropologie/69950285_080_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
     name: "Capri Blue Capiz Jar Candle",
     price: "28.80",
     strikePrice: "36.00",
-},
-{
-  image_1: "https://images.urbndata.com/is/image/Anthropologie/67477232_080_a10?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
-    image_2: "https://images.urbndata.com/is/image/Anthropologie/67123141_014_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
-    image_3: "https://images.urbndata.com/is/image/Anthropologie/69950285_080_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+  },
+  {
+    image_1:
+      "https://images.urbndata.com/is/image/Anthropologie/67477232_080_a10?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+    image_2:
+      "https://images.urbndata.com/is/image/Anthropologie/67123141_014_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+    image_3:
+      "https://images.urbndata.com/is/image/Anthropologie/69950285_080_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
     name: "Casual Draped Knit Set",
     price: "180.00",
-},
-{
-  image_1: "https://images.urbndata.com/is/image/Anthropologie/37659125_901_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
-  image_2: "https://images.urbndata.com/is/image/Anthropologie/37659125_901_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
-    image_3: "https://images.urbndata.com/is/image/Anthropologie/37659125_902_b14?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+  },
+  {
+    image_1:
+      "https://images.urbndata.com/is/image/Anthropologie/37659125_901_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+    image_2:
+      "https://images.urbndata.com/is/image/Anthropologie/37659125_901_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+    image_3:
+      "https://images.urbndata.com/is/image/Anthropologie/37659125_902_b14?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
     name: "Monogram Pendant Necklace",
     price: "38.00",
-},
-{
-    image_1: "https://images.urbndata.com/is/image/Anthropologie/78189701_000_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
-  image_2: "https://images.urbndata.com/is/image/Anthropologie/69950285_230_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
-    image_3: "https://images.urbndata.com/is/image/Anthropologie/37659125_901_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+  },
+  {
+    image_1:
+      "https://images.urbndata.com/is/image/Anthropologie/78189701_000_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+    image_2:
+      "https://images.urbndata.com/is/image/Anthropologie/69950285_230_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+    image_3:
+      "https://images.urbndata.com/is/image/Anthropologie/37659125_901_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
     name: "Moglea Candy Beam Stationery Set",
     price: "25.60",
-    strikePrice: 32.00,
-},
-{
-    image_1: "https://images.urbndata.com/is/image/Anthropologie/69950285_004_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
-    image_2: "https://images.urbndata.com/is/image/Anthropologie/67477232_080_a10?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
-    image_3: "https://images.urbndata.com/is/image/Anthropologie/69950285_080_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+    strikePrice: 32.0,
+  },
+  {
+    image_1:
+      "https://images.urbndata.com/is/image/Anthropologie/69950285_004_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+    image_2:
+      "https://images.urbndata.com/is/image/Anthropologie/67477232_080_a10?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+    image_3:
+      "https://images.urbndata.com/is/image/Anthropologie/69950285_080_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
     name: "Striped Pillar Candle",
     price: "25.00",
-    strikePrice: 40.00,
-},
-{
-    image_1: "https://images.urbndata.com/is/image/Anthropologie/67477232_040_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
-  image_2: "https://images.urbndata.com/is/image/Anthropologie/67477232_080_a10?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
-    image_3: "https://images.urbndata.com/is/image/Anthropologie/69950285_080_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+    strikePrice: 40.0,
+  },
+  {
+    image_1:
+      "https://images.urbndata.com/is/image/Anthropologie/67477232_040_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+    image_2:
+      "https://images.urbndata.com/is/image/Anthropologie/67477232_080_a10?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+    image_3:
+      "https://images.urbndata.com/is/image/Anthropologie/69950285_080_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
     name: "Sequoia Wood Pillar Candle Holder",
     price: "34.00",
-},
-{
-    image_1: "https://images.urbndata.com/is/image/Anthropologie/69234557_066_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
-  image_2: "https://images.urbndata.com/is/image/Anthropologie/67477232_080_a10?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
-    image_3: "https://images.urbndata.com/is/image/Anthropologie/69234557_066_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+  },
+  {
+    image_1:
+      "https://images.urbndata.com/is/image/Anthropologie/69234557_066_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+    image_2:
+      "https://images.urbndata.com/is/image/Anthropologie/67477232_080_a10?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+    image_3:
+      "https://images.urbndata.com/is/image/Anthropologie/69234557_066_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
     name: "Grown Alchemist Age Repair Minis Kit",
     price: "36.00",
-    strikePrice: 45.00,
-},
-{
-    image_1: "https://images.urbndata.com/is/image/Anthropologie/78189719_000_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
-  image_2: "https://images.ctfassets.net/5de70he6op10/5qUns1ztyJw0P3QHaLfvF1/1539ecaf44f453f53b167819327b6164/051022_Evergreen_GiftGuide_GiftsForHostess.jpg?w=856&q=80&fm=webp",
-    image_3: "https://images.urbndata.com/is/image/Anthropologie/69234557_066_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+    strikePrice: 45.0,
+  },
+  {
+    image_1:
+      "https://images.urbndata.com/is/image/Anthropologie/78189719_000_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+    image_2:
+      "https://images.ctfassets.net/5de70he6op10/5qUns1ztyJw0P3QHaLfvF1/1539ecaf44f453f53b167819327b6164/051022_Evergreen_GiftGuide_GiftsForHostess.jpg?w=856&q=80&fm=webp",
+    image_3:
+      "https://images.urbndata.com/is/image/Anthropologie/69234557_066_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
     name: "Moglea Dewdrop Stationery Set",
     price: "58.00",
-},
-{
-    image_1: "https://images.urbndata.com/is/image/Anthropologie/48097422_070_b10?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
-  image_2: "https://images.ctfassets.net/5de70he6op10/5qUns1ztyJw0P3QHaLfvF1/1539ecaf44f453f53b167819327b6164/051022_Evergreen_GiftGuide_GiftsForHostess.jpg?w=856&q=80&fm=webp",
-    image_3: "https://images.urbndata.com/is/image/Anthropologie/48097422_070_b10?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+  },
+  {
+    image_1:
+      "https://images.urbndata.com/is/image/Anthropologie/48097422_070_b10?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+    image_2:
+      "https://images.ctfassets.net/5de70he6op10/5qUns1ztyJw0P3QHaLfvF1/1539ecaf44f453f53b167819327b6164/051022_Evergreen_GiftGuide_GiftsForHostess.jpg?w=856&q=80&fm=webp",
+    image_3:
+      "https://images.urbndata.com/is/image/Anthropologie/48097422_070_b10?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
     name: "Grecian Bust Pot",
     price: "60.00",
-},];
+  },
+];
 displaydatafunction(Clothing_WomensClothing);
 // funtion for mapping all the data of items
 function displaydatafunction(Clothing_WomensClothing) {
@@ -111,13 +177,16 @@ function displaydatafunction(Clothing_WomensClothing) {
     imgCircle1.setAttribute("class", "productsCircle");
     imgCircle2.setAttribute("class", "productsCircle");
     imgCircle3.setAttribute("class", "productsCircle");
-    clickable.setAttribute("href", "../productsReviewPage/productReviewPage.html");
+    clickable.setAttribute(
+      "href",
+      "../productsReviewPage/productReviewPage.html"
+    );
     // image1.addEventListener("click", function () {
     //   adddatatoprductview(index);
     // });
     image1.addEventListener("click", adddatatoprductview);
 
-    function adddatatoprductview(){
+    function adddatatoprductview() {
       localStorage.setItem("itemName", elem.name);
       localStorage.setItem("image_1", elem.image_1);
       localStorage.setItem("image_2", elem.image_2);
