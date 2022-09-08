@@ -8,6 +8,7 @@
     <title>Shipping</title>
     <link rel="shortcut icon" type="image/x-icon" href="https://visitoakville.com/wp-content/uploads/2013/03/04-07-2021-anthropologie-logo.jpg" />
     <script src="https://kit.fontawesome.com/8823e938e1.js" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
 </head>
 <body>
     <div style="display: flex;" id="cartmainbox ">
@@ -290,9 +291,9 @@
                     <div id="orderbox"><p>Shipping</p><p>TBD</p></div>
                     <div id="orderbox"><p>Estimated Tax</p><p>0.00</p></div>
                     <div id="orderbox"><p>Total</p><p>1500</p></div>
-                    <button id="btn">Ship To This Address</button>
-                    <hr>
-                    <div class="navbar">
+                    <button id="shipbtn" onclick="popupfun()">Ship To This Address</button>
+                    <!-- <hr> -->
+                    <!-- <div class="navbar">
                         <div class="dropdown">
                             <button class="dropbtn" onclick="myFunction()">Promo Code
                             <i class="fa fa-caret-down"></i>
@@ -302,7 +303,7 @@
                                 <button>Apply</button>
                             </div>
                         </div> 
-                    </div>
+                    </div> -->
                 </div>
             </div>
     </div>
@@ -316,9 +317,9 @@
                 <div id="orderbox"><p>Shipping</p><p>TBD</p></div>
                 <div id="orderbox"><p>Estimated Tax</p><p>0.00</p></div>
                 <div id="orderbox"><p>Total</p><p>1500</p></div>
-                <button id="btn">Ship To This Address</button>
-                <hr>
-                <div class="navbar">
+                <button id="shipbtn" onclick="popupfun()">Ship To This Address</button>
+                <!-- <hr> -->
+                <!-- <div class="navbar">
                     <div class="dropdown">
                         <button class="dropbtn" onclick="myFunction()">Promo Code
                         <i class="fa fa-caret-down"></i>
@@ -328,9 +329,19 @@
                             <button>Apply</button>
                         </div>
                     </div> 
-                </div>
+                </div> -->
             </div>
         </div> 
     </div>
 </body>
 </html>
+<script>
+    function popupfun(){
+        swal({
+  title: "Good job!",
+  text: "Your Order is Placed!",
+  icon: "success",
+  button: "Aww yiss!",
+});
+    }
+</script>
