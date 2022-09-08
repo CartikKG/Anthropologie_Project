@@ -137,3 +137,7 @@ a:active {
     text-decoration: none;
     color: inherit;
 }
+
+.modal-backdrop {
+    background-image: url("https://images.urbndata.com/is/image/Anthropologie/67592915_050_a?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349");
+}
