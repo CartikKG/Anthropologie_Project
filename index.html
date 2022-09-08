@@ -13,10 +13,14 @@
     <!-- <a href="./"></a> -->
     <!-- <a href="./HOMEPAGE/home.html"></a> -->
     <a href="./footerPage/footerPage.html"></a>
-    <!-- <link
-      rel="/Anthropologie_Project/footerPage/footerPage.html"
-      href="/Anthropologie_Project/footerPage/footerPage.html"
-    /> -->
+    <link
+    href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
+    rel="stylesheet"
+  />
+  <script
+  src="https://kit.fontawesome.com/60b736368c.js"
+  crossorigin="anonymous"
+></script>
     <script>
       $(function () {
         // $("#navbarHtml").load("./NAVBAR/navbar.html");
@@ -686,3 +690,43 @@
     <div id="includedContent"></div>
   </body>
 </html>
+<script>
+  let slideIndex = 1;
+ showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("SLIDEDIVS");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length){
+       slideIndex = 1
+  }    
+  if (n < 1){
+   slideIndex = slides.length
+  }
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style. display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "flex";  
+ 
+}
+
+function Changeui(){
+  document.getElementById("NAVBARUL").classList.toggle("changewholenav");
+  document.getElementById("MOBILECLICK").classList.toggle("MOBILECLICKDISPLAY");
+ 
+  
+}
+
+</script>
