@@ -41,12 +41,12 @@
     width: 100%;
     margin: auto;
     margin-top: 10px;
-    border: 1px solid white;
+    /* border: 1px solid white; */
     cursor: pointer;
 }
 
 .leftSideImageDiv>img:hover {
-    border: 1px solid teal;
+    border: 3px solid teal;
 }
 
 .mainImageDiv {
