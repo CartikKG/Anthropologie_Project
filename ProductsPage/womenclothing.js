@@ -664,13 +664,19 @@ function displaydatafunction(Clothing_WomensClothing) {
     imgCircle1.setAttribute("class", "productsCircle");
     imgCircle2.setAttribute("class", "productsCircle");
     imgCircle3.setAttribute("class", "productsCircle");
-    clickable.setAttribute(
-      "href",
-      "../productsReviewPage/productReviewPage.html"
-    );
-    image1.addEventListener("click", function () {
-      adddatatoprductview(index);
-    });
+    clickable.setAttribute("href", "../productsReviewPage/productReviewPage.html");
+    // image1.addEventListener("click", function () {
+    //   adddatatoprductview(index);
+    // });
+    image1.addEventListener("click", adddatatoprductview);
+
+    function adddatatoprductview(){
+      localStorage.setItem("itemName", elem.name);
+      localStorage.setItem("image_1", elem.image_1);
+      localStorage.setItem("image_2", elem.image_2);
+      localStorage.setItem("image_3", elem.image_3);
+      localStorage.setItem("price", elem.price);
+    }
 
     // function for changing image on mouseover and mouseleave
     image1.addEventListener("mouseover", changeImg1);
@@ -775,12 +781,12 @@ function changebyfunctionvalue(name) {
   }
 }
 
-function adddatatoprductview(index) {
-  let temp = Clothing_WomensClothing.filter(function (el, i) {
-    if (i == index) {
-      return el;
-    }
-  });
-  console.log("KARTIK WIN");
-  localStorage.setItem("forcheckitemview", JSON.stringify(temp[0]));
-}
+// function adddatatoprductview(index) {
+//   let temp = Clothing_WomensClothing.filter(function (el, i) {
+//     if (i == index) {
+//       return el;
+//     }
+//   });
+//   console.log("KARTIK WIN");
+//   localStorage.setItem("forcheckitemview", JSON.stringify(temp[0]));
+// }
