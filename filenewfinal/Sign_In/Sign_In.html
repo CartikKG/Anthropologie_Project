@@ -1,14 +1,20 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Signin</title>
-    <link rel="icon" type="image/x-icon" href="https://www.anthropologie.com/favicon.ico" />
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="https://www.anthropologie.com/favicon.ico"
+    />
     <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+    />
 
     <!-- jQuery library -->
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
@@ -19,74 +25,99 @@
     <!-- Latest compiled JavaScript -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
-    <script src="https://kit.fontawesome.com/60b736368c.js" crossorigin="anonymous"></script>
-</head>
-<link rel="stylesheet" href="Sign_In.css" />
+    <script
+      src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+      integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js"
+      integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/60b736368c.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <link rel="stylesheet" href="Sign_In.css" />
 
-<body id="mainbody">
+  <body id="mainbody">
     <div class="container">
-        <div class="modal fade" id="parent1" data-keyboard="false" data-backdrop="static">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header" id="parent">
-                        <div id="medium">
-                            <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
-                            <a href="../../index.html">
-                                <span style="color: rgb(0, 0, 0)" id="gotoright">
+      <div
+        class="modal fade"
+        id="parent1"
+        data-keyboard="false"
+        data-backdrop="static"
+      >
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header" id="parent">
+              <div id="medium">
+                <!-- <button type="button" class="close" data-dismiss="modal">&times;</button> -->
+                <a href="../../index.html">
+                  <span style="color: rgb(0, 0, 0)" id="gotoright">
                     <i class="fa-solid fa-xmark"></i>
                   </span>
-                            </a>
-                            <h2 id="h2">Sign In</h2>
-                            <hr />
-                            <p class="p">
-                                Sign in so you can save items to your wishlists, track your orders, and check out faster!
-                            </p>
-                            <form>
-                                <div>
-                                    <p class="p" style="text-align: left; margin-bottom: 3% ;color: black;">
-                                        Email*
-                                    </p>
-                                    <input id="getemailid" type="email" required />
-                                </div>
-                                <button type="submit" id="Next" class="anc">Next</button>
-                            </form>
-                            <!-- <a 
+                </a>
+                <h2 id="h2">Sign In</h2>
+                <hr />
+                <p class="p">
+                  Sign in so you can save items to your wishlists, track your
+                  orders, and check out faster!
+                </p>
+                <form>
+                  <div>
+                    <p
+                      class="p"
+                      style="text-align: left; margin-bottom: 3%; color: black"
+                    >
+                      Email*
+                    </p>
+                    <input id="getemailid" type="email" required />
+                  </div>
+                  <button type="submit" id="Next" class="anc">Next</button>
+                </form>
+                <!-- <a 
                     href="/Anthropologie_Project/SignUp__SignIn/Sign_In_By_Email/Sign_In_By_Email.html"
                     ></a>
                   > -->
 
-                            <!-- <button id="MOBILE">
+                <!-- <button id="MOBILE">
                   <a
                     href="/Anthropologie_Project/SignUp__SignIn/Sign_In_By_Mobile/Sign_In_By_Mobile.html"
                     >USE MOBILE NUMBER INSTEAD</a
                   >
                 </button> -->
-                            <hr />
+                <hr />
 
-                            <h2>Sign Up</h2>
-                            <p class="p">
-                                Welcome! It's quick and easy to set up an account
-                            </p>
-                            <button id="ACCOUNT">
-                  <a class="anc"
-                    href="/Anthropologie_Project/SignUp__SignIn/SignUp/Signup.html"
-                    >CREATE AN ACCOUNT</a>
-                  
+                <h2>Sign Up</h2>
+                <p class="p">
+                  Welcome! It's quick and easy to set up an account
+                </p>
+                <button id="ACCOUNT">
+                  <a class="anc" href="../SignUp/Signup.html"
+                    >CREATE AN ACCOUNT</a
+                  >
                 </button>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
+          </div>
         </div>
+      </div>
     </div>
-</body>
-
+  </body>
 </html>
 
 <script src="Sign_In.js"></script>
