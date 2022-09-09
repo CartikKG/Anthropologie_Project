@@ -270,3 +270,10 @@ function couponcheck() {
     document.getElementById("promocodeapplied").innerText = "Invalid Coupon";
   }
 }
+let flagg = localStorage.getItem("flag");
+let dataa = JSON.parse(localStorage.getItem("data"));
+// if(data)
+if (dataa.length != 0) {
+  document.getElementById("emaildata").innerText = "Logged In";
+  console.log("Kartik");
+}

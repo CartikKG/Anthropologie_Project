@@ -3,7 +3,13 @@ document.getElementById("cartitemstotalcount").innerHTML =
   cartItemstotalqty.length;
 let slideIndex = 1;
 showSlides(slideIndex);
-
+let flagg = localStorage.getItem("flag");
+let dataa = JSON.parse(localStorage.getItem("data"));
+// if(data)
+if (dataa.length != 0) {
+  document.getElementById("emaildata").innerText = "Logged In";
+  console.log("Kartik");
+}
 function plusSlides(n) {
   showSlides((slideIndex += n));
 }

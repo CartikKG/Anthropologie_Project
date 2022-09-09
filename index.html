@@ -12,7 +12,7 @@
     />
     <!-- <a href="./"></a> -->
     <!-- <a href="./HOMEPAGE/home.html"></a> -->
-    <a href="./footerPage/footerPage.html"></a>
+    <!-- <a href="./footerPage/footerPage.html"></a> -->
     <link
     href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap"
     rel="stylesheet"
@@ -90,7 +90,7 @@
           <a href="./filenewfinal/SINGUP_SIGNIN/Singup_Signin.html"
               style="text-decoration:none;">
               <div>
-                  <i class="fa-regular fa-user"></i> Sign In / Sign Up
+                  <i class="fa-regular fa-user"></i> <span id="emaildata">Sign In / Sign Up</span> 
               </div>
           </a>
     
@@ -134,7 +134,7 @@
           <ul id="NAVBARUL">
               <div id="SigninSignUPMOBILE">
                   <div> <i class="fa-sharp fa-solid fa-globe" style="margin-right: 10px;"></i>English ($)</div>
-                   <div><a href="./filenewfinal/SINGUP_SIGNIN/Singup_Signin.html"> <i class="fa-regular fa-user"></i> Sign In / Sign Up </a> </div>
+                   <div><a href="./filenewfinal/SINGUP_SIGNIN/Singup_Signin.html"> <i class="fa-regular fa-user"></i> <span id="emaildata">Sign In / Sign Up</span> </a> </div>
     
     
               </div>
@@ -1290,5 +1290,15 @@ function Changeui(){
 }
 let cartItemstotalqty = JSON.parse(localStorage.getItem("cartItems")) || [];
 document.getElementById("cartitemstotalcount").innerHTML =cartItemstotalqty.length;
+let flagg=localStorage.getItem("flag");
+let dataa=JSON.parse(localStorage.getItem("data"));
+// if(data)
+if(dataa.length!=0){
+ 
+  document.getElementById("emaildata").innerText = "Logged In";
+  console.log("Kartik");
+}
+
+
 
 </script>

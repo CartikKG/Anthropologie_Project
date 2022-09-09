@@ -130,7 +130,7 @@
           <ul id="NAVBARUL">
               <div id="SigninSignUPMOBILE">
                   <div> <i class="fa-sharp fa-solid fa-globe" style="margin-right: 10px;"></i>English ($)</div>
-                   <div><a href=""> <i class="fa-regular fa-user"></i> Sign In / Sign Up </a> </div>
+                   <div><a href=""> <i class="fa-regular fa-user"></i> <span id="emaildata">Sign In / Sign Up</span>  </a> </div>
   
   
               </div>
@@ -1962,4 +1962,12 @@ document.getElementById("idtotalamount").innerText=cartgettotal.total
 document.getElementById("idtotaltaxx").innerText=cartgettotal.tax
 document.getElementById("idtotalat").innerText=cartgettotal.after
 console.log(cartItemstotalqty.after)
+let flagg=localStorage.getItem("flag");
+let dataa=JSON.parse(localStorage.getItem("data"));
+// if(data)
+if(dataa.length!=0){
+ 
+  document.getElementById("emaildata").innerText = "Logged In";
+  console.log("Kartik");
+}
 </script>
