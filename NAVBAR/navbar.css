@@ -351,6 +351,15 @@ nav a {
     position: fixed;
     /* z-index: 100; 
 } */
+#cartitemstotalcount {
+    font-size: 18px;
+    /* border: 2px solid red; */
+    padding: 2px 4px;
+    border-radius: 50px;
+    /* margin-left: 10px; */
+    background-color: #000000;
+    color: #ffffff;
+}
 
 
 

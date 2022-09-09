@@ -23,7 +23,7 @@
     <link rel="stylesheet" href="../footerPage/footerStyle.css">
     <link rel="stylesheet" href="../footerPage/footerStyle.css">
 
-     <link rel="stylesheet" href="/Anthropologie_Project/NAVBAR/navbar.css" />
+     <link rel="stylesheet" href="../navbar/navbar.css" />
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   </head>
   <body>
@@ -114,7 +114,7 @@
                 aria-label="Search"
               />
             
-             <a href="">   <i class="fa-solid fa-bag-shopping"></i>  </a> </i>
+             <a href="./CARTPAGE.html">   <i class="fa-solid fa-bag-shopping"></i>  </a> </i>
                <input type="Checkbox" id="checkboxnav" >
             <label for="check" class="checkbtn" id="MOBILECLICK" onclick="Changeui()" > <i class="fas fa-bars" ></i></label>
             </form>
@@ -682,7 +682,7 @@
           ><span style="color: red !important; display: inline; float: none"
             >*</span
           ><br />
-          <select id="country" name="country" class="form-control">
+          <select id="country" name="country" class="form-control" required="">
             <option value="Afghanistan">Afghanistan</option>
             <option value="Åland Islands">Åland Islands</option>
             <option value="Albania">Albania</option>
@@ -979,23 +979,24 @@
             <option value="Zimbabwe">Zimbabwe</option></select
           ><br />
           <label for="fname">First Name*</label><br />
-          <input type="text" id="fname" name="fname" required />
+          <input type="text" id="fname" name="fname" required=""/>
           <label for="l name">Last Name*</label>
-          <input type="text" id="lname" name="lname" required /><br />
+          <input type="text" id="lname" name="lname" required="" /><br />
           <label for="stadd"> Street Address*</label><br />
-          <input type="text" id="add" name="address" required /><br />
+          <input type="text" id="add" name="address" required=""/><br />
           <label for="stadd2"> Address 2</label><br />
-          <input type="text" id="add" name="address" required /><br />
+          <input type="text" id="add" name="address" required="" /><br />
           <label for="city"> City*</label>
-          <input type="text" id="add" name="address" required />
+          <input type="text" id="add" name="address" required=""/>
           <label for="province"> Province Or Region</label>
-          <input type="text" id="add" name="address" required />
+          <input type="text" id="add" name="address" required="" />
           <label for="postcode"> PostCode</label><br />
-          <input type="text" id="add" name="address" required /><br />
+          <input type="text" id="add" name="address" required="" /><br />
           <label for="phno."> Mobile Number</label><br />
-          <input type="text" id="emailid" name="email" required /><br />
+          <input type="text" id="emailid" name="email" required="" /><br />
           <label for="email"> Email</label><br />
-          <input type="email" id="emailid" name="email" required /><br />
+          <input type="email" id="emailid" name="email" required=""/><br />
+          <input type="submit" id="submittheaddress" name="email" required="" /><br />
         </form>
       </div>
       <div style="border: 2px" id="PaymentTranc">
@@ -1297,7 +1298,7 @@
           &nbsp<a href="">France<span>&nbsp</span></a>&nbsp
           &nbsp<a href="">Germany<span>&nbsp</span></a> &nbsp
           &nbsp<a href="">Italy<span>&nbsp</span></a>&nbsp
-          &nbsp<a href="">Spain<span>&nbsp</span></a>&nbsp
+          &ship<a href="">Spain<span>&nbsp</span></a>&nbsp
           &nbsp<a href="">UK</a>
       </div>
       <div class="base-tags">
