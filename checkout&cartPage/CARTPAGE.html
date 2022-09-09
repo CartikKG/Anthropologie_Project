@@ -9,17 +9,41 @@
     <link rel="shortcut icon" type="image/x-icon" href="https://visitoakville.com/wp-content/uploads/2013/03/04-07-2021-anthropologie-logo.jpg" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
+    <style>
+
+    </style>
 </head>
 <body>
     <div id="cartMainbox">
         <!-- <label for="">Cart Page</label> -->
         <div id="CartBox">
             <div id="AddCart">
-                <h2>Basket</h2>
+                <div id="basketHeading">
+                    <h2>Basket</h2>
+                </div>
+                <div id="detailsList">
+                    <div>
+                        <p>Item</p>
+                    </div>
+                    <div>
+                        <p>Item Price</p>
+                        <p>Quantity</p>
+                        <p>Total Price</p>
+                    </div>
+                </div>
                 <div id="ListCart">
+                    <!-- <div id="itemImageDiv">
 
+                    </div>
+                    <div id="itemDetailDiv">
+
+                    </div>
+                    <div id="priceQuantityTotalDiv">
+
+                    </div> -->
                 </div>
             </div>
+
             <div id="PaymentTranc">
                <div id="ordertext">
                     <h2>Order Summary</h2>
@@ -139,6 +163,108 @@
 <script>
     const btn=document.getElementById("submitbtn");
     btn.addEventListener("click",function apply(){
+        event.preventDefault();
         btn.textContent="Applied";
     })
+
+    var cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
+
+    cartItems.map(function(elem){
+        var itemImageDiv = document.createElement("div");
+        var fullDescritionBox = document.createElement("div");
+        var itemDetailDiv = document.createElement("div");
+        var priceQuantityTotalDiv = document.createElement("div");
+        var itemPriceDiv = document.createElement("div");
+        var itemQuantityDiv = document.createElement("div");
+        var itemTotalPriceDiv = document.createElement("div");
+
+        var cartItemImage = document.createElement("img");
+        var cartItemName = document.createElement("a");
+        var cartItemStyle = document.createElement("p");
+        var cartItemColor = document.createElement("p");
+        var cartItemSize = document.createElement("p");
+        var cartItemPrice = document.createElement("p");
+        var cartItemQuantity = document.createElement("select");
+        var cartItemOption1 = document.createElement("option");
+        var cartItemOption2 = document.createElement("option");
+        var cartItemOption3 = document.createElement("option");
+        var cartItemOption4 = document.createElement("option");
+        var cartItemOption5 = document.createElement("option");
+        var cartItemOption6 = document.createElement("option");
+        var cartItemOption7 = document.createElement("option");
+        var cartItemOption8 = document.createElement("option");
+        var cartItemOption9 = document.createElement("option");
+        var cartItemOption10 = document.createElement("option");
+        var cartItemTotalPrice = document.createElement("p");
+        var cartItemDelete = document.createElement("a");
+        var cartItemSaveForLater = document.createElement("a");
+
+
+
+        cartItemImage.setAttribute("src", elem.image1);
+
+        cartItemName.innerText = elem.name
+        cartItemName.setAttribute("href", "");
+        cartItemStyle.innerText = "Style # 4122941520" + Number(elem.price) + elem.quantity; 
+        cartItemColor.innerText = "Color: " + elem.color;
+        cartItemSize.innerText = "Size: " + elem.size;
+        cartItemPrice.innerText = "$" + elem.price;
+        cartItemTotalPrice.innerText = "$" + Number(elem.price) * Number(elem.quantity) + ".00";
+        cartItemDelete.innerText = "Remove";
+        cartItemDelete.setAttribute("href", "");         // Add Remove function on this
+        // cartItemSaveForLater.innerText = "Save for Later";
+        // cartItemSaveForLater.setAttribute("href", "");
+        
+        
+        
+        var optionArr = [cartItemOption1, cartItemOption2, cartItemOption3, cartItemOption4, cartItemOption5, cartItemOption6, cartItemOption7, cartItemOption8, cartItemOption9, cartItemOption10];
+        optionArr[0].innerText = 1;
+        optionArr[1].innerText = 2;
+        optionArr[2].innerText = 3;
+        optionArr[3].innerText = 4;
+        optionArr[4].innerText = 5;
+        optionArr[5].innerText = 6;
+        optionArr[6].innerText = 7;
+        optionArr[7].innerText = 8;
+        optionArr[8].innerText = 9;
+        optionArr[9].innerText = 10;
+
+        optionArr.map(function(element){
+            if(element.innerText == elem.quantity){
+                element.setAttribute("selected", "selected");
+            }
+        })
+
+
+
+        itemImageDiv.setAttribute("id", "itemImageDiv");
+        itemDetailDiv.setAttribute("id", "itemDetailDiv");
+        priceQuantityTotalDiv.setAttribute("id", "priceQuantityTotalDiv");
+        fullDescritionBox.setAttribute("id", "fullDescritionBox");
+        itemPriceDiv.setAttribute("id", "itemPriceDiv");
+        itemQuantityDiv.setAttribute("id", "itemQuantityDiv");
+        itemTotalPriceDiv.setAttribute("id", "itemTotalPriceDiv");
+        cartItemDelete.setAttribute("id", "cartItemDelete");
+        cartItemName.setAttribute("id", "cartItemName");
+
+        // cartItemQuantity.addEventListener("click", changeBorderColor);
+
+        // function changeBorderColor(){
+        //     cartItemQuantity.style.borderColor = "teal"
+        // }
+
+        itemImageDiv.append(cartItemImage);
+        itemDetailDiv.append(cartItemName, cartItemStyle, cartItemColor, cartItemSize);
+        cartItemQuantity.append(optionArr[0], optionArr[1], optionArr[2], optionArr[3], optionArr[4], optionArr[5], optionArr[6], optionArr[7], optionArr[8], optionArr[9]);
+        itemPriceDiv.append(cartItemPrice);
+        itemQuantityDiv.append(cartItemQuantity);
+        itemTotalPriceDiv.append(cartItemTotalPrice, cartItemDelete);
+        priceQuantityTotalDiv.append(itemPriceDiv, itemQuantityDiv, itemTotalPriceDiv);
+
+        fullDescritionBox.append(itemDetailDiv, priceQuantityTotalDiv)
+
+        document.getElementById("ListCart").append(itemImageDiv, fullDescritionBox);
+
+    })
 </script>
+
