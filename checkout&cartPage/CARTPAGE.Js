@@ -222,13 +222,13 @@ function displaypriceandtaxvalue(cartItems) {
   let totaltax = (Number(totalll) / 100) * 18;
   let totalamontaftertax = Number(totalll) + Number(totaltax);
   // console.log(totaltax);
-  let totalDiscount = (document.querySelector(
-    ".totalpricebeforetax"
-  ).innerText = "$" + Math.round(totalll) + ".00");
+
+  (document.querySelector(".totalpricebeforetax").innerText =
+   "$" + Math.round(totalll) + ".00");
   document.querySelector(".totaltax").innerText =
     "$" + Math.round(totaltax) + ".00";
   document.querySelector(".totalprice").innerText =
-    "$" + Math.round(totaltax + totalll - totalDiscount) + ".00";
+    "$" + Math.round(totaltax + totalll) + ".00";
 
   document.getElementById("totalpricebeforetax").innerText =
     "$" + Number(totalll) + ".00";
@@ -254,11 +254,11 @@ function couponcheck() {
     let minus = (Number(a) / 100) * 30;
     let fin = a - minus;
     console.log(fin);
-    document.getElementById("promocodeapplied").innerHTML =
-      "Coupon Applied got 30% Discount";
-    document.getElementById("totalprice").innerText = fin;
+    document.getElementById("promocodeapplied").innerText = "Coupon Applied got 30% Discount";
+      // document.querySelector(".totalprice").innerText = fin;
+      document.querySelector(".totalprice").innerText = "$" + Math.round(Number(fin)) + ".00";
     // location.reload();
   } else {
-    document.getElementById("promocodeapplied").innerHTML = "Invalid Coupon";
+    document.getElementById("promocodeapplied").innerText = "Invalid Coupon";
   }
 }
