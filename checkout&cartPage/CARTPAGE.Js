@@ -1,6 +1,5 @@
 let cartItemstotalqty = JSON.parse(localStorage.getItem("cartItems")) || [];
-document.getElementById("cartitemstotalcount").innerHTML =
-  cartItemstotalqty.length;
+document.getElementById("cartitemstotalcount").innerHTML = cartItemstotalqty.length;
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -81,22 +80,20 @@ function displaycartintems(cartItems) {
 
     cartItemName.innerText = elem.name;
     cartItemName.setAttribute("href", "");
-    cartItemStyle.innerText =
-      "Style # 4122941520" + Number(elem.price) + elem.quantity;
+    cartItemStyle.innerText = "Style # 4122941520" + Number(elem.price) + elem.quantity;
     cartItemColor.innerText = "Color: " + elem.color;
     cartItemSize.innerText = "Size: " + elem.size;
     cartItemPrice.innerText = "$" + elem.price;
-    cartItemTotalPrice.innerText =
-      "$" + Number(elem.price) * Number(elem.quantity) + ".00";
-    // Number(elem.price) * Number(elem.quantity);
+    cartItemTotalPrice.innerText = "$" + Math.round(Number(elem.price) * Number(elem.quantity)) + ".00";
     cartItemDelete.innerText = "Remove";
+    cartItemDelete.setAttribute("href", "");
+
     cartItemDelete.addEventListener("click", function () {
       removedatafromcart(Index);
     });
-    cartItemDelete.setAttribute("href", ""); // Add Remove function on this
-    // cartItemSaveForLater.innerText = "Save for Later";
-    // cartItemSaveForLater.setAttribute("href", "");
 
+    // console.log(Number(elem.price) * Number(elem.quantity));
+    
     var optionArr = [
       cartItemOption1,
       cartItemOption2,
@@ -119,6 +116,27 @@ function displaycartintems(cartItems) {
     optionArr[7].innerText = 8;
     optionArr[8].innerText = 9;
     optionArr[9].innerText = 10;
+    optionArr[0].setAttribute("value", "1");
+    optionArr[1].setAttribute("value", "2");
+    optionArr[2].setAttribute("value", "3");
+    optionArr[3].setAttribute("value", "4");
+    optionArr[4].setAttribute("value", "5");
+    optionArr[5].setAttribute("value", "6");
+    optionArr[6].setAttribute("value", "7");
+    optionArr[7].setAttribute("value", "8");
+    optionArr[8].setAttribute("value", "9");
+    optionArr[9].setAttribute("value", "10");
+
+
+    cartItemQuantity.addEventListener("change", updateQuantity);
+
+    function updateQuantity(){
+      elem.quantity = cartItemQuantity.value;
+
+      localStorage.setItem("cartItems", JSON.stringify(cartItems));
+      displaycartintems(cartItems);
+      displaypriceandtaxvalue(cartItems);
+    }
 
     optionArr.map(function (element) {
       if (element.innerText == elem.quantity) {
@@ -135,12 +153,7 @@ function displaycartintems(cartItems) {
     itemTotalPriceDiv.setAttribute("id", "itemTotalPriceDiv");
     cartItemDelete.setAttribute("id", "cartItemDelete");
     cartItemName.setAttribute("id", "cartItemName");
-
-    // cartItemQuantity.addEventListener("click", changeBorderColor);
-
-    // function changeBorderColor(){
-    //     cartItemQuantity.style.borderColor = "teal"
-    // }
+    cartItemQuantity.setAttribute("id", "cartItemQuantity");
 
     itemImageDiv.append(cartItemImage);
     itemDetailDiv.append(
@@ -164,11 +177,7 @@ function displaycartintems(cartItems) {
     itemPriceDiv.append(cartItemPrice);
     itemQuantityDiv.append(cartItemQuantity);
     itemTotalPriceDiv.append(cartItemTotalPrice, cartItemDelete);
-    priceQuantityTotalDiv.append(
-      itemPriceDiv,
-      itemQuantityDiv,
-      itemTotalPriceDiv
-    );
+    priceQuantityTotalDiv.append(itemPriceDiv, itemQuantityDiv, itemTotalPriceDiv);
 
     fullDescritionBox.append(itemDetailDiv, priceQuantityTotalDiv);
 
@@ -178,45 +187,47 @@ function displaycartintems(cartItems) {
 
 function removedatafromcart(index) {
   cartItems.splice(index, 1);
-  document.getElementById("cartitemstotalcount").innerHTML =
-    cartItemstotalqty.length;
+  document.getElementById("cartitemstotalcount").innerHTML = cartItemstotalqty.length;
   // localStorage.getItem();
   localStorage.setItem("cartItems", JSON.stringify(cartItems));
 
   displaycartintems(cartItems);
   displaypriceandtaxvalue(cartItems);
   location.reload();
-  // let newitemlist = .filter(function(el,i){
-  //    if()
-  // });
 }
 
+// function updateQuantity(index){
+//   cartItems.map(function(el,inn){
+//     let q = document.getElementById("cartItemQuantity").value;
+//     if(index==inn){
+//       el.quantity=q;
+//     }
+//   }) 
+//   displaycartintems(cartItems);
+// }
+
 function displaypriceandtaxvalue(cartItems) {
-  // let total = cartItems.reduce(function (v, v1) => {
-  //  return  Number(v) + Number(v1.price);
-  // }, 0);
 
   let total = cartItems.reduce((value, value1) => {
-    return Number(value) + Number(value1.price);
+    return Number(value) + (Number(value1.price) * Number(value1.quantity));
   }, 0);
-  let totalll = Math.round(Number(total));
+  let totalll = (Number(total));
 
   let totaltax = (Number(totalll) / 100) * 18;
   let totalamontaftertax = Number(totalll) + Number(totaltax);
-  console.log(totaltax);
-  document.querySelector(".totalpricebeforetax").innerText =
-    "$" + Number(totalll) + ".00";
-  document.querySelector(".totaltax").innerText = totaltax;
-  document.querySelector(".totalprice").innerText = totaltax;
+  // console.log(totaltax);
+  document.querySelector(".totalpricebeforetax").innerText = "$" + Math.round(totalll) + ".00";
+  document.querySelector(".totaltax").innerText = "$" + Math.round(totaltax) + ".00";
+  document.querySelector(".totalprice").innerText = "$" + Math.round(totaltax + totalll) + ".00";
 
   document.getElementById("totalpricebeforetax").innerText =
     "$" + Number(totalll) + ".00";
   document.getElementById("totaltax").innerText = totaltax;
-  document.getElementById("totalprice").innerText = totaltax;
+  document.getElementById("totalprice").innerText = totalamontaftertax;
   let amount = {
     total: totalll,
     tax: totaltax,
-    after: totalamontaftertax,
+    after: (Number(totalamontaftertax)),
   };
 
   localStorage.setItem("totalamountincart", JSON.stringify(amount));
