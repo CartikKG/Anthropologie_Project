@@ -296,7 +296,16 @@
 .dropdown-content input:hover {
   background-color: #ddd;
 } */
-
+@media (max-width:759) {
+  #ListCart {
+    /* border-bottom: 1px solid #e5e2de; */
+    display: grid;
+    padding-top: 20px;
+    grid-template-columns: 15% 82%;
+    gap: 20px;
+    margin-left: -29px;
+  }
+}
 
 @media screen and (min-width: 761px) and (max-width: 1020px) {
   #belowPaymentScreen {

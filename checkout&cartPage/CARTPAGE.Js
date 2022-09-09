@@ -43,6 +43,7 @@ btn.addEventListener("click", function apply() {
 
 var cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
 displaycartintems(cartItems);
+displaypriceandtaxvalue(cartItems);
 
 function displaycartintems(cartItems) {
   document.getElementById("ListCart").innerHTML = "";
@@ -73,7 +74,7 @@ function displaycartintems(cartItems) {
     var cartItemOption9 = document.createElement("option");
     var cartItemOption10 = document.createElement("option");
     var cartItemTotalPrice = document.createElement("p");
-    var cartItemDelete = document.createElement("button");
+    var cartItemDelete = document.createElement("a");
     var cartItemSaveForLater = document.createElement("a");
 
     cartItemImage.setAttribute("src", elem.image1);
@@ -87,6 +88,7 @@ function displaycartintems(cartItems) {
     cartItemPrice.innerText = "$" + elem.price;
     cartItemTotalPrice.innerText =
       "$" + Number(elem.price) * Number(elem.quantity) + ".00";
+    // Number(elem.price) * Number(elem.quantity);
     cartItemDelete.innerText = "Remove";
     cartItemDelete.addEventListener("click", function () {
       removedatafromcart(Index);
@@ -176,12 +178,46 @@ function displaycartintems(cartItems) {
 
 function removedatafromcart(index) {
   cartItems.splice(index, 1);
-
-  //   localStorage.getItem();
+  document.getElementById("cartitemstotalcount").innerHTML =
+    cartItemstotalqty.length;
+  // localStorage.getItem();
   localStorage.setItem("cartItems", JSON.stringify(cartItems));
 
   displaycartintems(cartItems);
+  displaypriceandtaxvalue(cartItems);
+  location.reload();
   // let newitemlist = .filter(function(el,i){
   //    if()
   // });
+}
+
+function displaypriceandtaxvalue(cartItems) {
+  // let total = cartItems.reduce(function (v, v1) => {
+  //  return  Number(v) + Number(v1.price);
+  // }, 0);
+
+  let total = cartItems.reduce((value, value1) => {
+    return Number(value) + Number(value1.price);
+  }, 0);
+  let totalll = Math.round(Number(total));
+
+  let totaltax = (Number(totalll) / 100) * 18;
+  let totalamontaftertax = Number(totalll) + Number(totaltax);
+  console.log(totaltax);
+  document.querySelector(".totalpricebeforetax").innerText =
+    "$" + Number(totalll) + ".00";
+  document.querySelector(".totaltax").innerText = totaltax;
+  document.querySelector(".totalprice").innerText = totaltax;
+
+  document.getElementById("totalpricebeforetax").innerText =
+    "$" + Number(totalll) + ".00";
+  document.getElementById("totaltax").innerText = totaltax;
+  document.getElementById("totalprice").innerText = totaltax;
+  let amount = {
+    total: totalll,
+    tax: totaltax,
+    after: totalamontaftertax,
+  };
+
+  localStorage.setItem("totalamountincart", JSON.stringify(amount));
 }
