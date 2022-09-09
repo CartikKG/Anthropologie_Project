@@ -1,5 +1,6 @@
 let cartItemstotalqty = JSON.parse(localStorage.getItem("cartItems")) || [];
-document.getElementById("cartitemstotalcount").innerHTML = cartItemstotalqty.length;
+document.getElementById("cartitemstotalcount").innerHTML =
+  cartItemstotalqty.length;
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -34,11 +35,11 @@ function Changeui() {
   document.getElementById("NAVBARUL").classList.toggle("changewholenav");
   document.getElementById("MOBILECLICK").classList.toggle("MOBILECLICKDISPLAY");
 }
-const btn = document.getElementById("submitbtn");
-btn.addEventListener("click", function apply() {
-  event.preventDefault();
-  btn.textContent = "Applied";
-});
+// const btn = document.getElementById("submitbtn");
+// btn.addEventListener("click", function apply() {
+//   event.preventDefault();
+//   btn.textContent = "Applied";
+// });
 
 var cartItems = JSON.parse(localStorage.getItem("cartItems")) || [];
 displaycartintems(cartItems);
@@ -80,11 +81,13 @@ function displaycartintems(cartItems) {
 
     cartItemName.innerText = elem.name;
     cartItemName.setAttribute("href", "");
-    cartItemStyle.innerText = "Style # 4122941520" + Number(elem.price) + elem.quantity;
+    cartItemStyle.innerText =
+      "Style # 4122941520" + Number(elem.price) + elem.quantity;
     cartItemColor.innerText = "Color: " + elem.color;
     cartItemSize.innerText = "Size: " + elem.size;
     cartItemPrice.innerText = "$" + elem.price;
-    cartItemTotalPrice.innerText = "$" + Math.round(Number(elem.price) * Number(elem.quantity)) + ".00";
+    cartItemTotalPrice.innerText =
+      "$" + Math.round(Number(elem.price) * Number(elem.quantity)) + ".00";
     cartItemDelete.innerText = "Remove";
     cartItemDelete.setAttribute("href", "");
 
@@ -93,7 +96,7 @@ function displaycartintems(cartItems) {
     });
 
     // console.log(Number(elem.price) * Number(elem.quantity));
-    
+
     var optionArr = [
       cartItemOption1,
       cartItemOption2,
@@ -127,10 +130,9 @@ function displaycartintems(cartItems) {
     optionArr[8].setAttribute("value", "9");
     optionArr[9].setAttribute("value", "10");
 
-
     cartItemQuantity.addEventListener("change", updateQuantity);
 
-    function updateQuantity(){
+    function updateQuantity() {
       elem.quantity = cartItemQuantity.value;
 
       localStorage.setItem("cartItems", JSON.stringify(cartItems));
@@ -177,7 +179,11 @@ function displaycartintems(cartItems) {
     itemPriceDiv.append(cartItemPrice);
     itemQuantityDiv.append(cartItemQuantity);
     itemTotalPriceDiv.append(cartItemTotalPrice, cartItemDelete);
-    priceQuantityTotalDiv.append(itemPriceDiv, itemQuantityDiv, itemTotalPriceDiv);
+    priceQuantityTotalDiv.append(
+      itemPriceDiv,
+      itemQuantityDiv,
+      itemTotalPriceDiv
+    );
 
     fullDescritionBox.append(itemDetailDiv, priceQuantityTotalDiv);
 
@@ -187,7 +193,8 @@ function displaycartintems(cartItems) {
 
 function removedatafromcart(index) {
   cartItems.splice(index, 1);
-  document.getElementById("cartitemstotalcount").innerHTML = cartItemstotalqty.length;
+  document.getElementById("cartitemstotalcount").innerHTML =
+    cartItemstotalqty.length;
   // localStorage.getItem();
   localStorage.setItem("cartItems", JSON.stringify(cartItems));
 
@@ -202,23 +209,26 @@ function removedatafromcart(index) {
 //     if(index==inn){
 //       el.quantity=q;
 //     }
-//   }) 
+//   })
 //   displaycartintems(cartItems);
 // }
 
 function displaypriceandtaxvalue(cartItems) {
-
   let total = cartItems.reduce((value, value1) => {
-    return Number(value) + (Number(value1.price) * Number(value1.quantity));
+    return Number(value) + Number(value1.price) * Number(value1.quantity);
   }, 0);
-  let totalll = (Number(total));
+  let totalll = Number(total);
 
   let totaltax = (Number(totalll) / 100) * 18;
   let totalamontaftertax = Number(totalll) + Number(totaltax);
   // console.log(totaltax);
-  document.querySelector(".totalpricebeforetax").innerText = "$" + Math.round(totalll) + ".00";
-  document.querySelector(".totaltax").innerText = "$" + Math.round(totaltax) + ".00";
-  document.querySelector(".totalprice").innerText = "$" + Math.round(totaltax + totalll) + ".00";
+
+  (document.querySelector(".totalpricebeforetax").innerText =
+   "$" + Math.round(totalll) + ".00");
+  document.querySelector(".totaltax").innerText =
+    "$" + Math.round(totaltax) + ".00";
+  document.querySelector(".totalprice").innerText =
+    "$" + Math.round(totaltax + totalll) + ".00";
 
   document.getElementById("totalpricebeforetax").innerText =
     "$" + Number(totalll) + ".00";
@@ -227,8 +237,28 @@ function displaypriceandtaxvalue(cartItems) {
   let amount = {
     total: totalll,
     tax: totaltax,
-    after: (Number(totalamontaftertax)),
+    after: Number(totalamontaftertax),
   };
 
   localStorage.setItem("totalamountincart", JSON.stringify(amount));
+}
+// document.getElementById("couponapplied").addEventListener("click", couponcheck);
+
+function couponcheck() {
+  event.preventDefault();
+  let tex = document.getElementById("typecouponh").value;
+  if (tex == "masai30") {
+    let totalamounttemp = JSON.parse(localStorage.getItem("totalamountincart"));
+
+    let a = Number(totalamounttemp.after);
+    let minus = (Number(a) / 100) * 30;
+    let fin = a - minus;
+    console.log(fin);
+    document.getElementById("promocodeapplied").innerText = "Coupon Applied got 30% Discount";
+      // document.querySelector(".totalprice").innerText = fin;
+      document.querySelector(".totalprice").innerText = "$" + Math.round(Number(fin)) + ".00";
+    // location.reload();
+  } else {
+    document.getElementById("promocodeapplied").innerText = "Invalid Coupon";
+  }
 }
