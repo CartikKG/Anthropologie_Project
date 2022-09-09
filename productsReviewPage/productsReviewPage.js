@@ -154,5 +154,6 @@ function addToCart() {
 
   cartArray.push(cartObject);
   localStorage.setItem("cartItems", JSON.stringify(cartArray));
-  window.open("../checkout&cartPage/CARTPAGE.html");
+  // window.open();
+  window.open("../checkout&cartPage/CARTPAGE.html", "_self");
 }
