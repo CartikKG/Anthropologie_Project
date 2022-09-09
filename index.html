@@ -23,8 +23,8 @@
 ></script>
     <script>
       $(function () {
-        // $("#navbarHtml").load("./NAVBAR/navbar.html");
-        $("#HOMEPAGE").load("./HOMEPAGE/home.html");
+        // $("#WHOLENAV").load("./navbar/navbar.html");
+        $("#HOMEPAGE").load("./homepage/home.html");
 
         $("#includedContent").load("./footerPage/footerPage.html");
       });
@@ -32,12 +32,76 @@
   </head>
 
   <body>
-    <!-- NAVBAR --> 
+    <div id="UPPERSLIDES">
+      <div class="SLIDEDIVS" style="background-color: #1b399c;color: aliceblue;">
+          <div>
+              <div>
+                  <i>ends tonight!
+                  </i>
+              </div>
+              <div>
+                  <p>Extra 50% OFF ALL SALE ITEMS </p>
+              </div>
+              <div>
+                  <i>shop </i>
+              </div>
+              <div>
+                  <i>all sale final-see details </i>
+              </div>
+          </div>
+      </div>
+      <div class="SLIDEDIVS" id="SLIDEDIVS1" style="background-color: #a80041; color: aliceblue;">
+          <div>
+              <div>
+                  <i>Discover NEW shades of meaning</i>
+              </div>
+              <div>
+                  <p>Reset The Tone</p>
+              </div>
+              <div><i>shop</i>
+              </div>
+              <div>
+                  <i>Shop the Fall 22 Collection </i>
+              </div>
+          </div>
+    
+      </div>
+      <div class="SLIDEDIVS" id="SLIDEDIVS2" style="background-color: #296361; color: aliceblue;">
+    
+          <div>
+              <div>
+                  <i>ends tonight!</i>
+              </div>
+              <div>
+                  <p>Extra 50% OFF ALL SALE ITEMS</p>
+              </div>
+              <div> <i>shop </i> </div>
+              <div>
+                  <i>all sale final-see details </i>
+              </div>
+          </div>
+    
+      </div>
+      <a class="slidesprev" onclick="plusSlides(-1)">❮</a>
+      <a class="slidesnext" onclick="plusSlides(1)">❯</a>
+      <div id="SigninSignUP">
+          <div> <i class="fa-sharp fa-solid fa-globe" style="margin-right: 10px;"></i>English ($)
+          </div>
+          <a href="/Anthropologie_Project/SignUp__SignIn/SINGUP_SIGNIN/Singup_Signin.html"
+              style="text-decoration:none;">
+              <div>
+                  <i class="fa-regular fa-user"></i> Sign In / Sign Up
+              </div>
+          </a>
+    
+          <!-- <a href="../index.html"></a> -->
+      </div>
+    </div>
     <div id="WHOLENAV">
       <nav>
           <div id="navbarupper">
               <div id="navbarupperinside">
-  
+    
                   <a href="./index.html">
                       <div style="margin-top:8px;">
                           <img src="https://images.ctfassets.net/5de70he6op10/53ZOE4rRqrxcvv0hg2eSLV/a849085e5f600c618132be2475017746/anthro-logo.svg"
@@ -55,26 +119,26 @@
               <div id="searchplusbag">
                   <form role="search">
                       <input type="search" placeholder="Search" aria-label="Search" />
-  
-                      <a href="./checkout&cartPage/CARTPAGE.html"> <i class="fa-solid fa-bag-shopping"></i> </a>
+    
+                      <a href=".././checkout&cartPage/CARTPAGE.html"> <i class="fa-solid fa-bag-shopping"></i> </a>
                       </i>
                       <span id="cartitemstotalcount">0</span>
                       <input type="Checkbox" id="checkboxnav">
                       <label for="check" class="checkbtn" id="MOBILECLICK" onclick="Changeui()"> <i
                               class="fas fa-bars"></i></label>
                   </form>
-  
+    
               </div>
           </div>
-  
+    
           <ul id="NAVBARUL">
               <div id="SigninSignUPMOBILE">
                   <div> <i class="fa-sharp fa-solid fa-globe" style="margin-right: 10px;"></i>English ($)</div>
                    <div><a href=""> <i class="fa-regular fa-user"></i> Sign In / Sign Up </a> </div>
-  
-  
+    
+    
               </div>
-  
+    
               <li class="dropdown">
                   <!-- <a href=> -->
                   <a class="active" href="/Anthropologie_Project/ProductsPage/womensClothing.html">NEW!</a>
@@ -85,7 +149,7 @@
                                   <h3>Shop More</h3> <br>
                               </div>
                           </a><br>
-  
+    
                           <a href="./productsPage/accessories/accessories.html">
                               <div>Accessories</div>
                           </a>
@@ -104,7 +168,7 @@
                           <a href="./productsPage/accessories/accessories.html">
                               <div>Shoes</div>
                           </a>
-  
+    
                       </div>
                       <span class="vi"></span>
                       <div>
@@ -113,8 +177,8 @@
                                   <h3>Featurerd</h3> <br>
                               </div>
                           </a><br>
-  
-  
+    
+    
                           <a href="./productsPage/accessories/accessories.html">
                               <div>Accessories</div>
                           </a>
@@ -166,9 +230,9 @@
                           <a href="./productsPage/dress/dresswholepages.html">
                               <div>Formal Dresses</div>
                           </a>
-  
-  
-  
+    
+    
+    
                       </div>
                       <span class="vi"></span>
                       <div>
@@ -177,8 +241,8 @@
                                   <h3>.</h3> <br>
                               </div>
                           </a> <br>
-  
-  
+    
+    
                           <a href="./productsPage/maxiDress/maxiDress.html">
                               <div>Maxi Dresses</div>
                           </a>
@@ -194,7 +258,7 @@
                           <a href="./productsPage/maxiDress/maxiDress.html">
                               <div>Plus Dresses</div>
                           </a>
-  
+    
                       </div>
                       <span class="vi"></span>
                       <div>
@@ -224,7 +288,7 @@
                                   <h3>Shop by Category</h3> <br>
                               </div>
                           </a><br>
-  
+    
                           <a href="">
                               <div>Shop All Cllothing</div>
                           </a>
@@ -258,48 +322,48 @@
                           <a href="./productsPage/topRated/topRated.html">
                               <div>Kimonos</div>
                           </a>
-  
+    
                       </div>
-  
+    
                       <div>
                           <a href="">
                               <div class="bottomborder">
                                   <h3>.</h3> <br>
                               </div>
                           </a><br>
-  
-  
-                          <a href="./productsPage/accessories/accessories,html">
+    
+    
+                          <a href="./productsPage/accessories/accessories.html">
                               <div>Loungwear</div>
                           </a>
-                          <a href="./productsPage/accessories/accessories,html">
+                          <a href="./productsPage/accessories/accessories.html">
                               <div>Pants</div>
                           </a>
-                          <a href="./productsPage/accessories/accessories,html">
+                          <a href="./productsPage/accessories/accessories.html">
                               <div>Pentites</div>
                           </a>
-                          <a href="./productsPage/accessories/accessories,html">
+                          <a href="./productsPage/accessories/accessories.html">
                               <div>Plus</div>
                           </a>
-                          <a href="./productsPage/accessories/accessories,html">
+                          <a href="./productsPage/accessories/accessories.html">
                               <div>Sets</div>
                           </a>
-                          <a href="./productsPage/accessories/accessories,html">
+                          <a href="./productsPage/accessories/accessories.html">
                               <div>Shorts</div>
                           </a>
-                          <a href="./productsPage/accessories/accessories,html">
+                          <a href="./productsPage/accessories/accessories.html">
                               <div>Skirts</div>
                           </a>
-                          <a href="./productsPage/accessories/accessories,html">
+                          <a href="./productsPage/accessories/accessories.html">
                               <div>Sleepwear</div>
                           </a>
-                          <a href="./productsPage/accessories/accessories,html">
+                          <a href="./productsPage/accessories/accessories.html">
                               <div>Sweaters</div>
                           </a>
-                          <a href="./productsPage/accessories/accessories,html">
+                          <a href="./productsPage/accessories/accessories.html">
                               <div>Swimwear</div>
                           </a>
-                          <a href="./productsPage/accessories/accessories,html">
+                          <a href="./productsPage/accessories/accessories.html">
                               <div>Tops & Tees</div>
                           </a>
                       </div>
@@ -310,7 +374,7 @@
                                   <h3>Features </h3> <br>
                               </div>
                           </a> <br>
-  
+    
                           <a href="./productsPage/belts/belts.html">
                               <div>Fall-Forwards: Suited & Tied</div>
                           </a>
@@ -329,7 +393,7 @@
                           <a href="./productsPage/wedding/bride.html">
                               <div>Date Night Outfits</div>
                           </a>
-  
+    
                       </div>
                       <span class="vi"></span>
                       <div>
@@ -338,8 +402,8 @@
                                   <h3>Explore Sweaters</h3><br>
                               </div>
                           </a> <br>
-  
-  
+    
+    
                           <a href="./productsPage/wedding/bride.html">
                               <div>Pullover Sweaters</div>
                           </a>
@@ -362,7 +426,7 @@
                               <div>Plus Sweaters</div>
                           </a>
                       </div>
-  
+    
                       <span class="vi"></span>
                       <div>
                           <img style="width: 100%; margin-top: 15px; "
@@ -395,17 +459,17 @@
                           <a href="">
                               <div>Heels & Wedges</div>
                           </a>
-  
+    
                       </div>
-  
+    
                       <div>
                           <a href="">
                               <div class="bottomborder">
                                   <h3>.</h3> <br>
                               </div><br>
-  
-  
-  
+    
+    
+    
                               <a href="">
                                   <div>Mules & Clogs</div>
                               </a>
@@ -426,7 +490,7 @@
                                   <h3>Features </h3> <br>
                               </div>
                           </a> <br>
-  
+    
                           <a href="">
                               <div>Legwear & Shoe Pairings</div>
                           </a>
@@ -439,8 +503,8 @@
                           <a href="">
                               <div>Platforms Shoes</div>
                           </a>
-  
-  
+    
+    
                       </div>
                       <span class="vi"></span>
                       <div>
@@ -449,9 +513,9 @@
                                   <h3>Brands We Love</h3> <br>
                               </div>
                           </a> <br>
-  
-  
-  
+    
+    
+    
                           <a href="">
                               <div>Virkenstock</div>
                           </a>
@@ -471,9 +535,9 @@
                               <div>Silent D</div>
                           </a>
                       </div>
-  
-  
-  
+    
+    
+    
                   </div>
               </li>
               <li class="dropdown">
@@ -503,16 +567,16 @@
                           <a href="./productsPage/fashionGloves/fashionGloves.html">
                               <div>Fashion Gloves</div>
                           </a>
-  
+    
                       </div>
-  
+    
                       <div>
                           <a href="">
                               <div class="bottomborder">
                                   <h3>.</h3> <br>
                               </div>
                           </a><br>
-  
+    
                           <a href="./productsPage/hats/hats.html">
                               <div>Hair Accessories</div>
                           </a>
@@ -560,8 +624,8 @@
                           <a href="./productsPage/jewelery/jewelery.html">
                               <div>Shop All Jewelry</div>
                           </a>
-  
-  
+    
+    
                       </div>
                       <span class="vi"></span>
                       <div>
@@ -570,9 +634,9 @@
                                   <h3>Featurerd</h3> <br>
                               </div>
                           </a> <br>
-  
-  
-  
+    
+    
+    
                           <a href="">
                               <div>Legwear & Shoe Pairing</div>
                           </a>
@@ -583,9 +647,9 @@
                               <div>The Pearl Edit </div>
                           </a>
                       </div>
-  
-  
-  
+    
+    
+    
                   </div>
               </li>
               <li class="dropdown">
@@ -618,7 +682,7 @@
                           <a href="./productsPage/giftAndCandles/giftAndCandles.html">
                               <div>Gift Cards</div>
                           </a>
-  
+    
                       </div>
                       <span class="vi"></span>
                       <div>
@@ -639,9 +703,9 @@
                           <a href="./productsPage/giftIdeas/giftIdeas.html">
                               <div>Gifts Under $100</div>
                           </a>
-  
-  
-  
+    
+    
+    
                       </div>
                       <span class="vi"></span>
                       <div>
@@ -650,9 +714,9 @@
                                   <h3>Curated Gifts Shops</h3> <br>
                               </div>
                           </a><br>
-  
-  
-  
+    
+    
+    
                           <a href="./productsPage/giftIdeas/giftIdeas.html">
                               <div>The Pet Shop</div>
                           </a>
@@ -666,9 +730,9 @@
                               <div>The Games Shop </div>
                           </a>
                       </div>
-  
-  
-  
+    
+    
+    
                   </div>
               </li>
               <li class="dropdown">
@@ -698,18 +762,18 @@
                           <a href="./productsPage/decor/decor.html">
                               <div>Decor</div>
                           </a>
-  
+    
                       </div>
-  
+    
                       <div>
                           <a href="">
                               <div class="bottomborder">
                                   <h3>.</h3> <br>
                               </div>
                           </a><br>
-  
-  
-  
+    
+    
+    
                           <a href="./productsPage/homeAndFurniture/homeAndFurniture.html">
                               <div>Furniture</div>
                           </a>
@@ -739,7 +803,7 @@
                                   <h3>Exclusively For AnthorL Artist <br> Colloborations </h3> <br>
                               </div>
                           </a> <br>
-  
+    
                           <a href="./productsPage/outdoor/outdoor.html">
                               <div>Amber Lewis</div>
                           </a>
@@ -755,8 +819,8 @@
                           <a href="./productsPage/outdoor/outdoor.html">
                               <div>Explore Artist Colloborations</div>
                           </a>
-  
-  
+    
+    
                       </div>
                       <span class="vi"></span>
                       <div>
@@ -765,9 +829,9 @@
                                   <h3>AnthroLiving House Tours</h3> <br>
                               </div>
                           </a><br>
-  
-  
-  
+    
+    
+    
                           <a href="./productsPage/belts/belts.html">
                               <div>*Sol* Spaces</div>
                           </a>
@@ -793,13 +857,13 @@
                               <div>Explore Anthro Living House Tours</div>
                           </a>
                       </div>
-  
+    
                       <div>
                           <a href=""> <img style="width: 100%;"
                                   src="https://images.ctfassets.net/5de70he6op10/1ICrLEgzqT43USEmvtlvGQ/3a0704e87040b5d77ce8972b13305041/083022_LaborDayHomePromo_Supernav.jpg?w=295&q=80&fm=webp"
                                   alt=""></a>
                       </div>
-  
+    
                   </div>
               </li>
               <li class="dropdown">
@@ -835,18 +899,18 @@
                           <a href="./productsPage/bath/bath.html">
                               <div>Nails</div>
                           </a>
-  
+    
                       </div>
-  
+    
                       <div>
                           <a href="">
                               <div class="bottomborder">
                                   <h3>.</h3> <br>
                               </div>
                           </a><br>
-  
-  
-  
+    
+    
+    
                           <a href="./productsPage/travelTech/travelTech.html">
                               <div>Fragrance</div>
                           </a>
@@ -879,7 +943,7 @@
                                   <h3>Featurerd</h3> <br>
                               </div>
                           </a><br>
-  
+    
                           <a href="./productsPage/travelTech/travelTech.html">
                               <div>The Summer Beauty Edit: Beauty & <br> Self-Care</div>
                           </a>
@@ -892,8 +956,8 @@
                           <a href="./productsPage/travelTech/travelTech.html">
                               <div>The Mask Shop</div>
                           </a>
-  
-  
+    
+    
                       </div>
                       <span class="vi"></span>
                       <div>
@@ -902,9 +966,9 @@
                                   <h3>Brands We Love</h3> <br>
                               </div>
                           </a> <br>
-  
-  
-  
+    
+    
+    
                           <a href="./productsPage/beautyAndWellness/beautyAndWellness.html">
                               <div>Caprl Blue</div>
                           </a>
@@ -936,13 +1000,13 @@
                               <div>Youth to the People</div>
                           </a>
                       </div>
-  
+    
                       <div>
                           <a href="./productsPage/beautyAndWellness/beautyAndWellness.html"> <img style="width: 100%;"
                                   src="https://images.ctfassets.net/5de70he6op10/3XAI6M0xPZ4Dmw1xqglnEh/cceadfaebe1aed2b64be887b1d1c99e3/072222_20Off_Beauty_Wellness_SuperNav.jpg?w=295&q=80&fm=webp"
                                   alt=""></a>
                       </div>
-  
+    
                   </div>
               </li>
               <li class="dropdown">
@@ -969,17 +1033,17 @@
                           <a href="./productsPage/gardenAndOutdoor/furniture.html">
                               <div>Heels & Wedges</div>
                           </a>
-  
+    
                       </div>
-  
+    
                       <div>
                           <a href="">
                               <div class="bottomborder">
                                   <h3>.</h3> <br>
                               </div><br>
-  
-  
-  
+    
+    
+    
                               <a href="./productsPage/gardenAndOutdoor/furniture.html">
                                   <div>Mules & Clogs</div>
                               </a>
@@ -994,17 +1058,17 @@
                               </a>
                       </div>
                       <!-- <span class="vi"></span> -->
-  
+    
                       <!-- <span class="vi"></span> -->
-  
-  
-  
+    
+    
+    
                   </div>
-  
+    
               </li>
               <li class="dropdown">
                   <a href="./productsPage/wedding/bride.html">Wedding</a>
-  
+    
                   <div class="downnav1" id="Wedding">
                       <div>
                           <a href="">
@@ -1027,17 +1091,17 @@
                           <a href="./productsPage/wedding/bride.html">
                               <div>Bridemaids</div>
                           </a>
-  
+    
                       </div>
-  
+    
                       <div>
                           <a href="">
                               <div class="bottomborder">
                                   <h3>.</h3> <br>
                               </div><br>
-  
-  
-  
+    
+    
+    
                               <a href="./productsPage/wedding/bride.html">
                                   <div>Flower Girl Dresses</div>
                               </a>
@@ -1060,9 +1124,9 @@
                               <div class="bottomborder">
                                   <h3>Featurerd</h3> <br>
                               </div><br>
-  
-  
-  
+    
+    
+    
                               <a href="./productsPage/plus/plus.html">
                                   <div>City Hall Bride</div>
                               </a>
@@ -1072,24 +1136,24 @@
                               <a href="./productsPage/plus/plus.html">
                                   <div>Bohemian Bride</div>
                               </a>
-  
+    
                       </div>
-  
-  
+    
+    
                       <span class="vi"></span>
                       <div>
-  
-  
-  
+    
+    
+    
                           <a href=""> <img style="width: 100%;"
                                   src="https://images.ctfassets.net/5de70he6op10/2iYTpFYonIxBrfJzQ1yZfh/59a2b461dabe0e202f89acf56aa652cb/L1_Weddings_Dropdown_CS.jpg?w=922&q=80&fm=webp"
                                   alt=""></a>
-  
+    
                       </div>
-  
-  
+    
+    
                   </div>
-  
+    
               </li>
               <li class="dropdown">
                   <a href="./productsPage/new/new.html" style="color: rgb(186, 58, 58);">Extra 50% Off Sale</a>
@@ -1112,18 +1176,18 @@
                           <a href="./productsPage/newS/newS.html">
                               <div>Clothing</div>
                           </a>
-  
-  
+    
+    
                       </div>
-  
+    
                       <div>
                           <a href="">
                               <div class="bottomborder">
                                   <h3>.</h3> <br>
                               </div><br>
-  
-  
-  
+    
+    
+    
                               <a href="./productsPage/homeAndFurniture/homeAndFurniture.html">
                                   <div>Home & Furniture</div>
                               </a>
@@ -1138,56 +1202,55 @@
                               </a>
                       </div>
                       <span class="vi"></span>
-  
+    
                       <div>
                           <a href="">
                               <div class="bottomborder">
                                   <h3>Shop by Price</h3> <br>
                               </div><br>
-  
-  
-  
-                              <a href="./productsPage/homeAndFurniture/homeAndFurniture.html">
+    
+    
+    
+                              <a href="./productsPage/accessories/accessories.html">
                                   <div>Under $25</div>
                               </a>
-                              <a href="./productsPage/homeAndFurniture/homeAndFurniture.html">
+                              <a href="./productsPage/productsPage/homeAndFurniture/homeAndFurniture.html">
                                   <div>Under $50</div>
                               </a>
                               <a href="./productsPage/homeAndFurniture/homeAndFurniture.html">
                                   <div>Under $75</div>
                               </a>
-                              <a href="./productsPage/wedding/bride.html">
+                              <a href="./productsPage/homeAndFurniture/homeAndFurniture.html">
                                   <div>Under $100</div>
                               </a>
-  
+    
                       </div>
-  
+    
                       <span class="vi"></span>
                       <div>
-  
-  
-  
+    
+    
+    
                           <a href=""> <img style="width: 100%;"
                                   src="https://images.ctfassets.net/5de70he6op10/5iyc5hElb58ovV19L9N1kE/decf62d3e45b27b01c90015f4aca4878/SuperNav_Content_Slot.jpg?w=295&q=80&fm=webp"
                                   alt=""></a>
-  
+    
                       </div>
-  
-  
+    
+    
                   </div>
-  
-  
+    
+    
               </li>
           </ul>
       </nav>
-  </div>
-    <!-- body  -->
+    </div>
     <div id="HOMEPAGE"></div>
     <!-- FOOTER -->
     <div id="includedContent"></div>
   </body>
 </html>
-<script>
+<!-- <script>
   let slideIndex = 1;
  showSlides(slideIndex);
 
@@ -1226,7 +1289,6 @@ function Changeui(){
   
 }
 let cartItemstotalqty = JSON.parse(localStorage.getItem("cartItems")) || [];
-document.getElementById("cartitemstotalcount").innerHTML =
-  cartItemstotalqty.length;
+document.getElementById("cartitemstotalcount").innerHTML =cartItemstotalqty.length;
 
-</script>
+</script> -->

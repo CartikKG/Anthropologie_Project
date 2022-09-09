@@ -1,6 +1,7 @@
 let cartItemstotalqty = JSON.parse(localStorage.getItem("cartItems")) || [];
 document.getElementById("cartitemstotalcount").innerHTML =
   cartItemstotalqty.length;
+
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -35,7 +36,6 @@ function Changeui() {
   document.getElementById("NAVBARUL").classList.toggle("changewholenav");
   document.getElementById("MOBILECLICK").classList.toggle("MOBILECLICKDISPLAY");
 }
-
 var getname = localStorage.getItem("itemName");
 var getimage1 = localStorage.getItem("image_1");
 var getimage2 = localStorage.getItem("image_2");
