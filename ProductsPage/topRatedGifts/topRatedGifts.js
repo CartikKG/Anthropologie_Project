@@ -1,3 +1,6 @@
+let cartItemstotalqty = JSON.parse(localStorage.getItem("cartItems")) || [];
+document.getElementById("cartitemstotalcount").innerHTML =
+  cartItemstotalqty.length;
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -32,39 +35,52 @@ function Changeui() {
   document.getElementById("NAVBARUL").classList.toggle("changewholenav");
   document.getElementById("MOBILECLICK").classList.toggle("MOBILECLICKDISPLAY");
 }
-var Clothing_WomensClothing = [{
-    image_1: "https://images.urbndata.com/is/image/Anthropologie/67495465_040_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
-    image_2: "https://images.urbndata.com/is/image/Anthropologie/64280464_053_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+var Clothing_WomensClothing = [
+  {
+    image_1:
+      "https://images.urbndata.com/is/image/Anthropologie/67495465_040_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+    image_2:
+      "https://images.urbndata.com/is/image/Anthropologie/64280464_053_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
     name: "Apothecary 18 Tin Candle",
     price: "19.20",
-},
-{
-    image_1: "https://images.urbndata.com/is/image/Anthropologie/64280464_013_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
-    image_2: "https://images.urbndata.com/is/image/Anthropologie/64280464_030_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+  },
+  {
+    image_1:
+      "https://images.urbndata.com/is/image/Anthropologie/64280464_013_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+    image_2:
+      "https://images.urbndata.com/is/image/Anthropologie/64280464_030_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
     name: "Day's Last Light Glass Boxed Candle",
     price: "25.60",
-},
-{
-    image_1: "https://images.urbndata.com/is/image/Anthropologie/65166043_010_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
-    image_2: "https://images.urbndata.com/is/image/Anthropologie/65166043_054_b10?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
-    image_3: "https://images.urbndata.com/is/image/Anthropologie/65166043_237_b10?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+  },
+  {
+    image_1:
+      "https://images.urbndata.com/is/image/Anthropologie/65166043_010_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+    image_2:
+      "https://images.urbndata.com/is/image/Anthropologie/65166043_054_b10?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+    image_3:
+      "https://images.urbndata.com/is/image/Anthropologie/65166043_237_b10?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
     name: "Classic Taper Candles",
     price: "20.00",
-},
-{
-    
-    image_1: "https://images.urbndata.com/is/image/Anthropologie/65166043_410_b10?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
-    image_2: "https://images.urbndata.com/is/image/Anthropologie/58028085_001_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+  },
+  {
+    image_1:
+      "https://images.urbndata.com/is/image/Anthropologie/65166043_410_b10?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+    image_2:
+      "https://images.urbndata.com/is/image/Anthropologie/58028085_001_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
     name: "Capri Blue Volcano Matte Black Jar Candle",
     price: "13.00",
-},
-{
-    image_1: "https://images.urbndata.com/is/image/Anthropologie/67594804_028_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
-    image_2: "https://images.urbndata.com/is/image/Anthropologie/67594804_070_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
-    image_3: "https://images.urbndata.com/is/image/Anthropologie/67594804_004_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+  },
+  {
+    image_1:
+      "https://images.urbndata.com/is/image/Anthropologie/67594804_028_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+    image_2:
+      "https://images.urbndata.com/is/image/Anthropologie/67594804_070_b?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
+    image_3:
+      "https://images.urbndata.com/is/image/Anthropologie/67594804_004_b2?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
     name: "Ivy Decorator Candle",
     price: "25.00",
-},];
+  },
+];
 displaydatafunction(Clothing_WomensClothing);
 // funtion for mapping all the data of items
 function displaydatafunction(Clothing_WomensClothing) {

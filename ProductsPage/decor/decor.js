@@ -1,3 +1,6 @@
+let cartItemstotalqty = JSON.parse(localStorage.getItem("cartItems")) || [];
+document.getElementById("cartitemstotalcount").innerHTML =
+  cartItemstotalqty.length;
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -32,92 +35,138 @@ function Changeui() {
   document.getElementById("NAVBARUL").classList.toggle("changewholenav");
   document.getElementById("MOBILECLICK").classList.toggle("MOBILECLICKDISPLAY");
 }
-var Clothing_WomensClothing = [{
-    image_1: "https://images.urbndata.com/is/image/Anthropologie/35388685_020_b10?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
-    image_2: "https://images.urbndata.com/is/image/Anthropologie/35388685_020_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
-    image_3: "https://images.urbndata.com/is/image/Anthropologie/35388685_020_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
+var Clothing_WomensClothing = [
+  {
+    image_1:
+      "https://images.urbndata.com/is/image/Anthropologie/35388685_020_b10?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
+    image_2:
+      "https://images.urbndata.com/is/image/Anthropologie/35388685_020_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
+    image_3:
+      "https://images.urbndata.com/is/image/Anthropologie/35388685_020_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
     name: "Gleaming Primrose Mirror",
     price1: "411.00",
     strikeoffprice1: "1278.40",
-}, 
-{image_1: "https://images.urbndata.com/is/image/Anthropologie/B45226327AA_030_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
-    image_2: "https://images.urbndata.com/is/image/Anthropologie/B45226327AA_030_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
-    image_3: "https://images.urbndata.com/is/image/Anthropologie/B45226327AA_030_b3?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
+  },
+  {
+    image_1:
+      "https://images.urbndata.com/is/image/Anthropologie/B45226327AA_030_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
+    image_2:
+      "https://images.urbndata.com/is/image/Anthropologie/B45226327AA_030_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
+    image_3:
+      "https://images.urbndata.com/is/image/Anthropologie/B45226327AA_030_b3?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
     name: "Eloise Table Lamp",
     price1: "198.00",
     strikeoffprice1: "200.00",
-}, 
-{image_1: "https://images.urbndata.com/is/image/Anthropologie/48097422_070_a10?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
-    image_2: "https://images.urbndata.com/is/image/Anthropologie/48097422_070_b10?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
-    image_3: "https://images.urbndata.com/is/image/Anthropologie/48097422_070_b15?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
+  },
+  {
+    image_1:
+      "https://images.urbndata.com/is/image/Anthropologie/48097422_070_a10?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
+    image_2:
+      "https://images.urbndata.com/is/image/Anthropologie/48097422_070_b10?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
+    image_3:
+      "https://images.urbndata.com/is/image/Anthropologie/48097422_070_b15?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
     name: "Grecian Bust Pot",
     price1: "28.00 ",
     strikeoffprice1: "28.00",
-}, 
-{image_1: "https://images.urbndata.com/is/image/Anthropologie/59352039_001_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
-    image_2: "https://images.urbndata.com/is/image/Anthropologie/59352039_001_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
-    image_3: "https://images.urbndata.com/is/image/Anthropologie/59352039_001_b3?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
+  },
+  {
+    image_1:
+      "https://images.urbndata.com/is/image/Anthropologie/59352039_001_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
+    image_2:
+      "https://images.urbndata.com/is/image/Anthropologie/59352039_001_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
+    image_3:
+      "https://images.urbndata.com/is/image/Anthropologie/59352039_001_b3?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
     name: "Minka Textured Pot",
     price1: "23.80",
     strikeoffprice1: "34.00",
-}, 
-{image_1: "https://images.urbndata.com/is/image/Anthropologie/61538542_011_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
-    image_2: "https://images.urbndata.com/is/image/Anthropologie/61538542_011_b15?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
-    image_3: "https://images.urbndata.com/is/image/Anthropologie/61538542_011_b16?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
+  },
+  {
+    image_1:
+      "https://images.urbndata.com/is/image/Anthropologie/61538542_011_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
+    image_2:
+      "https://images.urbndata.com/is/image/Anthropologie/61538542_011_b15?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
+    image_3:
+      "https://images.urbndata.com/is/image/Anthropologie/61538542_011_b16?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
     name: "Hudson Mirror",
     price1: "398.40",
     strikeoffprice1: "498.00",
-}, 
-{image_1: "https://images.urbndata.com/is/image/Anthropologie/4546TBCUAA_040_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
-    image_2: "https://images.urbndata.com/is/image/Anthropologie/4546TBCUAA_040_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
+  },
+  {
+    image_1:
+      "https://images.urbndata.com/is/image/Anthropologie/4546TBCUAA_040_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
+    image_2:
+      "https://images.urbndata.com/is/image/Anthropologie/4546TBCUAA_040_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
     image_3: "",
     name: "Tiber Curtain",
     price1: "86.40",
     strikeoffprice1: "108.00",
-}, 
-{image_1: "https://images.urbndata.com/is/image/Anthropologie/65085714_046_b14?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
-    image_2: "https://images.urbndata.com/is/image/Anthropologie/65085714_046_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
-    image_3: "https://images.urbndata.com/is/image/Anthropologie/65085714_046_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
+  },
+  {
+    image_1:
+      "https://images.urbndata.com/is/image/Anthropologie/65085714_046_b14?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
+    image_2:
+      "https://images.urbndata.com/is/image/Anthropologie/65085714_046_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
+    image_3:
+      "https://images.urbndata.com/is/image/Anthropologie/65085714_046_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
     name: "Handwoven Nami Rug",
     price1: "70.40",
     strikeoffprice1: "88.00",
-}, 
-{image_1: "https://images.urbndata.com/is/image/Anthropologie/65886301_027_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
-    image_2: "https://images.urbndata.com/is/image/Anthropologie/65886301_027_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
-    image_3: "https://images.urbndata.com/is/image/Anthropologie/65886301_027_b3?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
+  },
+  {
+    image_1:
+      "https://images.urbndata.com/is/image/Anthropologie/65886301_027_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
+    image_2:
+      "https://images.urbndata.com/is/image/Anthropologie/65886301_027_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
+    image_3:
+      "https://images.urbndata.com/is/image/Anthropologie/65886301_027_b3?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
     name: "Gleaming Primrose Triptych Mirror",
     price1: "373.50",
     strikeoffprice1: "498.00",
-}, 
-{image_1: "https://images.urbndata.com/is/image/Anthropologie/59900944_027_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
-    image_2: "https://images.urbndata.com/is/image/Anthropologie/59900944_027_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
-    image_3: "https://images.urbndata.com/is/image/Anthropologie/59900944_027_b3?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
+  },
+  {
+    image_1:
+      "https://images.urbndata.com/is/image/Anthropologie/59900944_027_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
+    image_2:
+      "https://images.urbndata.com/is/image/Anthropologie/59900944_027_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
+    image_3:
+      "https://images.urbndata.com/is/image/Anthropologie/59900944_027_b3?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
     name: "Gleaming Primrose Mirror",
     price1: "398.40",
     strikeoffprice1: "498.00",
-}, 
-{image_1: "https://images.urbndata.com/is/image/Anthropologie/51561926_029_b14?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
-    image_2: "https://images.urbndata.com/is/image/Anthropologie/51561926_029_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
-    image_3: "https://images.urbndata.com/is/image/Anthropologie/51561926_029_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
+  },
+  {
+    image_1:
+      "https://images.urbndata.com/is/image/Anthropologie/51561926_029_b14?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
+    image_2:
+      "https://images.urbndata.com/is/image/Anthropologie/51561926_029_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
+    image_3:
+      "https://images.urbndata.com/is/image/Anthropologie/51561926_029_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
     name: "Sophie Faux Fur Throw Blanket",
     price1: "102.40",
     strikeoffprice1: "128.00",
-}, 
-{image_1: "https://images.urbndata.com/is/image/Anthropologie/45263797AA_070_b11?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
-    image_2: "https://images.urbndata.com/is/image/Anthropologie/45263797AA_070_b10?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
-    image_3: "https://images.urbndata.com/is/image/Anthropologie/45263797AA_070_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
+  },
+  {
+    image_1:
+      "https://images.urbndata.com/is/image/Anthropologie/45263797AA_070_b11?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
+    image_2:
+      "https://images.urbndata.com/is/image/Anthropologie/45263797AA_070_b10?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
+    image_3:
+      "https://images.urbndata.com/is/image/Anthropologie/45263797AA_070_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
     name: "Victoria Frame",
     price1: "19.50",
     strikeoffprice1: "26.00",
-}, 
-{image_1: "https://images.urbndata.com/is/image/Anthropologie/45455754AA_045_b11?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
-    image_2: "https://images.urbndata.com/is/image/Anthropologie/45455754AA_045_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
-    image_3: "https://images.urbndata.com/is/image/Anthropologie/45455754AA_045_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
+  },
+  {
+    image_1:
+      "https://images.urbndata.com/is/image/Anthropologie/45455754AA_045_b11?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
+    image_2:
+      "https://images.urbndata.com/is/image/Anthropologie/45455754AA_045_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
+    image_3:
+      "https://images.urbndata.com/is/image/Anthropologie/45455754AA_045_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
     name: "Adelina Velvet Pillow",
     price1: "38.40",
     strikeoffprice1: "48.00",
-}, 
-
+  },
 ];
 
 displaydatafunction(Clothing_WomensClothing);

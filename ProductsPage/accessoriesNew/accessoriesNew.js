@@ -1,3 +1,6 @@
+let cartItemstotalqty = JSON.parse(localStorage.getItem("cartItems")) || [];
+document.getElementById("cartitemstotalcount").innerHTML =
+  cartItemstotalqty.length;
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -77,8 +80,10 @@ var Clothing_WomensClothing = [
     name: "Embellished Pearl Reading Glasses",
     image_1:
       "https://images.urbndata.com/is/image/Anthropologie/78784055_017_b14?$an-category$&fit=constrain&fmt=webp&hei=523&qlt=80&wid=349",
-      image_2: "https://images.urbndata.com/is/image/Anthropologie/78784055_017_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
-    image_3:"https://images.urbndata.com/is/image/Anthropologie/78784055_017_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
+    image_2:
+      "https://images.urbndata.com/is/image/Anthropologie/78784055_017_b2?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
+    image_3:
+      "https://images.urbndata.com/is/image/Anthropologie/78784055_017_b?$a15-pdp-detail-shot$&fit=constrain&fmt=webp&qlt=80&wid=540",
     price: "48",
   },
   {

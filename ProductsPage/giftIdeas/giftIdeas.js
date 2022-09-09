@@ -1,3 +1,6 @@
+let cartItemstotalqty = JSON.parse(localStorage.getItem("cartItems")) || [];
+document.getElementById("cartitemstotalcount").innerHTML =
+  cartItemstotalqty.length;
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -32,48 +35,62 @@ function Changeui() {
   document.getElementById("NAVBARUL").classList.toggle("changewholenav");
   document.getElementById("MOBILECLICK").classList.toggle("MOBILECLICKDISPLAY");
 }
-var Clothing_WomensClothing=[{
-    image_1:"https://images.ctfassets.net/5de70he6op10/24HFg687FQvhLQRn9cUMOw/ea75d712760bdbd95f95fe5f63a4751a/051022_MothersDay_GiftGuide_GiftsForGardener.jpg?w=856&q=80&fm=webp",
-    image_2:"https://images.ctfassets.net/5de70he6op10/24HFg687FQvhLQRn9cUMOw/ea75d712760bdbd95f95fe5f63a4751a/051022_MothersDay_GiftGuide_GiftsForGardener.jpg?w=856&q=80&fm=webp",
-    
-  name: "Gifts for the Gardener",
-    price:"23.00"
-},
-{
-    image_1:"https://images.ctfassets.net/5de70he6op10/5qUns1ztyJw0P3QHaLfvF1/1539ecaf44f453f53b167819327b6164/051022_Evergreen_GiftGuide_GiftsForHostess.jpg?w=856&q=80&fm=webp",
-    image_2:"https://images.ctfassets.net/5de70he6op10/4ZpamMGnslgbnOXCKasDCm/c92f332539b4a36125d961c6504658c1/051022_Evergreen_GiftGuide_GiftsForWineLover.jpg?w=856&q=80&fm=webp",
-   
-  name: "Gifts for the Hostess",
-    price:"12.00"
-},
-{
-    image_1:"https://images.ctfassets.net/5de70he6op10/4ZpamMGnslgbnOXCKasDCm/c92f332539b4a36125d961c6504658c1/051022_Evergreen_GiftGuide_GiftsForWineLover.jpg?w=856&q=80&fm=webp",
-    image_2:"https://images.ctfassets.net/5de70he6op10/5qUns1ztyJw0P3QHaLfvF1/1539ecaf44f453f53b167819327b6164/051022_Evergreen_GiftGuide_GiftsForHostess.jpg?w=856&q=80&fm=webp",
+var Clothing_WomensClothing = [
+  {
+    image_1:
+      "https://images.ctfassets.net/5de70he6op10/24HFg687FQvhLQRn9cUMOw/ea75d712760bdbd95f95fe5f63a4751a/051022_MothersDay_GiftGuide_GiftsForGardener.jpg?w=856&q=80&fm=webp",
+    image_2:
+      "https://images.ctfassets.net/5de70he6op10/24HFg687FQvhLQRn9cUMOw/ea75d712760bdbd95f95fe5f63a4751a/051022_MothersDay_GiftGuide_GiftsForGardener.jpg?w=856&q=80&fm=webp",
 
-  name: "Gifts for Wine Lovers",
-    price:"34.00"
-},
-{
-    image_1:"https://images.ctfassets.net/5de70he6op10/24HFg687FQvhLQRn9cUMOw/ea75d712760bdbd95f95fe5f63a4751a/051022_MothersDay_GiftGuide_GiftsForGardener.jpg?w=856&q=80&fm=webp",
-    image_2:"https://images.ctfassets.net/5de70he6op10/5qUns1ztyJw0P3QHaLfvF1/1539ecaf44f453f53b167819327b6164/051022_Evergreen_GiftGuide_GiftsForHostess.jpg?w=856&q=80&fm=webp",
+    name: "Gifts for the Gardener",
+    price: "23.00",
+  },
+  {
+    image_1:
+      "https://images.ctfassets.net/5de70he6op10/5qUns1ztyJw0P3QHaLfvF1/1539ecaf44f453f53b167819327b6164/051022_Evergreen_GiftGuide_GiftsForHostess.jpg?w=856&q=80&fm=webp",
+    image_2:
+      "https://images.ctfassets.net/5de70he6op10/4ZpamMGnslgbnOXCKasDCm/c92f332539b4a36125d961c6504658c1/051022_Evergreen_GiftGuide_GiftsForWineLover.jpg?w=856&q=80&fm=webp",
 
-  name: "Gifts for the Gardener",
-    price:"11.00"
-},
-{
-    image_1:"https://images.ctfassets.net/5de70he6op10/5qUns1ztyJw0P3QHaLfvF1/1539ecaf44f453f53b167819327b6164/051022_Evergreen_GiftGuide_GiftsForHostess.jpg?w=856&q=80&fm=webp",
-    image_2:"https://images.ctfassets.net/5de70he6op10/4ZpamMGnslgbnOXCKasDCm/c92f332539b4a36125d961c6504658c1/051022_Evergreen_GiftGuide_GiftsForWineLover.jpg?w=856&q=80&fm=webp",
-    
-  name: "Gifts for the Hostess",
-    price:"10.00"
-},
-{
-    image_1:"https://images.ctfassets.net/5de70he6op10/4ZpamMGnslgbnOXCKasDCm/c92f332539b4a36125d961c6504658c1/051022_Evergreen_GiftGuide_GiftsForWineLover.jpg?w=856&q=80&fm=webp",
-    image_2:"https://images.ctfassets.net/5de70he6op10/24HFg687FQvhLQRn9cUMOw/ea75d712760bdbd95f95fe5f63a4751a/051022_MothersDay_GiftGuide_GiftsForGardener.jpg?w=856&q=80&fm=webp",
+    name: "Gifts for the Hostess",
+    price: "12.00",
+  },
+  {
+    image_1:
+      "https://images.ctfassets.net/5de70he6op10/4ZpamMGnslgbnOXCKasDCm/c92f332539b4a36125d961c6504658c1/051022_Evergreen_GiftGuide_GiftsForWineLover.jpg?w=856&q=80&fm=webp",
+    image_2:
+      "https://images.ctfassets.net/5de70he6op10/5qUns1ztyJw0P3QHaLfvF1/1539ecaf44f453f53b167819327b6164/051022_Evergreen_GiftGuide_GiftsForHostess.jpg?w=856&q=80&fm=webp",
 
-  name: "Gifts for Wine Lovers",
-    price:"8.00"
-},];
+    name: "Gifts for Wine Lovers",
+    price: "34.00",
+  },
+  {
+    image_1:
+      "https://images.ctfassets.net/5de70he6op10/24HFg687FQvhLQRn9cUMOw/ea75d712760bdbd95f95fe5f63a4751a/051022_MothersDay_GiftGuide_GiftsForGardener.jpg?w=856&q=80&fm=webp",
+    image_2:
+      "https://images.ctfassets.net/5de70he6op10/5qUns1ztyJw0P3QHaLfvF1/1539ecaf44f453f53b167819327b6164/051022_Evergreen_GiftGuide_GiftsForHostess.jpg?w=856&q=80&fm=webp",
+
+    name: "Gifts for the Gardener",
+    price: "11.00",
+  },
+  {
+    image_1:
+      "https://images.ctfassets.net/5de70he6op10/5qUns1ztyJw0P3QHaLfvF1/1539ecaf44f453f53b167819327b6164/051022_Evergreen_GiftGuide_GiftsForHostess.jpg?w=856&q=80&fm=webp",
+    image_2:
+      "https://images.ctfassets.net/5de70he6op10/4ZpamMGnslgbnOXCKasDCm/c92f332539b4a36125d961c6504658c1/051022_Evergreen_GiftGuide_GiftsForWineLover.jpg?w=856&q=80&fm=webp",
+
+    name: "Gifts for the Hostess",
+    price: "10.00",
+  },
+  {
+    image_1:
+      "https://images.ctfassets.net/5de70he6op10/4ZpamMGnslgbnOXCKasDCm/c92f332539b4a36125d961c6504658c1/051022_Evergreen_GiftGuide_GiftsForWineLover.jpg?w=856&q=80&fm=webp",
+    image_2:
+      "https://images.ctfassets.net/5de70he6op10/24HFg687FQvhLQRn9cUMOw/ea75d712760bdbd95f95fe5f63a4751a/051022_MothersDay_GiftGuide_GiftsForGardener.jpg?w=856&q=80&fm=webp",
+
+    name: "Gifts for Wine Lovers",
+    price: "8.00",
+  },
+];
 displaydatafunction(Clothing_WomensClothing);
 // funtion for mapping all the data of items
 function displaydatafunction(Clothing_WomensClothing) {

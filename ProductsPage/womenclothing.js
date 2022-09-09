@@ -1,3 +1,7 @@
+let cartItemstotalqty = JSON.parse(localStorage.getItem("cartItems")) || [];
+document.getElementById("cartitemstotalcount").innerHTML =
+  cartItemstotalqty.length;
+
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -827,6 +831,3 @@ function changebyfunctionvalue(name) {
 //   console.log("KARTIK WIN");
 //   localStorage.setItem("forcheckitemview", JSON.stringify(temp[0]));
 // }
-let cartItemstotalqty = JSON.parse(localStorage.getItem("cartItems")) || [];
-document.getElementById("cartitemstotalcount").innerHTML =
-  cartItemstotalqty.length;
