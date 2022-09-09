@@ -708,6 +708,9 @@
        
         
     }
+    let cartItemstotalqty = JSON.parse(localStorage.getItem("cartItems")) || [];
+document.getElementById("cartitemstotalcount").innerHTML =
+  cartItemstotalqty.length;
 
   </script>
 </html>

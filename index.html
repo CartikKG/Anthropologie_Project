@@ -670,7 +670,7 @@
              <span class="vi"></span>
              <div>
              
-                
+                <!-- <a href=""></a> -->
                
               <a href="">   <img style="width: 100%;" src="https://images.ctfassets.net/5de70he6op10/5iyc5hElb58ovV19L9N1kE/decf62d3e45b27b01c90015f4aca4878/SuperNav_Content_Slot.jpg?w=295&q=80&fm=webp" alt=""></a>
                 
@@ -729,5 +729,8 @@ function Changeui(){
  
   
 }
+let cartItemstotalqty = JSON.parse(localStorage.getItem("cartItems")) || [];
+document.getElementById("cartitemstotalcount").innerHTML =
+  cartItemstotalqty.length;
 
 </script>
