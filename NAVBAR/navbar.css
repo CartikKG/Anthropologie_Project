@@ -352,12 +352,13 @@ nav a {
     /* z-index: 100; 
 } */
 #cartitemstotalcount {
-    font-size: 18px;
+    font-size: 15px;
     /* border: 2px solid red; */
+    /* height: 10px; */
     padding: 2px 4px;
     border-radius: 50px;
-    /* margin-left: 10px; */
-    background-color: #000000;
+    /* margin-left: -8px; */
+    background-color: #9c9c9c;
     color: #ffffff;
 }
 
