@@ -200,6 +200,8 @@
   #orderboxlines>p{
     font-size:xx-small;
   } */
+
+
 #shipbtn {
   -webkit-font-smoothing: antialiased;
   background-color: rgb(75, 86, 102);
@@ -219,6 +221,11 @@
   margin-left: 25px;
   margin-bottom: 20px;
   margin-top: 20px;
+}
+
+#submittheaddress {
+  background-color: aqua;
+  color: aqua;
 }
 
 /* #btn:hover {
@@ -289,6 +296,7 @@
 .dropdown-content input:hover {
   background-color: #ddd;
 } */
+
 
 @media screen and (min-width: 761px) and (max-width: 1020px) {
   #belowPaymentScreen {

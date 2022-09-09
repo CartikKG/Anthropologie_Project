@@ -351,6 +351,16 @@ nav a {
     position: fixed;
     /* z-index: 100; 
 } */
+#cartitemstotalcount {
+    font-size: 15px;
+    /* border: 2px solid red; */
+    /* height: 10px; */
+    padding: 2px 4px;
+    border-radius: 50px;
+    /* margin-left: -8px; */
+    background-color: #9c9c9c;
+    color: #ffffff;
+}
 
 
 

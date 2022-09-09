@@ -1,3 +1,6 @@
+let cartItemstotalqty = JSON.parse(localStorage.getItem("cartItems")) || [];
+document.getElementById("cartitemstotalcount").innerHTML =
+  cartItemstotalqty.length;
 let slideIndex = 1;
 showSlides(slideIndex);
 
@@ -700,7 +703,7 @@ function displaydatafunction(Clothing_WomensClothing) {
     imgCircle3.setAttribute("class", "productsCircle");
     clickable.setAttribute(
       "href",
-      "../productsReviewPage/productReviewPage.html"
+      "../../productsReviewPage/productsReviewPage.js"
     );
     // image1.addEventListener("click", function () {
     //   adddatatoprductview(index);

@@ -1,3 +1,6 @@
+let cartItemstotalqty = JSON.parse(localStorage.getItem("cartItems")) || [];
+document.getElementById("cartitemstotalcount").innerHTML =
+  cartItemstotalqty.length;
 let slideIndex = 1;
 showSlides(slideIndex);
 

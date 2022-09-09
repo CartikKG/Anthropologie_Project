@@ -2,38 +2,35 @@ let slideIndex = 1;
 showSlides(slideIndex);
 
 function plusSlides(n) {
- showSlides(slideIndex += n);
+  showSlides((slideIndex += n));
 }
 
 function currentSlide(n) {
- showSlides(slideIndex = n);
+  showSlides((slideIndex = n));
 }
 
 function showSlides(n) {
- let i;
- let slides = document.getElementsByClassName("SLIDEDIVS");
- let dots = document.getElementsByClassName("dot");
- if (n > slides.length){
-      slideIndex = 1
- }    
- if (n < 1){
-  slideIndex = slides.length
- }
- for (i = 0; i < slides.length; i++) {
-   slides[i].style. display = "none";  
- }
- for (i = 0; i < dots.length; i++) {
-   dots[i].className = dots[i].className.replace(" active", "");
- }
- slides[slideIndex-1].style.display = "flex";  
-
+  let i;
+  let slides = document.getElementsByClassName("SLIDEDIVS");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {
+    slideIndex = 1;
+  }
+  if (n < 1) {
+    slideIndex = slides.length;
+  }
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex - 1].style.display = "flex";
 }
 
-function Changeui(){
- document.getElementById("NAVBARUL").classList.toggle("changewholenav");
- document.getElementById("MOBILECLICK").classList.toggle("MOBILECLICKDISPLAY");
-
- 
+function Changeui() {
+  document.getElementById("NAVBARUL").classList.toggle("changewholenav");
+  document.getElementById("MOBILECLICK").classList.toggle("MOBILECLICKDISPLAY");
 }
 var Clothing_WomensClothing = [
   {
@@ -701,13 +698,16 @@ function displaydatafunction(Clothing_WomensClothing) {
     imgCircle1.setAttribute("class", "productsCircle");
     imgCircle2.setAttribute("class", "productsCircle");
     imgCircle3.setAttribute("class", "productsCircle");
-    clickable.setAttribute("href", "../productsReviewPage/productReviewPage.html");
+    clickable.setAttribute(
+      "href",
+      "../productsReviewPage/productReviewPage.html"
+    );
     // image1.addEventListener("click", function () {
     //   adddatatoprductview(index);
     // });
     image1.addEventListener("click", adddatatoprductview);
 
-    function adddatatoprductview(){
+    function adddatatoprductview() {
       localStorage.setItem("itemName", elem.name);
       localStorage.setItem("image_1", elem.image_1);
       localStorage.setItem("image_2", elem.image_2);
@@ -827,3 +827,6 @@ function changebyfunctionvalue(name) {
 //   console.log("KARTIK WIN");
 //   localStorage.setItem("forcheckitemview", JSON.stringify(temp[0]));
 // }
+let cartItemstotalqty = JSON.parse(localStorage.getItem("cartItems")) || [];
+document.getElementById("cartitemstotalcount").innerHTML =
+  cartItemstotalqty.length;

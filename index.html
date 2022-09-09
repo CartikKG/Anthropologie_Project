@@ -124,7 +124,8 @@
               aria-label="Search"
             />
           
-           <a href="">   <i class="fa-solid fa-bag-shopping"></i>  </a> </i>
+           <a href="./checkout&cartPage/CARTPAGE.html">   <i class="fa-solid fa-bag-shopping"></i>  </a> </i>
+           <span id="cartitemstotalcount">10</span>
              <input type="Checkbox" id="checkboxnav" >
           <label for="check" class="checkbtn" id="MOBILECLICK" onclick="Changeui()" > <i class="fas fa-bars" ></i></label>
           </form>
@@ -669,7 +670,7 @@
              <span class="vi"></span>
              <div>
              
-                
+                <!-- <a href=""></a> -->
                
               <a href="">   <img style="width: 100%;" src="https://images.ctfassets.net/5de70he6op10/5iyc5hElb58ovV19L9N1kE/decf62d3e45b27b01c90015f4aca4878/SuperNav_Content_Slot.jpg?w=295&q=80&fm=webp" alt=""></a>
                 
@@ -728,5 +729,8 @@ function Changeui(){
  
   
 }
+let cartItemstotalqty = JSON.parse(localStorage.getItem("cartItems")) || [];
+document.getElementById("cartitemstotalcount").innerHTML =
+  cartItemstotalqty.length;
 
 </script>
