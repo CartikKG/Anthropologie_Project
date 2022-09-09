@@ -27,6 +27,72 @@
     <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
   </head>
   <body>
+    <div id="UPPERSLIDES">
+        <div class="SLIDEDIVS" style="background-color: #1b399c;color: aliceblue;">
+            <div>
+                <div>
+                    <i>ends tonight!
+                    </i>
+                </div>
+                <div>
+                    <p>Extra 50% OFF ALL SALE ITEMS </p>
+                </div>
+                <div>
+                    <i>shop </i>
+                </div>
+                <div>
+                    <i>all sale final-see details </i>
+                </div>
+            </div>
+        </div>
+        <div class="SLIDEDIVS" id="SLIDEDIVS1" style="background-color: #a80041; color: aliceblue;">
+            <div>
+                <div>
+                    <i>Discover NEW shades of meaning</i>
+                </div>
+                <div>
+                    <p>Reset The Tone</p>
+                </div>
+                <div><i>shop</i>
+                </div>
+                <div>
+                    <i>Shop the Fall 22 Collection </i>
+                </div>
+            </div>
+
+        </div>
+        <div class="SLIDEDIVS" id="SLIDEDIVS2" style="background-color: #296361; color: aliceblue;">
+
+            <div>
+                <div>
+                    <i>ends tonight!</i>
+                </div>
+                <div>
+                    <p>Extra 50% OFF ALL SALE ITEMS</p>
+                </div>
+                <div> <i>shop </i> </div>
+                <div>
+                    <i>all sale final-see details </i>
+                </div>
+            </div>
+
+        </div>
+        <a class="slidesprev" onclick="plusSlides(-1)">❮</a>
+        <a class="slidesnext" onclick="plusSlides(1)">❯</a>
+        <div id="SigninSignUP">
+            <div> <i class="fa-sharp fa-solid fa-globe" style="margin-right: 10px;"></i>English ($)
+            </div>
+            <a href="/Anthropologie_Project/SignUp__SignIn/SINGUP_SIGNIN/Singup_Signin.html"
+                style="text-decoration:none;">
+                <div>
+                    <i class="fa-regular fa-user"></i> Sign In / Sign Up
+                </div>
+            </a>
+
+            <!-- <a href="../index.html"></a> -->
+        </div>
+    </div>
+    
     <div id="WHOLENAV">
       <nav>
           <div id="navbarupper">
@@ -50,7 +116,7 @@
                   <form role="search">
                       <input type="search" placeholder="Search" aria-label="Search" />
   
-                      <a href="../../checkout&cartPage/CARTPAGE.html"> <i class="fa-solid fa-bag-shopping"></i> </a>
+                      <a href=".././checkout&cartPage/CARTPAGE.html"> <i class="fa-solid fa-bag-shopping"></i> </a>
                       </i>
                       <span id="cartitemstotalcount">0</span>
                       <input type="Checkbox" id="checkboxnav">
@@ -1507,7 +1573,7 @@
         <div id="ordersum">
           <div id="orderbox">
             <p>Subtotal</p>
-            <p>149.00</p>
+            <p  id="idtotalamount">0</p>
           </div>
           <div id="orderbox">
             <p>Shipping</p>
@@ -1515,11 +1581,11 @@
           </div>
           <div id="orderbox">
             <p>Estimated Tax</p>
-            <p>0.00</p>
+            <p id="idtotaltaxx">0.00</p>
           </div>
           <div id="orderbox">
             <p>Total</p>
-            <p>1500</p>
+            <p id="idtotalat" >0</p>
           </div>
           <button id="shipbtn" onclick="popupfun()">
             Ship To This Address
@@ -1546,8 +1612,8 @@
         </div>
         <div id="ordersum">
           <div id="orderbox">
-            <p>Subtotal</p>
-            <p>149.00</p>
+            <p >Subtotal</p>
+            <p id="totalamount">0</p>
           </div>
           <div id="orderbox">
             <p>Shipping</p>
@@ -1555,11 +1621,11 @@
           </div>
           <div id="orderbox">
             <p>Estimated Tax</p>
-            <p>0.00</p>
+            <p id="totaltaxx" >0.00</p>
           </div>
           <div id="orderbox">
             <p>Total</p>
-            <p>1500</p>
+            <p id="totalat" >0</p>
           </div>
           <button id="shipbtn" onclick="popupfun()">
             Ship To This Address
@@ -1880,4 +1946,13 @@ function Changeui(){
 let cartItemstotalqty = JSON.parse(localStorage.getItem("cartItems")) || [];
 document.getElementById("cartitemstotalcount").innerHTML = cartItemstotalqty.length;
 
+
+let cartgettotal=JSON.parse(localStorage.getItem("totalamountincart"));
+document.getElementById("totalamount").innerText=cartgettotal.total
+document.getElementById("totaltaxx").innerText=cartgettotal.tax
+document.getElementById("totalat").innerText=cartgettotal.after
+document.getElementById("idtotalamount").innerText=cartgettotal.total
+document.getElementById("idtotaltaxx").innerText=cartgettotal.tax
+document.getElementById("idtotalat").innerText=cartgettotal.after
+console.log(cartItemstotalqty.after)
 </script>
