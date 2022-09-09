@@ -754,24 +754,24 @@
                 <div class="form-group">
                   <label>Have coupon?</label>
                   <div class="input-group">
-                    <input
+                    <input id="typecouponh"
                       type="text"
                       class="form-control"
                       name=""
                       placeholder="Coupon code"
                     />
                     <span class="input-group-append">
-                      <button class="btnapply" id="submitbtn" type="submit">
+                      <button onclick="couponcheck()" id="couponapplied" class="btnapply" type="submit">
                         Apply
                       </button>
                     </span>
                   </div>
                 </div>
-              </form>
+              </form> 
             </div>
             <div class="promocodeans">
-              <p>Use Promo Code: <span class="promo">MASAI100</span></p>
-              <p class="expire">Expires:7days</p>
+               <p id="promocodeapplied" >Use Promo Code: MASAI100</p>
+              <!-- <p class="expire">Expires:7days</p> -->
             </div>
             <!-- <div class="navbar">
                         <div class="dropdown">
