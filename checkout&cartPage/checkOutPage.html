@@ -1958,11 +1958,11 @@ document.getElementById("cartitemstotalcount").innerHTML = cartItemstotalqty.len
 
 let cartgettotal=JSON.parse(localStorage.getItem("totalamountincart"))|| {};
 // document.getElementById("totalamount").innerText=cartgettotal.total;
-document.getElementById("totaltaxx").innerText=Math.round(cartgettotal.tax);
-document.getElementById("totalat").innerText=Math.round(cartgettotal.after);
-document.getElementById("idtotalamount").innerText=Math.round(cartgettotal.total);
-document.getElementById("idtotaltaxx").innerText= Math.round(cartgettotal.tax);
-document.getElementById("idtotalat").innerText= Math.round(cartgettotal.after);
+document.getElementById("totaltaxx").innerText="$"+Math.round(cartgettotal.tax)+".00";
+document.getElementById("totalat").innerText="$"+Math.round(cartgettotal.after)+".00";
+document.getElementById("idtotalamount").innerText= "$"+Math.round(cartgettotal.total)+".00";
+document.getElementById("idtotaltaxx").innerText= "$"+Math.round(cartgettotal.tax)+".00";
+document.getElementById("idtotalat").innerText= "$"+Math.round(cartgettotal.after)+".00";
 console.log(cartItemstotalqty.after)
 let flagg=localStorage.getItem("flag");
 let dataa=JSON.parse(localStorage.getItem("data"))|| [];
