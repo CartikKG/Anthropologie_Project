@@ -1563,7 +1563,7 @@
           <input type="text" id="emailid" name="email" required="" /><br />
           <label for="email"> Email</label><br />
           <input type="email" id="emailid" name="email" required=""/><br />
-          <input type="submit" id="submittheaddress" name="email" required="" /><br />
+          <!-- <input type="submit" id="submittheaddress" name="email" required="" /><br /> -->
         </form>
       </div>
       <div style="border: 2px" id="PaymentTranc">
@@ -1605,7 +1605,7 @@
         </div>
       </div>
     </div>
-    <!-- <div id="belowPaymentScreen">
+    <div id="belowPaymentScreen">
       <div id="secondScreenPayment">
         <div id="ordertext">
           <h2>Order Summary</h2>
@@ -1641,7 +1641,7 @@
                             <button>Apply</button>
                         </div>
                     </div> 
-                </div> -->
+                </div>
         </div>
       </div>
     </div> -->
@@ -1954,13 +1954,13 @@ let cartItemstotalqty = JSON.parse(localStorage.getItem("cartItems")) || [];
 document.getElementById("cartitemstotalcount").innerHTML = cartItemstotalqty.length;
 
 
-let cartgettotal=JSON.parse(localStorage.getItem("totalamountincart"));
-document.getElementById("totalamount").innerText=cartgettotal.total
-document.getElementById("totaltaxx").innerText=cartgettotal.tax
-document.getElementById("totalat").innerText=cartgettotal.after
-document.getElementById("idtotalamount").innerText=cartgettotal.total
-document.getElementById("idtotaltaxx").innerText=cartgettotal.tax
-document.getElementById("idtotalat").innerText=cartgettotal.after
+let cartgettotal=JSON.parse(localStorage.getItem("totalamountincart"))|| {};
+// document.getElementById("totalamount").innerText=cartgettotal.total;
+document.getElementById("totaltaxx").innerText=Math.round(cartgettotal.tax);
+document.getElementById("totalat").innerText=Math.round(cartgettotal.after);
+document.getElementById("idtotalamount").innerText=Math.round(cartgettotal.total);
+document.getElementById("idtotaltaxx").innerText= Math.round(cartgettotal.tax);
+document.getElementById("idtotalat").innerText= Math.round(cartgettotal.after);
 console.log(cartItemstotalqty.after)
 let flagg=localStorage.getItem("flag");
 let dataa=JSON.parse(localStorage.getItem("data"))|| [];
