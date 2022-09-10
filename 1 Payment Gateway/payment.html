@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Payment Form</title>
+    <link rel="stylesheet" href="payment.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <form id="paymentbox">
+            <h1 id="paymentHeading">Payment Method</h1>
+            <div class="second-row">
+                <div class="card-number">
+                    <p>Card Number*</p>
+                    <div class="input-field">
+                        <input type="number" placeholder="XXXX XXXX XXXX XXXX" required="">
+                    </div>
+                </div>
+                
+            </div>
+            <div class="first-row">
+                <div class="owner">
+                    <p>Owner</p>
+                    <div class="input-field">
+                        <input type="text" placeholder="Name on the Card" required="">
+                    </div>
+                </div>
+                <div class="cvv">
+                    <p>CVV*</p>
+                    <div class="input-field">
+                        <input type="password" placeholder="***" required>
+                    </div>
+                </div>
+            </div>
+            <div class="third-row">
+                <p>Expiration date*</p>
+                <div class="selection">
+                    <div class="date">
+                        <select name="months" id="months">
+                            <option value="Jan">Jan</option>
+                            <option value="Feb">Feb</option>
+                            <option value="Mar">Mar</option>
+                            <option value="Apr">Apr</option>
+                            <option value="May">May</option>
+                            <option value="Jun">Jun</option>
+                            <option value="Jul">Jul</option>
+                            <option value="Aug">Aug</option>
+                            <option value="Sep">Sep</option>
+                            <option value="Oct">Oct</option>
+                            <option value="Nov">Nov</option>
+                            <option value="Dec">Dec</option>
+                          </select>
+                          <select name="years" id="years">
+                            <option value="2020">2020</option>
+                            <option value="2019">2019</option>
+                            <option value="2018">2018</option>
+                            <option value="2017">2017</option>
+                            <option value="2016">2016</option>
+                            <option value="2015">2015</option>
+                          </select>
+                    </div>
+                    <div class="cards">
+                        <img src="mastercard.png" alt="">
+                        <img src="visa.png" alt="">
+                        <img src="paypal.png" alt="">
+                    </div>
+                </div>    
+            <div>
+                <input id="cardSubmit" type="submit" >
+            </div>
+        </form>
+    </div>
+        <div id="PaymentTranc">
+            <div id="ordertext">
+              <h2>Order Summary</h2>
+            </div>
+            <div id="ordersum">
+              <div id="orderbox">
+                <p>Subtotal</p>
+                <p class="totalpricebeforetax">0</p>
+              </div>
+              <div id="orderbox">
+                <p>Shipping</p>
+                <p>$0.00</p>
+              </div>
+              <div id="orderbox">
+                <p>Estimated Tax</p>
+                <p class="totaltax">0.00</p>
+              </div>
+              <div id="orderbox">
+                <p>Total</p>
+                <p class="totalprice">0</p>
+              </div>
+              <!-- <div id="orderboxlines"><p>Or 4 interest-free installments of $35.00 with </br> Klarna orAfterpay </p></div> -->
+             <a href="./checkOutPage.html"><button id="btn" onclick="window.location.href"="checkOutPage.html";>Confirm Payment</button></a> 
+            </div>
+        </div>
+    </div>
+    <script src="./payment.js"></script>
+</body>
+</html>
