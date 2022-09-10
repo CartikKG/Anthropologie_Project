@@ -69,8 +69,8 @@ if (dataa.length != 0) {
   document.getElementById("emaildata").innerText = "Logged In";
   console.log("Kartik");
 }
-document.getElementById("btn").addEventListener("click", popupfun);
-function popupfun() {
+document.getElementById("btn").addEventListener("click", openPopUp);
+function openPopUp() {
   swal({
     title: "Your Order is Placed!",
     text: "Thank you for shopping with us!",
