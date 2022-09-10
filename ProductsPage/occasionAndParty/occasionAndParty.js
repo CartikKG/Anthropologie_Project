@@ -325,7 +325,7 @@ function changebyfunctionvalue(name) {
 //   localStorage.setItem("forcheckitemview", JSON.stringify(temp[0]));
 // }
 let flagg = localStorage.getItem("flag");
-let dataa = JSON.parse(localStorage.getItem("data"));
+let dataa = JSON.parse(localStorage.getItem("data")) || [];
 // if(data)
 if (dataa.length != 0) {
   document.getElementById("emaildata").innerText = "Logged In";

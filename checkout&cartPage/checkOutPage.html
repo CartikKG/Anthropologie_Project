@@ -1963,7 +1963,7 @@ document.getElementById("idtotaltaxx").innerText=cartgettotal.tax
 document.getElementById("idtotalat").innerText=cartgettotal.after
 console.log(cartItemstotalqty.after)
 let flagg=localStorage.getItem("flag");
-let dataa=JSON.parse(localStorage.getItem("data"));
+let dataa=JSON.parse(localStorage.getItem("data"))|| [];
 // if(data)
 if(dataa.length!=0){
  

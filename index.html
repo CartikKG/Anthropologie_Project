@@ -1291,7 +1291,7 @@ function Changeui(){
 let cartItemstotalqty = JSON.parse(localStorage.getItem("cartItems")) || [];
 document.getElementById("cartitemstotalcount").innerHTML =cartItemstotalqty.length;
 let flagg=localStorage.getItem("flag");
-let dataa=JSON.parse(localStorage.getItem("data"));
+let dataa=JSON.parse(localStorage.getItem("data"))|| [];
 // if(data)
 if(dataa.length!=0){
  
