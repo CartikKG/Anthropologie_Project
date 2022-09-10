@@ -8,10 +8,11 @@
 }
 
 #cartmainbox {
-  width: 100%;
+  /* width: 100%; */
+  display: flex;
   /* display: flex; */
-  justify-content: space-between;
-  background-color: #fdfdf9;
+  /* justify-content: space-between; */
+  /* background-color: #fdfdf9; */
   /* position: absolute; */
 
 }
@@ -296,7 +297,9 @@
 .dropdown-content input:hover {
   background-color: #ddd;
 } */
-@media (max-width:759) {
+
+
+@media (max-width:759px) {
   #ListCart {
     /* border-bottom: 1px solid #e5e2de; */
     display: grid;
@@ -305,52 +308,49 @@
     gap: 20px;
     margin-left: -29px;
   }
-}
 
-@media screen and (min-width: 761px) and (max-width: 1020px) {
-  #belowPaymentScreen {
-    display: flex;
-    justify-content: flex-end;
-  }
+  #CartBox {
+    /* display: block; */
 
-  #secondScreenPayment {
-    display: block;
-    /* border: 10px solid blue; */
-    width: 30%;
-    /* right: 10px; */
-  }
-
-  #PaymentTranc {
-    display: none;
-  }
-
-}
-
-@media screen and (min-width: 761px) and (max-width: 1020px) {
-  #belowPaymentScreen {
-    display: flex;
-    justify-content: flex-end;
-  }
-
-  #secondScreenPayment {
-    display: block;
-    /* border: 10px solid blue; */
-    width: 100%;
-    /* right: 10px; */
   }
 
   #ordersum {
-    width: 90%;
-    margin: auto;
+    position: absolute;
+    border: 1px solid #26262c4b;
+    padding: 21px;
+    width: 84%;
   }
+}
 
-  #CartBox {
+
+
+
+@media screen and (min-width: 761px) and (max-width: 1020px) {
+  /* #belowPaymentScreen {
+    display: flex;
+    justify-content: flex-end;
+  } */
+
+  /* #secondScreenPayment {
     display: block;
-  }
+    border: 10px solid blue;
+    width: 100%;
+    /* right: 10px; */
+  /* } */
+  /* */
+  /* #ordersum { */
+  /* width: 90%;
+    margin: auto; */
 
-  #ordertext {
-    margin-left: 30px;
-  }
+  /* } */
+
+  /* #CartBox {
+    display: block;
+  } */
+
+  /* #ordertext { */
+  /* margin-left: 30px; */
+  /* } */
 
   #formfill {
     width: 100%;
@@ -358,9 +358,9 @@
     margin-left: 20px;
   }
 
-  #PaymentTranc {
+  /* #PaymentTranc {
     display: none;
-  }
+  } */
 
   #formfill>form>h2 {
     /* border: 2px solid red; */
@@ -371,22 +371,22 @@
 }
 
 @media screen and (min-width: 100px) and (max-width: 760px) {
-  #secondScreenPayment {
+  /*  #secondScreenPayment {
     display: block;
-    /* border: 10px solid blue; */
-    width: 95%;
-    margin: auto;
-    /* right: 10px; */
-  }
+    border: 10px solid blue; */
+  /* width: 95%; */
+  /* margin: auto; */
+  /* right: 10px; 
+  }*/
 
-  #PaymentTranc {
+  /* #PaymentTranc {
     display: none;
-  }
+  } */
 
-  #ordersum {
+  /* #ordersum {
     width: 90%;
     margin: auto;
-  }
+  } */
 
   #formfill {
     width: 90%;

@@ -1241,12 +1241,12 @@
           </ul>
       </nav>
   </div>
-    <div style="display: flex" id="cartmainbox ">
+    <div style="display: flex;" id="cartmainbox ">
       <div id="formfill">
         <form>
           <h2>Shipping Address</h2>
           <label for="country">Country/Region</label
-          ><span style="color: red !important; display: inline; float: none"
+          ><span style="color: red !important; "
             >*</span
           ><br />
           <select id="country" name="country" class="form-control" required="">
@@ -1587,9 +1587,9 @@
             <p>Total</p>
             <p id="idtotalat" >0</p>
           </div>
-          <button id="shipbtn" onclick="popupfun()">
+         <a href="../1 Payment Gateway/payment.html"> <button id="shipbtn" onclick="popupfun()">
             Ship To This Address
-          </button>
+          </button></a>
           <!-- <hr> -->
           <!-- <div class="navbar">
                         <div class="dropdown">
@@ -1605,7 +1605,7 @@
         </div>
       </div>
     </div>
-    <div id="belowPaymentScreen">
+    <!-- <div id="belowPaymentScreen">
       <div id="secondScreenPayment">
         <div id="ordertext">
           <h2>Order Summary</h2>
@@ -1644,7 +1644,7 @@
                 </div> -->
         </div>
       </div>
-    </div>
+    </div> -->
     <!-- <div id="includedContent"></div> -->
     <footer>
       <!-- pop-up box -->
@@ -1885,18 +1885,18 @@
   </body>
 </html>
 <script>
-  function popupfun() {
+//   function popupfun() {
 
      
-    swal({
-      title: "Your Order is Placed!",
-      text: "Thank you for shopping with us!",
-      icon: "success",
-     button:   "ok",
+//     swal({
+//       title: "Your Order is Placed!",
+//       text: "Thank you for shopping with us!",
+//       icon: "success",
+//      button:   "ok",
      
-    });
-//   button.addEventListener("click", gotoo);
-  }
+//     });
+// //   button.addEventListener("click", gotoo);
+//   }
 //  fun gotoo(){
 //  window.open("../index.html", "_self")
 //   }
