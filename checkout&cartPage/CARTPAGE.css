@@ -42,6 +42,10 @@
   justify-content: space-between;
 }
 
+#detailsList p {
+  margin-left: 27px
+}
+
 #detailsList>div:first-child {
   /* border: 1px solid teal; */
   display: flex;
@@ -99,7 +103,7 @@
 }
 
 #priceQuantityTotalDiv {
-  width: 53%;
+  width: 70%;
   /* border: 2px solid red; */
   font-size: 13px;
   display: flex;

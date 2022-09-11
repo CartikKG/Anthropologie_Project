@@ -14,12 +14,13 @@
   /* justify-content: space-between; */
   /* background-color: #fdfdf9; */
   /* position: absolute; */
+  margin: auto;
 
 }
 
 #formfill {
 
-  width: 60%;
+  width: 80%;
   /* margin: auto; */
   margin-left: 50px;
   /* height: 680px; */
@@ -35,6 +36,7 @@
   /* color: #26262c; */
   font-size: 15px;
   line-height: 15px;
+  margin: auto;
 }
 
 #formfill>form>h2 {
@@ -84,7 +86,7 @@
 /* width: 350px; */
 /* } */
 #PaymentTranc {
-  width: 25%;
+  width: 75%;
   /* border: 2px solid red; */
   /* margin-top: 1px5 */
   margin-left: 0px;
@@ -100,6 +102,7 @@
   /* position: -webkit-sticky; */
   /* position: fixed; */
   right: 20px;
+  margin: auto;
 }
 
 #ordersum {
@@ -320,6 +323,9 @@
     padding: 21px;
     width: 84%;
   }
+
+  /* #priceQuantityTotalDiv {
+    width: 66%; */
 }
 
 
@@ -331,12 +337,17 @@
     justify-content: flex-end;
   } */
 
+  #PaymentTranc {
+    /* display: none; */
+  }
+
   /* #secondScreenPayment {
     display: block;
     border: 10px solid blue;
     width: 100%;
-    /* right: 10px; */
-  /* } */
+    right: 10px;
+  } */
+
   /* */
   /* #ordersum { */
   /* width: 90%;
